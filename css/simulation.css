@@ -1,0 +1,161 @@
+/* Restoration Styles */
+.procedure-grid, .positions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step, .position-card {
+    transition: var(--transition);
+}
+
+.step h3, .position-card h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.step p, .position-card ul {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.position-card ul {
+    padding-left: 1.2rem;
+}
+
+.actors-mini-table, .evaluation-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.actors-mini-table th, .evaluation-grid th {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.actors-mini-table td, .evaluation-grid td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.simulation-tabs {
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 0.5rem;
+    border-radius: 50px;
+    margin: 2rem auto;
+    max-width: fit-content;
+}
+
+/* Mini Table & Dynamic Content Restoration */
+.actors-mini-section {
+    margin: 2rem 0;
+}
+
+.actors-mini-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.actors-mini-table th {
+    background: rgba(253, 187, 45, 0.1);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: left;
+}
+
+.actors-mini-table tr {
+    transition: var(--transition);
+}
+
+.actors-mini-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: scale(1.01);
+}
+
+.actors-mini-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dynamic-content-area {
+    min-height: 300px;
+    margin-top: 2rem;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 3rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.acte-content {
+    animation: fadeIn 0.5s ease;
+}
+
+.positions-list p {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.tab-btn {
+    opacity: 0.7;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    background: var(--accent-color);
+    color: #000;
+}
+
+.questions-examples {
+    margin-top: 2rem;
+}
+
+.questions-examples ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.evaluation-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.evaluation-grid {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .simulation-tabs {
+        flex-wrap: wrap;
+        border-radius: 15px;
+    }
+    .tab-btn {
+        width: 45%;
+        padding: 0.6rem;
+    }
+}

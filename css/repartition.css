@@ -1,0 +1,101 @@
+.repartition-card {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-effect);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+}
+
+.repartition-card h2 {
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.template-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.help-text {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.custom-file-upload {
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.custom-file-upload:hover {
+    border-color: var(--accent-color);
+    background: rgba(253, 187, 45, 0.05);
+}
+
+#csvFile { display: none; }
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.btn.primary { background: var(--accent-color); color: #000; }
+.btn.secondary { background: rgba(255, 255, 255, 0.1); color: #fff; }
+
+.results-table-container {
+    overflow-x: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+th { background: rgba(255, 255, 255, 0.05); color: var(--accent-color); font-size: 0.9rem; }
+.role-cell { font-weight: 600; color: #fff; }
+.name-cell { color: rgba(255, 255, 255, 0.8); }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Simulation Parlementaire – Affaire CYPHERA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main class="container">
+        <section class="carousel-container" id="carousel">
+            <div class="carousel-track">
+                <!-- Slide 1 -->
+                <!-- Slide 1: Scandale CYPHERA -->
+                <div class="carousel-slide active">
+                    <img src="assets/photos/cyber.png" alt="Cyber Security">
+                    <div class="slide-content">
+                        <h2 data-i18n="slide1_title">Scandale CYPHERA</h2>
+                        <p data-i18n="slide1_text">Découvrez l'affaire d'ingérence et de surveillance qui secoue la République.</p>
+                        <ul class="slide-list" data-i18n="slide1_list">
+                            <li>Programme secret État/CYPHERA SECURITY</li>
+                            <li>Surveillance journalistes/chercheurs/ONG</li>
+                            <li>Ingérence russe vs libertés</li>
+                            <li>Commission d'enquête créée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Commissions Vᵉ République -->
+                <div class="carousel-slide">
+                    <img src="assets/photos/justice.png" alt="Justice">
+                    <div class="slide-content">
+                        <h2 data-i18n="slide2_title">Commissions Vᵉ République</h2>
+                        <p data-i18n="slide2_text">Le pouvoir d'enquête du Parlement pour le contrôle démocratique.</p>
+                        <ul class="slide-list" data-i18n="slide2_list">
+                            <li>Résolution + bureau (président/rapporteur)</li>
+                            <li>Pouvoirs citation/auditions/rapport</li>
+                            <li>Contrôle démocratique exécutif</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 3: 14 Acteurs -->
+                <div class="carousel-slide">
+                    <img src="assets/photos/committee.png" alt="Committee">
+                    <div class="slide-content">
+                        <h2 data-i18n="slide3_title">14 Acteurs Clés</h2>
+                        <p data-i18n="slide3_text">Des intérêts divergents au cœur de la commission.</p>
+                        <div class="slide-table-container">
+                            <table class="mini-table" data-i18n="slide3_table">
+                                <!-- Replaced by i18n -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Grille Évaluation et Vidéo -->
+                <div class="carousel-slide slide-video">
+                    <video id="presentationVideo" playsinline>
+                        <source src="assets/videos/Cypherea.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-play" id="videoOverlay">
+                        <button class="central-play-btn" onclick="playCarouselVideo()">
+                            <span class="play-icon">▶</span>
+                        </button>
+                    </div>
+                    <div class="slide-content">
+                        <h2 data-i18n="slide4_title">Grille Évaluation</h2>
+                        <p data-i18n="slide4_text">Critères de notation sur 20 points.</p>
+                        <div class="slide-table-container">
+                            <table class="mini-table" data-i18n="slide4_table">
+                                <!-- Replaced by i18n -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="setSlide(0)"></span>
+                <span class="indicator" onclick="setSlide(1)"></span>
+                <span class="indicator" onclick="setSlide(2)"></span>
+                <span class="indicator" onclick="setSlide(3)"></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="i18n/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="tab_objectives">Objectifs – Affaire CYPHERA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/objectifs.css">
+</head>
+<body data-lang="fr">
+    <main class="objectifs-container">
+        <!-- Page Hero (Harmonized) -->
+        <section class="page-hero">
+            <div class="video-container">
+                <video id="bgVideo" autoplay muted playsinline loop>
+                    <source src="assets/videos/CYPHERA02.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 data-i18n="nav_objectives">Objectifs</h1>
+                <p data-i18n="slide3_text">Incarnez un acteur clé et participez à une commission d'enquête sur 4 actes intenses.</p>
+            </div>
+        </section>
+
+        <!-- Navigation par 3 Boutons -->
+        <section class="objectifs-buttons">
+            <div class="buttons-grid">
+                <button class="objectif-btn pedagogique active" data-section="pedagogiques">
+                    <span class="btn-icon">📚</span>
+                    <span data-i18n="objectifs.pedagogiques">A. Objectifs Pédagogiques</span>
+                </button>
+                <button class="objectif-btn eleves" data-section="eleves">
+                    <span class="btn-icon">👥</span>
+                    <span data-i18n="objectifs.eleves">B. Objectifs Élèves</span>
+                </button>
+                <button class="objectif-btn evaluation" data-section="evaluation">
+                    <span class="btn-icon">📊</span>
+                    <span data-i18n="objectifs.evaluation">C. Grille d'Évaluation</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contenu Dynamique 3 Sections -->
+        <section class="objectifs-content">
+            
+            <!-- Section A : Objectifs Pédagogiques -->
+            <!-- Section A : Objectifs Pédagogiques -->
+            <div id="pedagogiques" class="content-section active glass-card">
+                <div class="section-header">
+                    <h2 data-i18n="pedagogiques.title">A. Objectifs Pédagogiques</h2>
+                    <p class="section-subtitle" data-i18n="pedagogiques.subtitle">Compétences institutionnelles et analytiques</p>
+                </div>
+                
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <span class="goal-number">1</span>
+                        <h3 data-i18n="pedagogiques.1.title">⚖️ Institutions</h3>
+                        <p data-i18n="pedagogiques.1.desc">Maîtriser le fonctionnement des commissions sous la Vᵉ République</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">2</span>
+                        <h3 data-i18n="pedagogiques.2.title">🗣️ Argumentation</h3>
+                        <p data-i18n="pedagogiques.2.desc">Développer une argumentation politique nuancée sur les enjeux de sécurité</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">3</span>
+                        <h3 data-i18n="pedagogiques.3.title">🤝 Négociation</h3>
+                        <p data-i18n="pedagogiques.3.desc">Pratiquer la négociation et le compromis institutionnel</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">4</span>
+                        <h3 data-i18n="pedagogiques.4.title">💻 Éthique & Droit</h3>
+                        <p data-i18n="pedagogiques.4.desc">Analyser le dilemme entre cybersurveillance et État de droit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section B : Objectifs Élèves (CORRECTION #3) -->
+            <div id="eleves" class="content-section glass-card">
+                <div class="section-header">
+                    <h2 data-i18n="eleves.title">B. Objectifs pour les Élèves</h2>
+                    <p class="section-subtitle" data-i18n="eleves.subtitle">Préparation et évaluation concrètes</p>
+                </div>
+                
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <span class="goal-number">1</span>
+                        <h3 data-i18n="eleves.1.title">🎭 Incarner un rôle</h3>
+                        <p data-i18n="eleves.1.desc">Incarner de manière réaliste l'un des 14 rôles attribués</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">2</span>
+                        <h3 data-i18n="eleves.2.title">📝 Préparer arguments</h3>
+                        <p data-i18n="eleves.2.desc">Préparer des arguments adaptés à la position politique du rôle</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">3</span>
+                        <h3 data-i18n="eleves.3.title">⚖️ Comprendre les institutions</h3>
+                        <p data-i18n="eleves.3.desc">Comprendre sa place et ses pouvoirs dans le cadre des institutions de la Ve République</p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-number">4</span>
+                        <h3 data-i18n="eleves.4.title">🗳️ Participer débat</h3>
+                        <p data-i18n="eleves.4.desc">Participer activement au débat démocratique structuré</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section C : Grille d'Évaluation COMPLÈTE -->
+            <div id="evaluation" class="content-section glass-card">
+                <h2 data-i18n="eval.title">Grille d'Évaluation (20 points)</h2>
+                
+                <div class="evaluation-summary">
+                    <p data-i18n="eval.description">Évaluation par groupe (2 élèves) sur 4 phases (5 pts/phase × 4 = 20 pts)</p>
+                </div>
+
+                <!-- Tableau Principal 4 Critères -->
+                <table class="evaluation-grid main-grid">
+                    <thead>
+                        <tr>
+                            <th data-i18n="eval.criteria">Critère</th>
+                            <th data-i18n="eval.description_col">Description</th>
+                            <th data-i18n="eval.0to1">0-1 pt</th>
+                            <th data-i18n="eval.2to3">2-3 pts</th>
+                            <th data-i18n="eval.4to5">4-5 pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="eval.criterion1">1. Rôle</td>
+                            <td data-i18n="eval.desc1">Cohérence/jeu du rôle attribué (position, intérêts, limites)</td>
+                            <td>Flou</td>
+                            <td>Plausible</td>
+                            <td class="gold">Nuancé</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="eval.criterion2">2. Faits CYPHERA</td>
+                            <td data-i18n="eval.desc2">Maîtrise scénario (ingérence, surveillance, 14 acteurs)</td>
+                            <td>Imprécis</td>
+                            <td>Corrects</td>
+                            <td class="gold">Enrichis</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="eval.criterion3">3. Questions/Réponses</td>
+                            <td data-i18n="eval.desc3">Commission: questions incisives. Témoins: réponses cohérentes</td>
+                            <td>Vagues</td>
+                            <td>Basiques</td>
+                            <td class="gold">Stratégiques</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="eval.criterion4">4. Argumentation</td>
+                            <td data-i18n="eval.desc4">Dilemme sécurité/libertés, cohérence avec pouvoir du rôle</td>
+                            <td>Faibles</td>
+                            <td>Logiques</td>
+                            <td class="gold">Complexes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Tableaux Par Phase (Actes 1-4) -->
+                <div class="phases-breakdown">
+                    <div class="phase-card">
+                        <h3 data-i18n="eval.phase1">Phase 1 : Création Commission (Acte 1)</h3>
+                        <table class="phase-grid">
+                            <tr><th data-i18n="eval.focus">Focus</th><th data-i18n="eval.expected">Attendus</th></tr>
+                            <tr><td data-i18n="eval.role">Rôle</td><td>Négociation président/rapporteur crédible</td></tr>
+                            <tr><td data-i18n="eval.facts">Faits</td><td>Procédure résolution, bureau commission</td></tr>
+                            <tr><td data-i18n="eval.questions">Questions</td><td>"Qui élit président ?", "Champ enquête ?"</td></tr>
+                            <tr><td data-i18n="eval.argumentation">Argumentation</td><td>Compromis majorités/oppositions</td></tr>
+                        </table>
+                    </div>
+                    <div class="phase-card">
+                        <h3 data-i18n="eval.phase2">Phase 2 : Auditions (Acte 2)</h3>
+                        <table class="phase-grid">
+                            <tr><th data-i18n="eval.focus">Focus</th><th data-i18n="eval.expected">Attendus</th></tr>
+                            <tr><td data-i18n="eval.role">Rôle</td><td>CNIL→RGPD, Extrême droite→Singapour, Journalistes→sources</td></tr>
+                            <tr><td data-i18n="eval.facts">Faits</td><td>CYPHERA SECURITY, surveillance collatérale</td></tr>
+                            <tr><td data-i18n="eval.questions">Questions</td><td>"Pourquoi surveiller innocents ?"</td></tr>
+                            <tr><td data-i18n="eval.argumentation">Argumentation</td><td>Défense/attaque selon position</td></tr>
+                        </table>
+                    </div>
+                    <div class="phase-card">
+                        <h3 data-i18n="eval.phase3">Phase 3 : Rapport (Acte 3)</h3>
+                        <table class="phase-grid">
+                            <tr><th data-i18n="eval.focus">Focus</th><th data-i18n="eval.expected">Attendus</th></tr>
+                            <tr><td data-i18n="eval.role">Rôle</td><td>4 positions/acteur/acte cohérentes</td></tr>
+                            <tr><td data-i18n="eval.facts">Faits</td><td>Synthèse auditions, responsabilités</td></tr>
+                            <tr><td data-i18n="eval.questions">Questions</td><td>Réformes proposées (CNCTR, loi)</td></tr>
+                            <tr><td data-i18n="eval.argumentation">Argumentation</td><td>Propositions législatives réalistes</td></tr>
+                        </table>
+                    </div>
+                    <div class="phase-card">
+                        <h3 data-i18n="eval.phase4">Phase 4 : Débat Final (Acte 4)</h3>
+                        <table class="phase-grid">
+                            <tr><th data-i18n="eval.focus">Focus</th><th data-i18n="eval.expected">Attendus</th></tr>
+                            <tr><td data-i18n="eval.role">Rôle</td><td>Plaidoyer final convaincant</td></tr>
+                            <tr><td data-i18n="eval.facts">Faits</td><td>Conséquences politiques (loi, opinion)</td></tr>
+                            <tr><td data-i18n="eval.questions">Questions</td><td>Gestion objections adversaires</td></tr>
+                            <tr><td data-i18n="eval.argumentation">Argumentation</td><td>Vision stratégique éthique</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Barème Détail -->
+                <div class="evaluation-scale">
+                    <h3 data-i18n="eval.scale">Barème Détaillé</h3>
+                    <table class="scale-grid">
+                        <thead>
+                            <tr>
+                                <th data-i18n="eval.points">Points</th>
+                                <th data-i18n="eval.level">Niveau</th>
+                                <th data-i18n="eval.expectations">Attentes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="excellent"><td>16-20/20</td><td data-i18n="eval.excellent">Excellent</td><td>Rôles nuancés, argumentation fine, maîtrise institutions</td></tr>
+                            <tr class="very-good"><td>12-15/20</td><td data-i18n="eval.veryGood">Très Bon</td><td>Rôles cohérents, arguments solides, procédure juste</td></tr>
+                            <tr class="satisfying"><td>8-11/20</td><td data-i18n="eval.satisfying">Satisfaisant</td><td>Rôles identifiés, faits corrects, participation active</td></tr>
+                            <tr class="insufficient"><td>&lt;8/20</td><td data-i18n="eval.insufficient">Insuffisant</td><td>Rôles flous, faits imprécis, participation passive</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Fiche Professeur -->
+                <div class="teacher-section">
+                    <h3 data-i18n="eval.instructions">Instructions Professeur</h3>
+                    <ul>
+                        <li data-i18n="eval.inst1">Évaluer par phase (5 colonnes horizontales)</li>
+                        <li data-i18n="eval.inst2">Cocher 4-5 pts : Excellent | 2-3 pts : Satisfaisant | 0-1 pt : À travailler</li>
+                        <li data-i18n="eval.inst3">Bonus transversaux (+4 pts max) : Sources, i18n, binôme équilibré</li>
+                        <li data-i18n="eval.inst4">Total final : ___/24 pts (grille + bonus)</li>
+                    </ul>
+                </div>
+
+                <!-- Boutons Actions -->
+                <div class="pdf-actions">
+                    <button class="pdf-btn gold" id="download-grille-pdf" data-pdf="grille-evaluation-complete">
+                        📥 <span data-i18n="eval.download">Télécharger PDF</span>
+                    </button>
+                    <button class="print-btn" onclick="window.print()">
+                        🖨️ <span data-i18n="eval.print">Imprimer</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts CYPHERA -->
+    <script src="i18n/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/pdf-generator.js"></script>
+    <script src="js/objectifs.js"></script>
+</body>
+</html>

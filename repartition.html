@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="tab_repartition">Répartition – Affaire CYPHERA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/repartition.css">
+</head>
+<body>
+    <section class="page-hero">
+        <div class="video-container">
+            <video id="bgVideo" autoplay muted playsinline loop>
+                <source src="assets/videos/CYPHERA02.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 data-i18n="nav_distribution">Répartition</h1>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="repartition-card">
+            <h2 data-i18n="rep_title">Répartition des Rôles</h2>
+            
+            <div class="template-section">
+                <button class="btn secondary" onclick="downloadTemplate()" data-i18n="rep_template_btn">Télécharger le Modèle (CSV)</button>
+                <p class="help-text">Remplissez ce fichier avec les noms de vos élèves, puis importez-le ci-dessous.</p>
+            </div>
+
+            <div class="upload-section">
+                <label for="csvFile" class="custom-file-upload">
+                    <span data-i18n="rep_upload">Charger la liste des élèves (CSV)</span>
+                    <input type="file" id="csvFile" accept=".csv" onchange="handleFileSelect(event)">
+                </label>
+                <div id="file-info"></div>
+            </div>
+
+            <div class="actions">
+                <button id="distributeBtn" class="btn primary" onclick="distributeRoles()" disabled data-i18n="rep_btn">Répartir les Rôles</button>
+                <button id="downloadBtn" class="btn secondary" onclick="downloadCSV()" disabled data-i18n="rep_download">Télécharger la Répartition</button>
+            </div>
+
+            <div class="results-table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th data-i18n="rep_group">Groupe</th>
+                            <th data-i18n="rep_role">Rôle</th>
+                            <th data-i18n="rep_name">Nom</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="i18n/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="js/roles.js"></script>
+    <script src="js/simulation.js"></script>
+</body>
+</html>
