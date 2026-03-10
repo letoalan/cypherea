@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/simulation.css">
 </head>
+
 <body>
     <section class="page-hero">
         <div class="video-container">
@@ -17,54 +19,169 @@
         </div>
         <div class="hero-content">
             <h1 data-i18n="nav_simulation">Simulation</h1>
-            <p data-i18n="slide3_text">Incarnez un acteur clé et participez à une commission d'enquête sur 4 actes intenses.</p>
+            <p data-i18n="slide3_text">Incarnez un acteur clé et participez à une commission d'enquête sur 4 actes
+                intenses.</p>
         </div>
     </section>
     <main class="container">
-        <!-- Hero Simulation avec Onglets -->
-        <section class="hero-simulation glass">
-            <nav class="simulation-tabs">
-                <button class="tab-btn active" onclick="loadActe(1)" data-i18n="sim_tab1">Acte 1</button>
-                <button class="tab-btn" onclick="loadActe(2)" data-i18n="sim_tab2">Acte 2</button>
-                <button class="tab-btn" onclick="loadActe(3)" data-i18n="sim_tab3">Acte 3</button>
-                <button class="tab-btn" onclick="loadActe(4)" data-i18n="sim_tab4">Acte 4</button>
+        <!-- Navigation Principale de la Simulation -->
+        <nav class="main-simulation-tabs">
+            <button class="main-tab-btn active" onclick="switchMainTab(1)"
+                data-i18n="sim_main_tab1">Présentation</button>
+            <button class="main-tab-btn" onclick="switchMainTab(2)" data-i18n="sim_main_tab2">L'Affaire</button>
+            <button class="main-tab-btn" onclick="switchMainTab(3)" data-i18n="sim_main_tab3">Acteurs &
+                Objectifs</button>
+            <button class="main-tab-btn" onclick="switchMainTab(4)" data-i18n="sim_main_tab4">L'Enquête</button>
+        </nav>
+
+        <!-- Tab 1: L'Affaire (Now First) -->
+        <div id="mainTab1" class="main-tab-content active">
+            <nav class="sub-tab-nav">
+                <button class="sub-tab-btn active" onclick="switchSubTab(1, 1)"
+                    data-i18n="sim_sub_reve">Révélations</button>
+                <button class="sub-tab-btn" onclick="switchSubTab(1, 2)" data-i18n="sim_sub_cons">Conséquences</button>
             </nav>
-        </section>
 
-        <!-- Tableau MINI 14 acteurs (hover -> modal) -->
-        <section class="actors-mini-section glass">
-            <h3 data-i18n="acte2_subtitle">14 Groupes (Survol pour détails)</h3>
-            <div class="table-container">
-                <table class="actors-mini-table">
-                    <thead>
-                        <tr>
-                            <th data-i18n="rep_group">Groupe</th>
-                            <th data-i18n="rep_role">Rôle</th>
-                            <th data-i18n="rep_pos_acte1">Position Acte 1</th>
-                        </tr>
-                    </thead>
-                    <tbody id="actorsMiniBody">
-                        <!-- Filled by simulation.js -->
-                    </tbody>
-                </table>
+            <div id="subContent1_1" class="sub-tab-container active">
+                <section class="glass-card">
+                    <div class="sub-content-row">
+                        <div class="left-col">
+                            <div class="photo-container">
+                                <img src="assets/photos/canard.png" alt="L'Affaire" class="sub-img">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h2 class="accent-title" data-i18n="sim_affaire_title1">L'Affaire</h2>
+                            <div data-i18n="sim_affaire_desc1">Chargement...</div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <!-- Zone de contenu dynamique -->
-        <section id="dynamicacte" class="dynamic-content-area">
-            <div class="loading-spinner"></div>
-        </section>
-
-        <!-- 5 PDF Download Buttons -->
-        <section class="pdf-downloads-section">
-            <div class="download-grid">
-                <button class="btn-download" onclick="generatePDF('ctx')" data-i18n="down_ctx">Contexte</button>
-                <button class="btn-download" onclick="generatePDF('comm')" data-i18n="down_comm">Guide</button>
-                <button class="btn-download" onclick="generatePDF('actors')" data-i18n="down_actors">Fiches</button>
-                <button class="btn-download" onclick="generatePDF('eval')" data-i18n="down_eval">Grille</button>
-                <button class="btn-download" onclick="generatePDF('sim')" data-i18n="down_sim">Déroulé</button>
+            <div id="subContent1_2" class="sub-tab-container">
+                <section class="glass-card">
+                    <div class="sub-content-row">
+                        <div class="left-col">
+                            <div class="photo-container">
+                                <img src="assets/photos/commis.jpg" alt="Conséquences" class="sub-img">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h2 class="accent-title" data-i18n="sim_affaire_title2">Conséquences</h2>
+                            <div data-i18n="sim_affaire_desc2">Chargement...</div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
+
+        <!-- Tab 2: Présentation -->
+        <div id="mainTab2" class="main-tab-content">
+            <nav class="sub-tab-nav">
+                <button class="sub-tab-btn active" onclick="switchSubTab(2, 1)"
+                    data-i18n="sim_sub_crea">Création</button>
+                <button class="sub-tab-btn" onclick="switchSubTab(2, 2)" data-i18n="sim_sub_cadre">Cadre</button>
+                <button class="sub-tab-btn" onclick="switchSubTab(2, 3)" data-i18n="sim_sub_cons">Conséquences</button>
+            </nav>
+
+            <div id="subContent2_1" class="sub-tab-container active">
+                <section class="glass-card">
+                    <div class="sub-content-row">
+                        <div class="left-col">
+                            <div class="photo-container">
+                                <img src="assets/photos/com.jpg" alt="Présentation" class="sub-img">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h2 class="accent-title" data-i18n="sim_pres_title1">Présentation</h2>
+                            <div data-i18n="sim_pres_desc1">Chargement...</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="subContent2_2" class="sub-tab-container">
+                <section class="glass-card">
+                    <div class="sub-content-row">
+                        <div class="left-col">
+                            <div class="photo-container">
+                                <img src="assets/photos/orga.png" alt="Cadre" class="sub-img">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h2 class="accent-title" data-i18n="sim_pres_title2">Cadre</h2>
+                            <div data-i18n="sim_pres_desc2">Chargement...</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="subContent2_3" class="sub-tab-container">
+                <section class="glass-card">
+                    <div class="sub-content-row">
+                        <div class="left-col">
+                            <div class="photo-container">
+                                <img src="assets/photos/singap.jpg" alt="Conséquences" class="sub-img">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <h2 class="accent-title" data-i18n="sim_pres_title3">Conséquences</h2>
+                            <div data-i18n="sim_pres_desc3">Chargement...</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Tab 3: Acteurs & Objectifs -->
+        <div id="mainTab3" class="main-tab-content">
+            <section class="glass-card">
+                <h3 class="accent-title" data-i18n="acte2_subtitle">14 Groupes (Survol pour détails)</h3>
+                <div class="table-container">
+                    <table class="actors-mini-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="rep_group">Groupe</th>
+                                <th data-i18n="rep_role">Rôle</th>
+                                <th data-i18n="rep_pos_acte1">Position Acte 1</th>
+                            </tr>
+                        </thead>
+                        <tbody id="actorsMiniBody">
+                            <!-- Filled by simulation.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tab 4: L'Enquête (Ancienne vue) -->
+        <div id="mainTab4" class="main-tab-content">
+            <!-- Hero Simulation avec Onglets (Actes) -->
+            <section class="hero-simulation glass-card">
+                <nav class="simulation-tabs">
+                    <button class="tab-btn active" onclick="loadActe(1)" data-i18n="sim_tab1">Acte 1</button>
+                    <button class="tab-btn" onclick="loadActe(2)" data-i18n="sim_tab2">Acte 2</button>
+                    <button class="tab-btn" onclick="loadActe(3)" data-i18n="sim_tab3">Acte 3</button>
+                    <button class="tab-btn" onclick="loadActe(4)" data-i18n="sim_tab4">Acte 4</button>
+                </nav>
+            </section>
+
+            <!-- Zone de contenu dynamique -->
+            <section id="dynamicacte" class="dynamic-content-area">
+                <div class="loading-spinner"></div>
+            </section>
+
+            <!-- 5 PDF Download Buttons -->
+            <section class="pdf-downloads-section">
+                <div class="download-grid">
+                    <button class="btn-download" onclick="generatePDF('ctx')" data-i18n="down_ctx">Contexte</button>
+                    <button class="btn-download" onclick="generatePDF('comm')" data-i18n="down_comm">Guide</button>
+                    <button class="btn-download" onclick="generatePDF('actors')" data-i18n="down_actors">Fiches</button>
+                    <button class="btn-download" onclick="generatePDF('eval')" data-i18n="down_eval">Grille</button>
+                    <button class="btn-download" onclick="generatePDF('sim')" data-i18n="down_sim">Déroulé</button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Modal Acteurs -->
@@ -83,4 +200,5 @@
     <script src="js/simulation.js"></script>
     <script src="js/pdf-generator.js"></script>
 </body>
+
 </html>

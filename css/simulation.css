@@ -1,21 +1,25 @@
 /* Restoration Styles */
-.procedure-grid, .positions-grid {
+.procedure-grid,
+.positions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
-.step, .position-card {
+.step,
+.position-card {
     transition: var(--transition);
 }
 
-.step h3, .position-card h4 {
+.step h3,
+.position-card h4 {
     color: var(--accent-color);
     margin-bottom: 1rem;
 }
 
-.step p, .position-card ul {
+.step p,
+.position-card ul {
     font-size: 0.95rem;
     opacity: 0.9;
 }
@@ -24,13 +28,15 @@
     padding-left: 1.2rem;
 }
 
-.actors-mini-table, .evaluation-grid {
+.actors-mini-table,
+.evaluation-grid {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
 
-.actors-mini-table th, .evaluation-grid th {
+.actors-mini-table th,
+.evaluation-grid th {
     background: rgba(255, 255, 255, 0.05);
     color: var(--accent-color);
     padding: 1rem;
@@ -38,7 +44,8 @@
     border-bottom: 2px solid var(--accent-color);
 }
 
-.actors-mini-table td, .evaluation-grid td {
+.actors-mini-table td,
+.evaluation-grid td {
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -103,8 +110,13 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .acte-content {
@@ -149,13 +161,192 @@
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-    .simulation-tabs {
-        flex-wrap: wrap;
-        border-radius: 15px;
+/* Main Tabs Navigation */
+.main-simulation-tabs {
+    display: flex;
+    justify-content: flex-start;
+    /* Changed for scrollability */
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+    overflow-x: auto;
+    /* Enable scroll */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+    white-space: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main-simulation-tabs::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar Chrome/Safari */
+}
+
+.main-tab-btn {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-tab-btn:hover {
+    color: #fff;
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(253, 187, 45, 0.1);
+    transform: translateY(-2px);
+}
+
+.main-tab-btn.active {
+    background: linear-gradient(135deg, var(--accent-color), #fbbf24);
+    color: #0f172a;
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 35px rgba(253, 187, 45, 0.3);
+}
+
+/* Tab Content Visibility */
+.main-tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.main-tab-content.active {
+    display: block;
+}
+
+/* Sub-tab Navigation */
+.sub-tab-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0.5rem 1rem;
+}
+
+.sub-tab-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.sub-tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sub-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.sub-tab-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(253, 187, 45, 0.2);
+}
+
+/* Two-column Layout (50/50) */
+.sub-tab-container {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.sub-tab-container.active {
+    display: block;
+}
+
+.sub-content-row {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    /* padding: 2rem; REMOVED because glass-card has padding */
+    border-radius: 20px;
+}
+
+.left-col,
+.right-col {
+    flex: 1;
+    width: 50%;
+}
+
+.photo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.right-col h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.right-col p {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
     }
-    .tab-btn {
-        width: 45%;
-        padding: 0.6rem;
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .sub-content-row {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .left-col,
+    .right-col {
+        width: 100%;
+        flex: none;
+    }
+
+    .photo-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-tab-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
     }
 }

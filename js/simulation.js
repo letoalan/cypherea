@@ -20,6 +20,38 @@ const actorsData = [
     { id: 14, org: "Groupe Divers", role: "Membre", pos: "Neutralité" }
 ];
 
+function switchMainTab(tabNumber) {
+    // Update main tabs
+    document.querySelectorAll('.main-tab-btn').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx + 1 === tabNumber);
+    });
+
+    // Update main content visibility
+    document.querySelectorAll('.main-tab-content').forEach((content, idx) => {
+        content.classList.toggle('active', idx + 1 === tabNumber);
+    });
+
+    // Special initialization if needed
+    if (tabNumber === 3) {
+        initActorsMiniTable();
+    }
+}
+
+function switchSubTab(mainTabId, subTabIndex) {
+    const mainTab = document.getElementById(`mainTab${mainTabId}`);
+    if (!mainTab) return;
+
+    // Update sub-tab buttons
+    mainTab.querySelectorAll('.sub-tab-btn').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx + 1 === subTabIndex);
+    });
+
+    // Update sub-content visibility
+    mainTab.querySelectorAll('.sub-tab-container').forEach((container, idx) => {
+        container.classList.toggle('active', idx + 1 === subTabIndex);
+    });
+}
+
 async function loadActe(acteNumber) {
     const container = document.getElementById('dynamicacte');
     if (!container) return;
@@ -34,7 +66,7 @@ async function loadActe(acteNumber) {
     try {
         const response = await fetch(`sous-modules/acte${acteNumber}.html`);
         if (!response.ok) throw new Error('Module non trouvé');
-        
+
         const html = await response.text();
         container.innerHTML = html;
 
@@ -64,18 +96,18 @@ function initActorsMiniTable() {
     actorsData.forEach(actor => {
         const row = document.createElement('tr');
         let roleName = actor.role;
-        
+
         // Safety guard for translations
         if (window.translations && window.translations[lang]) {
             roleName = window.translations[lang][`role_${actor.id}`] || actor.role;
         }
-        
+
         row.innerHTML = `
             <td>${actor.org}</td>
             <td>${roleName}</td>
             <td>${actor.pos}</td>
         `;
-        
+
         row.style.cursor = 'pointer';
         row.onclick = () => openActorModal(actor.id);
         body.appendChild(row);
@@ -93,7 +125,7 @@ function initPositionsGrid() {
         const card = document.createElement('div');
         card.className = 'position-card glass';
         let roleName = actor.role;
-        
+
         if (window.translations && window.translations[lang]) {
             roleName = window.translations[lang][`role_${actor.id}`] || actor.role;
         }
@@ -109,12 +141,12 @@ function initPositionsGrid() {
 
         // Case ED / Minority (as in prompt)
         if (actor.id === 3 || actor.id === 14) {
-             const p1 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_1'] : "ED 1";
-             const p2 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_2'] : "ED 2";
-             const p3 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_3'] : "ED 3";
-             const p4 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_4'] : "ED 4";
+            const p1 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_1'] : "ED 1";
+            const p2 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_2'] : "ED 2";
+            const p3 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_3'] : "ED 3";
+            const p4 = (window.translations && window.translations[lang]) ? window.translations[lang]['pos_ed_4'] : "ED 4";
 
-             positionsHTML = `
+            positionsHTML = `
                 <ul>
                     <li data-i18n="pos_ed_1">${p1}</li>
                     <li data-i18n="pos_ed_2">${p2}</li>
@@ -144,7 +176,7 @@ function openActorModal(id) {
     if (actor && window.translations && window.translations[lang]) {
         roleName = window.translations[lang][`role_${id}`] || actor.role;
     }
-    
+
     body.innerHTML = `
         <h2 style="color: var(--accent-color);">${roleName}</h2>
         <div class="modal-acts">
@@ -162,13 +194,12 @@ function openActorModal(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Wait a bit for other scripts if necessary, but DOMContentLoaded should be fine
-    // However, if translations.js is async or loaded at the bottom, we might need a small delay or check
-    if (document.getElementById('actorsMiniBody')) {
-        initActorsMiniTable();
-        loadActe(1); 
-    }
-    
+    // Initialize first main tab
+    switchMainTab(1);
+
+    // Pre-initialize acts for tab 4
+    loadActe(1);
+
     const modal = document.getElementById('actorModal');
     const closeBtn = document.querySelector('.close-btn');
     if (closeBtn) closeBtn.onclick = () => modal.style.display = 'none';

@@ -52,6 +52,12 @@ let translations = {
         rep_role: "Rôle",
         rep_group: "Groupe",
         rep_pos_acte1: "Position Acte 1",
+        rep_view_table: "Vue Tableau",
+        rep_view_dynamic: "Vue Dynamique",
+        cat_an: "Assemblée Nationale",
+        cat_senat: "Sénat",
+        cat_etat: "Acteurs Étatiques",
+        cat_societe: "Société Civile",
 
         // Simulation Page
         sim_hero_title: "Simulation Commission CYPHERA",
@@ -60,7 +66,59 @@ let translations = {
         sim_tab2: "Acte 2",
         sim_tab3: "Acte 3",
         sim_tab4: "Acte 4",
-        
+
+        // Main Simulation Tabs
+        sim_main_tab1: "L'Affaire",
+        sim_main_tab2: "Présentation",
+        sim_main_tab3: "Acteurs & Objectifs",
+        sim_main_tab4: "L'Enquête",
+
+        // Sub-tabs labels
+        sim_sub_reve: "Révélations",
+        sim_sub_cons: "Conséquences",
+        sim_sub_crea: "Création",
+        sim_sub_cadre: "Cadre",
+
+        // L'Affaire (mainTab1)
+        sim_affaire_title1: "1. L’affaire CYPHERA et sa révélation",
+        sim_affaire_desc1: `
+            <p>Depuis plusieurs années, l’État français a discrètement noué un partenariat stratégique avec l’entreprise privée CYPHERA SECURITY, spécialisée dans l’analyse massive de données numériques et la cybersurveillance « prédictive ». Le dispositif est couvert par le secret‑défense et piloté par les ministères des Armées et de l’Intérieur.</p>
+            <p>CYPHERA a mis en place des algorithmes capables de croiser métadonnées, géolocalisation et données administratives pour établir des profils de « risque ». Le problème survient lorsque ces outils sont utilisés pour surveiller des journalistes d’investigation, des chercheurs travaillant sur l’influence russe, et plusieurs ONG.</p>
+            <p>Un lanceur d’alerte, ingénieur chez CYPHERA, a contacté une journaliste du <i>Canard Enchaîné</i> pour dénoncer le détournement de ces outils. La publication d'une une explosive : « CYPHERA : quand l’État surveille ses journalistes » a déclenché un séisme médiatique et politique, menant à la création de cette commission d'enquête.</p>
+        `,
+        sim_affaire_title2: "2. La réaction du Parlement",
+        sim_affaire_desc2: `
+            <p>La procédure se met en marche dans le cadre prévu par le règlement de l’Assemblée. Une proposition de résolution est déposée conjointement par plusieurs groupes d’opposition, avec un intitulé soigneusement calibré : « Commission d’enquête relative aux conditions de conception, de déploiement et de contrôle démocratique du partenariat entre l’État et CYPHERA SECURITY ».</p>
+            <p>Le texte précise l’objet de la commission, sa durée (six mois), le nombre de membres, ainsi que la volonté explicite d’auditionner les principaux responsables politiques, les dirigeants de l’entreprise, les autorités de contrôle (CNIL, ANSSI), des journalistes, des chercheurs et des représentants d’ONG.</p>
+            <p>Conformément aux usages, les sièges sont répartis à la proportionnelle des groupes. La majorité obtient un nombre de sièges important, mais accepte de laisser la présidence à l’opposition tandis que le rapporteur sera choisi dans les rangs de la majorité pour garantir un équilibre.</p>
+        `,
+
+        // Présentation (mainTab2)
+        sim_pres_title1: "1. Origines et Objectifs",
+        sim_pres_desc1: `
+            <p>La commission est née de la nécessité de faire toute la lumière sur le partenariat CYPHERA. Elle doit auditionner les responsables politiques et dirigeants d'entreprise pour comprendre comment des outils de surveillance ont été détournés.</p>
+            <p>Les auditions se déroulent sous serment et les membres disposent de pouvoirs d'enquête étendus (visites sur place, communication de documents confidentiels).</p>
+        `,
+        sim_pres_title2: "2. Cadre institutionnel de la Ve République",
+        sim_pres_desc2: `
+            <p>La commission d’enquête CYPHERA s’inscrit dans un ordre institutionnel où le Parlement est structurellement subordonné à l’exécutif. Créée selon l’article 140 du Règlement de l’Assemblée nationale, elle dispose de pouvoirs spécifiques :</p>
+            <ul>
+                <li>Audition sous serment (ministres, experts, témoins).</li>
+                <li>Communication de documents (contrats, rapports internes).</li>
+                <li>Droit de visite sur place (locaux CYPHERA).</li>
+            </ul>
+            <p><strong>Limites :</strong> Le gouvernement peut opposer le secret‑défense. Le Président de la République reste constitutionnellement irresponsable (Art. 67).</p>
+        `,
+        sim_pres_title3: "3. Conséquences et enjeux possibles",
+        sim_pres_desc3: `
+            <p>La commission CYPHERA doit produire un rapport dont les conclusions varient selon l’équilibre politique interne. Trois scénarios émergent :</p>
+            <ul>
+                <li><strong>Scénario 1 – Minimaliste :</strong> Recommandations techniques et contrôle CNIL accru, sans remise en cause politique majeure.</li>
+                <li><strong>Scénario 2 – Ambitieux :</strong> Refonte de la loi renseignement 2015, sanctions pénales et démissions des chefs du renseignement.</li>
+                <li><strong>Scénario 3 – Modèle singapourien :</strong> Création d'un « Patriot Act à la française » justifié par l'agressivité informationnelle étrangère.</li>
+            </ul>
+        `,
+
         acte1_title: "Acte 1 : Création de la Commission",
         acte1_step1_title: "1. Résolution",
         acte1_step1_desc: "Vote résolution Assemblée Nationale : objet, durée (6 mois), composition (14 membres).",
@@ -190,7 +248,59 @@ let translations = {
         sim_tab2: "Act 2",
         sim_tab3: "Act 3",
         sim_tab4: "Act 4",
-        
+
+        // Main Simulation Tabs EN
+        sim_main_tab1: "The Case",
+        sim_main_tab2: "Overview",
+        sim_main_tab3: "Actors & Objectives",
+        sim_main_tab4: "The Inquiry",
+
+        // Sub-tabs labels EN
+        sim_sub_reve: "Revelations",
+        sim_sub_cons: "Consequences",
+        sim_sub_crea: "Creation",
+        sim_sub_cadre: "Framework",
+
+        // The Case (mainTab1)
+        sim_affaire_title1: "1. The CYPHERA Affair and its Revelation",
+        sim_affaire_desc1: `
+            <p>For several years, the French State has discreetly established a strategic partnership with CYPHERA SECURITY, specializing in massive digital data analysis and "predictive" cyber-surveillance. The system is covered by national defense secrecy and led by the Ministries of the Armed Forces and the Interior.</p>
+            <p>CYPHERA implemented algorithms capable of cross-referencing metadata, geolocation, and administrative databases to establish "risk" profiles. The crisis erupted when these tools were used to monitor investigative journalists, researchers, and NGOs.</p>
+            <p>A whistleblower, an engineer at CYPHERA, leaked architectural diagrams and meeting notes to <i>Le Canard Enchaîné</i>. The front page "CYPHERA: when the State monitors its journalists" triggered a political storm, leading to this commission of inquiry.</p>
+        `,
+        sim_affaire_title2: "2. The Reaction of Parliament",
+        sim_affaire_desc2: `
+            <p>The procedure was initiated following a resolution proposal tabled by several opposition groups. The chosen title is: "Commission of inquiry into the conditions of design, deployment, and democratic control of the partnership between the State and CYPHERA SECURITY".</p>
+            <p>The commission has six months to interview political leaders, company executives, and oversight authorities (CNIL, ANSSI). After tough negotiations, the presidency was granted to the opposition while the rapporteur is from the parliamentary majority.</p>
+            <p>In accordance with custom, seats are allocated proportionally to the groups. The majority obtains a large number of seats but agrees to leave the presidency to the opposition while the rapporteur will be chosen from the ranks of the majority to ensure balance.</p>
+        `,
+
+        // Overview (mainTab2)
+        sim_pres_title1: "1. Origins and Objectives",
+        sim_pres_desc1: `
+            <p>The commission was born from the need to shed full light on the CYPHERA partnership. It must interview political leaders and company executives to understand how surveillance tools were misused.</p>
+            <p>Hearings are conducted under oath, and members have extensive investigative powers (on-site visits, communication of confidential documents).</p>
+        `,
+        sim_pres_title2: "2. Institutional Framework of the Fifth Republic",
+        sim_pres_desc2: `
+            <p>The CYPHERA inquiry commission is part of an institutional order where Parliament is structurally subordinated to the executive. Created according to Article 140 of the Rules of the National Assembly, it has specific powers:</p>
+            <ul>
+                <li>Audition under oath (ministers, experts, witnesses).</li>
+                <li>Communication of documents (contracts, internal reports).</li>
+                <li>Right to on-site visits (CYPHERA premises).</li>
+            </ul>
+            <p><strong>Limits:</strong> The government can invoke national defense secrecy. The President of the Republic remains constitutionally unaccountable (Art. 67).</p>
+        `,
+        sim_pres_title3: "3. Consequences and Possible Stakes",
+        sim_pres_desc3: `
+            <p>The CYPHERA commission produces a report whose conclusions vary according to the internal political balance. Three scenarios emerge:</p>
+            <ul>
+                <li><strong>Scenario 1 – Minimalist:</strong> Technical recommendations and increased CNIL control, without major political accountability.</li>
+                <li><strong>Scenario 2 – Ambitious:</strong> Overhaul of the 2015 intelligence law, criminal sanctions, and resignations of intelligence heads.</li>
+                <li><strong>Scenario 3 – Singaporean Model:</strong> Creation of a "French Patriot Act" justified by foreign informational aggression.</li>
+            </ul>
+        `,
+
         acte1_title: "Act 1: Creation of the Commission",
         acte1_step1_title: "1. Resolution",
         acte1_step1_desc: "National Assembly resolution vote: object, duration (6 months), composition (14 members).",
@@ -223,6 +333,12 @@ let translations = {
         eval_total: "TOTAL",
         eval_score: "/20 pts",
         acte4_btn: "📥 PDF Evaluation Grid",
+        rep_view_table: "Table View",
+        rep_view_dynamic: "Dynamic View",
+        cat_an: "National Assembly",
+        cat_senat: "Senate",
+        cat_etat: "State Actors",
+        cat_societe: "Civil Society",
 
         // Objectifs
         "objectifs.title": "Simulation Objectives",
@@ -350,6 +466,58 @@ let translations = {
         "eval.phase2": "Phase 2: Anhörungen (Akt 2)",
         "eval.phase3": "Phase 3: Bericht (Akt 3)",
         "eval.phase4": "Phase 4: Abschlussdebatte (Akt 4)",
+
+        // Main Simulation Tabs DE
+        sim_main_tab1: "Der Fall",
+        sim_main_tab2: "Überblick",
+        sim_main_tab3: "Akteure & Ziele",
+        sim_main_tab4: "Die Untersuchung",
+
+        // Sub-tabs labels DE
+        sim_sub_reve: "Enthüllungen",
+        sim_sub_cons: "Konsequenzen",
+        sim_sub_crea: "Einsetzung",
+        sim_sub_cadre: "Rahmen",
+
+        // Der Fall (mainTab1)
+        sim_affaire_title1: "1. Die Affäre CYPHERA und ihre Enthüllung",
+        sim_affaire_desc1: `
+            <p>Seit mehreren Jahren unterhält der französische Staat diskret eine strategische Partnerschaft mit dem Privatunternehmen CYPHERA SECURITY. Das System unterliegt der Geheimhaltung und wird vom Verteidigungs- und Innenministerium geleitet.</p>
+            <p>CYPHERA implementierte Algorithmen, um Metadaten, Geolokalisierung und Verwaltungsdatenbanken zu verknüpfen. Die Krise entstand, als diese Werkzeuge zur Überwachung von Journalisten, Forschern und NGOs eingesetzt wurden.</p>
+            <p>Ein Whistleblower bei CYPHERA lieferte technische Dokumente über die „Kartierung von Gegnern“. Die Schlagzeile „CYPHERA: Wenn der Staat seine Journalisten überwacht“ löste einen politischen Sturm aus.</p>
+        `,
+        sim_affaire_title2: "2. Die Reaktion des Parlaments",
+        sim_affaire_desc2: `
+            <p>Das Verfahren wurde durch einen Resolutionsentwurf mehrerer Oppositionsgruppen eingeleitet. Der Titel lautet: „Untersuchungskommission zu Bedingungen für Design, Einsatz und demokratische Kontrolle der Partnerschaft zwischen Staat und CYPHERA SECURITY“.</p>
+            <p>Die Kommission hat sechs Monate Zeit, um politische Verantwortliche, Unternehmensleiter und Kontrollbehörden (CNIL, ANSSI) anzuhören. Der Vorsitz liegt bei der Opposition, während der Berichterstatter aus der Regierungsmehrheit kommt.</p>
+            <p>Die Sitze werden proportional zu den Gruppen verteilt. Die Mehrheit erhält eine große Anzahl von Sitzen, stimmt jedoch zu, den Vorsitz der Opposition zu überlassen, während der Berichterstatter aus den Reihen der Mehrheit gewählt wird.</p>
+        `,
+
+        // Überblick (mainTab2)
+        sim_pres_title1: "1. Ursprung und Ziele",
+        sim_pres_desc1: `
+            <p>Die Kommission entstand aus der Notwendigkeit, Licht in die CYPHERA-Partnerschaft zu bringen. Sie muss politische Verantwortliche und Unternehmensleiter anhören, um zu verstehen, wie Überwachungswerkzeuge missbraucht wurden.</p>
+            <p>Die Anhörungen finden unter Eid statt, und die Mitglieder verfügen über weitreichende Untersuchungsbefugnisse (Besichtigungen vor Ort, Einsicht in vertrauliche Dokumente).</p>
+        `,
+        sim_pres_title2: "2. Institutioneller Rahmen in der Fünften Republik",
+        sim_pres_desc2: `
+            <p>Die Untersuchungskommission est Teil einer institutionellen Ordnung, in der das Parlament der Exekutive untergeordnet ist. Sie wurde gemäß Artikel 140 eingesetzt und hat besondere Befugnisse:</p>
+            <ul>
+                <li>Anhörungen unter Eid (Minister, Experten, Zeugen).</li>
+                <li>Einsicht in Dokumente (Verträge, interne Berichte).</li>
+                <li>Recht auf Besichtigungen vor Ort (CYPHERA-Standorte).</li>
+            </ul>
+            <p><strong>Grenzen:</strong> Die Regierung kann sich auf das Verteidigungsgeheimnis berufen. Der Staatspräsident bleibt verfassungsrechtlich unantastbar (Art. 67).</p>
+        `,
+        sim_pres_title3: "3. Mögliche Szenarien und Konsequenzen",
+        sim_pres_desc3: `
+            <p>Die Kommission produziert einen Bericht, dessen Schlussfolgerungen variieren. Drei Szenarien zeichnen sich ab:</p>
+            <ul>
+                <li><strong>Szenario 1 – Minimalistisch:</strong> Technische Empfehlungen und verstärkte Kontrolle durch die CNIL.</li>
+                <li><strong>Szenario 2 – Ambitioniert:</strong> Reform der Geheimdienstgesetze, strafrechtliche Sanktionen und Rücktrittsforderungen.</li>
+                <li><strong>Szenario 3 – Souveränistisches Modell:</strong> Forderung nach einem „französischen Patriot Act“ aufgrund ausländischer Informationsaggression.</li>
+            </ul>
+        `,
         "eval.focus": "Fokus",
         "eval.expected": "Erwartet",
         "eval.scale": "Detaillierte Skala",

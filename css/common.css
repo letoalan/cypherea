@@ -29,7 +29,8 @@ body {
 .main-header {
     background: rgba(15, 23, 42, 0.9);
     backdrop-filter: var(--glass-effect);
-    padding: 1.2rem 3rem;
+    padding: 1rem 1.5rem;
+    /* Reduced padding for mobile */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,10 +41,13 @@ body {
 }
 
 .logo-container h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    /* Slightly smaller logo */
     font-weight: 800;
     background: linear-gradient(to right, var(--accent-color), #fff);
     -webkit-background-clip: text;
+    background-clip: text;
+    /* Standard property */
     -webkit-text-fill-color: transparent;
 }
 
@@ -62,7 +66,8 @@ body {
     transition: var(--transition);
 }
 
-.main-nav a:hover, .main-nav a.active {
+.main-nav a:hover,
+.main-nav a.active {
     opacity: 1;
     color: var(--accent-color);
 }
@@ -83,7 +88,8 @@ body {
     transition: var(--transition);
 }
 
-.lang-btn:hover, .lang-btn.active {
+.lang-btn:hover,
+.lang-btn.active {
     background: var(--accent-color);
     color: #000;
     border-color: var(--accent-color);
@@ -153,4 +159,42 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 800;
+}
+/* Global UX Design Tokens (Harmonized from Objectifs) */
+.glass-card {
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.accent-title {
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .glass-card {
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+    }
+    
+    .accent-title {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/repartition.css">
 </head>
+
 <body>
     <section class="page-hero">
         <div class="video-container">
@@ -21,11 +23,12 @@
     </section>
 
     <main class="container">
-        <section class="repartition-card">
-            <h2 data-i18n="rep_title">Répartition des Rôles</h2>
-            
+        <section class="glass-card">
+            <h2 class="accent-title" data-i18n="rep_title">Répartition des Rôles</h2>
+
             <div class="template-section">
-                <button class="btn secondary" onclick="downloadTemplate()" data-i18n="rep_template_btn">Télécharger le Modèle (CSV)</button>
+                <button class="btn secondary" onclick="downloadTemplate()" data-i18n="rep_template_btn">Télécharger le
+                    Modèle (CSV)</button>
                 <p class="help-text">Remplissez ce fichier avec les noms de vos élèves, puis importez-le ci-dessous.</p>
             </div>
 
@@ -38,23 +41,21 @@
             </div>
 
             <div class="actions">
-                <button id="distributeBtn" class="btn primary" onclick="distributeRoles()" disabled data-i18n="rep_btn">Répartir les Rôles</button>
-                <button id="downloadBtn" class="btn secondary" onclick="downloadCSV()" disabled data-i18n="rep_download">Télécharger la Répartition</button>
+                <button id="distributeBtn" class="btn primary" onclick="distributeRoles()" disabled
+                    data-i18n="rep_btn">Répartir les Rôles</button>
+                <button id="downloadBtn" class="btn secondary" onclick="downloadCSV()" disabled
+                    data-i18n="rep_download">Télécharger la Répartition</button>
             </div>
 
-            <div class="results-table-container">
-                <table id="resultsTable">
-                    <thead>
-                        <tr>
-                            <th data-i18n="rep_group">Groupe</th>
-                            <th data-i18n="rep_role">Rôle</th>
-                            <th data-i18n="rep_name">Nom</th>
-                        </tr>
-                    </thead>
-                    <tbody id="resultsBody">
-                        <!-- Filled by JS -->
-                    </tbody>
-                </table>
+            <div class="view-switcher">
+                <button class="view-btn active" data-view="table" onclick="setView('table')"
+                    data-i18n="rep_view_table">Vue Tableau</button>
+                <button class="view-btn" data-view="dynamic" onclick="setView('dynamic')"
+                    data-i18n="rep_view_dynamic">Vue Dynamique</button>
+            </div>
+
+            <div id="resultsContainer">
+                <!-- Filled by JS (Table or Dynamic view) -->
             </div>
         </section>
     </main>
@@ -66,4 +67,5 @@
     <script src="js/roles.js"></script>
     <script src="js/simulation.js"></script>
 </body>
+
 </html>

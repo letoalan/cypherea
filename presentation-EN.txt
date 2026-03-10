@@ -1,0 +1,83 @@
+### 1. The CYPHERA Affair and its Revelation
+
+For several years, the French State has discreetly established a strategic partnership with the private company CYPHERA SECURITY, which specializes in massive digital data analysis and "predictive" cyber-surveillance. The system, officially presented as a simple reinforcement of cybersecurity capabilities against foreign threats, is covered by national defense secrecy and integrated into an inter-ministerial program led by the Ministry of the Armed Forces and the Ministry of the Interior.
+
+In reality, at the executive's request, CYPHERA SECURITY implemented a series of algorithms capable of cross-referencing connection metadata, geolocation data, social media content, and administrative databases to establish "risk" profiles supposedly useful for fighting terrorism, foreign interference, and "radicalization" in all its forms.
+
+The problem arises when the initial objectives are broadly exceeded. Under pressure from certain Elysée advisors and Intelligence Directorate officials, CYPHERA's tools were progressively used to monitor not only foreign or terrorist targets, but also investigative journalists, political science researchers working on Russian influence, and several NGOs engaged in issues of public liberties, transparency, and corruption.
+
+Internal reports show that the boundary between external and internal surveillance has blurred: "sensitive profile" lists include opposition parliamentarians, unionists, lawyers engaged in litigation against the State, and personnel from oversight bodies like the CNIL and the Defender of Rights. A whistleblower, a sub-contracting engineer for CYPHERA SECURITY, initiated the crisis. Shocked to see his tools diverted, he discreetly contacted a journalist from *Le Canard Enchaîné*. For several weeks, he provided her with extracts of technical documents: architectural diagrams, meeting notes between the company and ministerial cabinets, and PowerPoint presentations boasting of "opponent mapping" or the ability to "neutralize hostile influence on national territory".
+
+*Le Canard* cross-referenced this information with other sources—notably a partial leak of public contracts and traces of fast-tracked markets awarded to CYPHERA SECURITY—then decided to publish an explosive front page: "CYPHERA: when the State monitors its journalists in the name of national security". The publication immediately triggered a media uproar. The concerned ministries spoke of "absurd extrapolations" and "regrettable confusion". The government spokesperson invoked the need to protect the country against "massive disinformation campaigns orchestrated from abroad," without ever formally denying the existence of the program.
+
+In newsrooms, anger rose: several journalists realized that their movements, appointments, and certain encrypted communications may have been traced. Journalists' unions filed complaints, NGOs seized the CNIL, and opposition parliamentarians demanded the full declassification of contracts signed with CYPHERA SECURITY. Quickly, the question shifted from a technical program to a possible systemic drift of the State apparatus. In Parliament, the affair was seized upon by several groups. The parliamentary majority tried to stifle the scandal by calling it "political polemic before the European elections," while the far-right paradoxically demanded "more assumed surveillance" but "under the people's control". Left-wing groups denounced a "French Patriot Act" and demanded public explanations from the government.
+
+Faced with the scale of the controversy and the multiplication of appeals before national and European jurisdictions, the President of the National Assembly could no longer ignore the situation: the presidents of several groups then tabled a resolution proposal aimed at creating a parliamentary commission of inquiry into the CYPHERA system.
+
+### 2. The Parliamentary Commission in the Institutional Framework of the Fifth Republic
+
+In the Fifth Republic, the CYPHERA inquiry commission operates within an institutional order where Parliament, although theoretically sovereign, is structurally subordinated to the preeminence of the executive. Created according to Article 140 et seq. of the Rules of the National Assembly, it follows a precise procedure: tabling a resolution proposal in the Conference of Presidents, examination in public session, and then official constitution with a limited duration (6 months maximum).
+
+**Composition and Functioning:**
+The commission has 30 members proportional to the parliamentary groups (majority: ~55%, opposition: ~45%), chaired by an opposition MP (by custom to ensure impartiality), and equipped with a rapporteur from the majority. It sits at the Palais Bourbon in a dedicated room, with a permanent secretariat and the power to conduct hearings under oath.
+
+**Specific Powers Include:**
+
+* Requesting all documents (contracts, technical reports, internal notes).
+* Public or closed-door hearings (Ministers, CEO of CYPHERA, CNIL, ANSSI, journalists).
+* On-site visits (CYPHERA premises, COMCYBER).
+* Transmission of criminal facts to the Prosecutor.
+
+**Relationship with the Executive:**
+
+* The government can invoke national defense secrecy (Art. L2312-8 of the Defense Code), blocking access to certain documents.
+* Auditioned ministers benefit from functional immunity and cannot be prosecuted for their statements.
+* The President of the Republic remains constitutionally untouchable (Art. 67), but the Defense Council can be indirectly implicated via its auditioned members.
+
+**Institutional Interactions:**
+
+* **CNIL:** Control of personal data. Advisory opinion, possible referral.
+* **ANSSI:** Cybersecurity technical expertise. Frequent defense secrecy.
+* **Constitutional Council:** Review of intelligence laws. Post-report QPC.
+* **Court of Auditors:** CYPHERA public contracts. Complementary reports.
+
+**Structural Limits:**
+Unlike the American model (Watergate), the French commission has no executive force. Its report can be rejected by the executive or drowned in the legislative flow. Article 49-3 allows the government to bypass Parliament. Only a referral to a criminal judge or a QPC (Priority Question of Constitutionality) can lead to legal follow-up.
+
+### 3. Consequences and Possible Stakes
+
+The CYPHERA commission produces a report whose conclusions vary according to the internal political balance. Three scenarios emerge:
+
+* **Scenario 1 – Minimalist (Majority):** "Reinforced framework" for public-private partnerships. Technical recommendations: increased CNIL control, bi-annual information to Parliament. Government responsibility is diluted.
+* **Scenario 2 – Ambitious (Left):** Structural drifts. Overhaul of the 2015 intelligence law, sharing of powers with the judicial judge. Clear responsibility: resignations of DGSE/DGSI heads, criminal sanctions for illegal contracts.
+* **Scenario 3 – Singaporean Model (Right + alt-Right + Opinion Media): An assumed "French Patriot Act", inspired by the Singapore model. The far-right (RN) and the right (LR) call for total internal/external security, justified by "Russian informational aggressiveness and unconventional terrorist attacks."
+
+**Specific Responsibilities:**
+
+* **President:** Defense Council arbitration (politically implicated).
+* **Prime Minister:** Operational validation (possible resignation).
+* **Concerned Ministers:** Given instructions (criminal prosecution possible).
+* **Cabinets:** Pressure on agencies (ethical risk).
+
+**Possible Judicial Consequences:**
+
+* **Criminal:** Transmission to the Prosecutor (abuse of power).
+* **Administrative:** CNIL appeals, GDPR sanctions (fines).
+* **Constitutional:** QPC on intelligence laws by NGOs.
+* **European:** ECHR referral (Art. 8, 10) by journalists.
+
+**Legislative Stakes:**
+The report may lead to a bill sponsored by the rapporteur. A organic law could modify the powers of inquiry commissions (binding force).
+
+**Political Effects:**
+The commission becomes an electoral issue: the majority minimizes, the opposition amplifies, and the far-right adopts the "weak State" narrative. The President, though constitutionally protected, suffers media attrition if damning elements leak.
+
+### 4. The Creation of the Parliamentary Commission
+
+The procedure was set in motion within the framework provided by the Assembly's rules. A resolution proposal was jointly tabled by several opposition groups with a carefully calibrated title: "Commission of inquiry into the conditions of design, deployment, and democratic control of the partnership between the State and CYPHERA SECURITY". The text specified the commission's purpose, its duration (six months), the number of members, and the explicit desire to interview key political leaders, company executives, oversight authorities (CNIL, ANSSI), journalists, researchers, and NGO representatives.
+
+In the Conference of Presidents, tensions were high. The majority sought to restrict the commission's scope to the "cybersecurity" aspect alone and avoid any direct questioning of the Elysée or the Defense Council. Conversely, the opposition demanded a broad field, including financial aspects, ministerial responsibilities, and potential pressure on the press. After several days of negotiations, a compromise was reached: the commission would be established, but its title would be slightly narrowed to "respect for public liberties and democratic principles". In practice, this left significant room for investigation while giving the majority the impression of maintaining control over the framework.
+
+Next came the crucial question of the commission's political composition. In accordance with custom, seats were distributed proportionally among the groups. The majority obtained a significant number of seats but accepted, under media pressure, to leave the chairmanship of the commission to an opposition MP from a hinge group, while the rapporteur would be chosen from the majority ranks to ensure a certain balance. This choice was strategic: an opposition presidency provided guarantees of neutrality, but the majority hoped to keep control over the final report's drafting through its rapporteur.
+
+Once the resolution was adopted in a public session, the CYPHERA inquiry commission was officially created. It possessed standard powers: hearings under oath, the right to request documents, on-site visits, and the possibility of transmitting facts likely to constitute offenses to the Public Prosecutor. From its first constitutive meeting, the stakes appeared: some members wanted to move very quickly, while others were already seeking to limit political damage or instrumentalize the commission to defend a very security-oriented vision of the State and digital technology.
