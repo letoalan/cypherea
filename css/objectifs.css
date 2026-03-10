@@ -357,9 +357,28 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .buttons-grid { grid-template-columns: 1fr; }
-    .glass-card { padding: 2rem 1.5rem; }
-    .evaluation-grid { display: block; overflow-x: auto; }
+    .buttons-grid { 
+        grid-template-columns: 1fr; 
+        padding: 0 1rem;
+    }
+    .goals-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .glass-card { 
+        padding: 2rem 1.2rem; 
+        border-radius: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .goal-card {
+        padding: 2rem 1.5rem;
+    }
+    .evaluation-grid { 
+        display: block; 
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
     .phases-breakdown { grid-template-columns: 1fr; }
     .pdf-actions { flex-direction: column; width: 100%; }
     .pdf-btn, .print-btn { width: 100%; justify-content: center; }
