@@ -35,9 +35,8 @@ body {
     background: rgba(15, 23, 42, 0.9);
     backdrop-filter: var(--glass-effect);
     padding: 1rem 1.5rem;
-    /* Reduced padding for mobile */
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     position: sticky;
     top: 0;
@@ -45,15 +44,30 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container {
+    text-align: center;
+}
+
 .logo-container h1 {
-    font-size: 1.2rem;
-    /* Slightly smaller logo */
+    font-size: 1.1rem;
     font-weight: 800;
     background: linear-gradient(to right, var(--accent-color), #fff);
     -webkit-background-clip: text;
     background-clip: text;
-    /* Standard property */
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
 .main-nav ul {
@@ -136,6 +150,26 @@ body {
 }
 
 @media (max-width: 768px) {
+    .main-header {
+        grid-template-columns: auto 1fr auto;
+        gap: 0.5rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .header-left {
+        order: 3; /* Nav toggle will be here eventually or hidden */
+    }
+
+    .logo-container {
+        order: 1;
+        text-align: left;
+    }
+
+    .header-right {
+        order: 2;
+        gap: 0.5rem;
+    }
+
     .menu-toggle {
         display: flex;
     }

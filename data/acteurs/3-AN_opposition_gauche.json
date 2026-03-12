@@ -1,0 +1,81 @@
+{
+  "id": "AN_opposition_gauche",
+  "acteur": "AN – opposition gauche",
+  "identite": {
+    "groupe": "NFP (LFI + PS + Écolo + PCF)",
+    "type": "Membre commission",
+    "sieges_commission": 4,
+    "fonction": "Dénonciation des dérives liberticides, défense des droits",
+    "place_republique": "Opposition frontale, mobilisatrice auprès de l'opinion"
+  },
+  "interets": {
+    "materiels": "Protection des données personnelles, financement des organes de contrôle",
+    "symboliques": "Libertés publiques, État de droit, transparence totale",
+    "electorat": "Urbains, jeunes, militants des droits de l'homme, syndicats"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Indignation, parle de « scandale d'État » et de « surveillance de masse »",
+    "discours": "L'outil est intrinsèquement dangereux ; remise en cause de la loi renseignement",
+    "narratif": "Cyphera est le bras armé d'une dérive autoritaire de l'exécutif",
+    "mots_cles": ["libertés", "autoritarisme", "surveillance de masse", "Big Brother"]
+  },
+  "contraintes": {
+    "politiques": "Minoritaire en commission, doit jouer sur l'écho médiatique",
+    "juridiques": "Oppose le secret-défense par le principe de transparence",
+    "strategiques": "Ne pas paraître complaisant avec les menaces étrangères (Russie)"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Abrogation ou réforme profonde des lois renseignement",
+      "Sanctions pénales contre les donneurs d'ordre politiques",
+      "Transparence totale sur la liste des personnes surveillées"
+    ],
+    "eviter": [
+      "Un rapport de compromis qui blanchirait le gouvernement",
+      "La transformation de la commission en débat sur la seule menace russe",
+      "L'exclusion du volet « surveillance des opposants » du rapport final"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Accusation : parle de déni de démocratie avant même le début des travaux",
+    "position2": "Radicalité : demande la suspension immédiate de tous les contrats Cyphera",
+    "position3": "Alliance avec la société civile : porte la parole des ONG et journalistes",
+    "position4": "Rupture : menace de quitter la commission si les documents sont refusés"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "❌"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "⚠️"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "✅"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "❌"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "6/30 (gauche AN + Sénat opp.) - Très minoritaire",
+    "temoins": {
+      "soutiens": ["Medias", "CNIL"],
+      "menaces":  ["DGSI", "Interieur", "Armees", "CYPHERA"],
+      "ambigu":   ["Justice", "ANSSI"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À Interieur : « Qui a autorisé la surveillance de ce député d'opposition ? »",
+      "À CYPHERA : « Combien de profils d'opposants politiques gérez-vous ? »",
+      "À Justice : « Comment justifiez-vous l'absence de contrôle judiciaire ? »"
+    ],
+    "cibles_privilegiees": "Pilonner le récit gouvernemental et mobiliser l'opinion"
+  },
+  "points_tension": [
+    "Compétition interne entre les composantes de la gauche (radicaux vs modérés)",
+    "Équilibre entre critique de CYPHERA et protection contre les cyberattaques",
+    "Risque de marginalisation si la commission se droitise"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 2 (Contrôle démocratique) : Saisine de la CEDH, vagues de démissions, réforme de la constitution",
+    "echec": "Scénario 1 : Rapport minoritaire ignoré, sentiment d'impuissance parlementaire"
+  },
+  "citation": "« La sécurité nationale ne peut justifier que l'on traque ceux qui pensent différemment. »",
+  "encadre_pedagogique": "L'opposition de gauche (NFP) utilise la commission comme une tribune. Minoritaire institutionnellement, elle mise sur la pression de la rue et des ONG pour forcer la transparence."
+}

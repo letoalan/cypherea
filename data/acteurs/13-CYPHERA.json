@@ -1,0 +1,81 @@
+{
+  "id": "CYPHERA",
+  "acteur": "CYPHERA SECURITY",
+  "identite": {
+    "groupe": "Entreprise privée technologique",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Développement d'algorithmes de surveillance",
+    "place_republique": "Partenaire stratégique de l'État (LPSPT)"
+  },
+  "interets": {
+    "materiels": "Préservation des contrats publics, protection propriété intellectuelle",
+    "symboliques": "Réputation leader tech, prestige industriel",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Offensive juridique contre la presse, déni de toute surveillance illégale",
+    "discours": "Nos outils sont neutres ; l'usage est défini par le client",
+    "narratif": "Nous sommes les champions face aux géants américains et russes",
+    "mots_cles": ["intelligence artificielle", "prédiction", "brevets", "guerre hybride"]
+  },
+  "contraintes": {
+    "politiques": "Risque d'être le bouc émissaire de l'exécutif",
+    "juridiques": "Secret des affaires, clauses de confidentialité",
+    "strategiques": "Éviter la fuite du code source et la chute du cours"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Reconnaissance de la légalité technique du produit",
+      "Maintien des contrats malgré le scandale",
+      "Protection des brevets contre toute demande d'audit"
+    ],
+    "eviter": [
+      "La condamnation pour complicité d'atteinte aux libertés",
+      "L'obligation de fournir la liste des cibles",
+      "Une amende massive du RGPD"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Dénégation ferme : 'Le Canard fantasme sur des slides de R&D'",
+    "position2": "Le prestataire : 'Nous n'exécutons que les commandes des services'",
+    "position3": "L'innovation : 'Prêts à co-construire un cadre éthique avec l'État'",
+    "position4": "Le bunker : invoque le secret des affaires systématiquement"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "⚠️"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "⚠️"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "⚠️"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "5/30 (AN_opposition_droite)",
+    "temoins": {
+      "soutiens": ["Armees", "Interieur", "DGSI"],
+      "menaces":  ["Medias", "CNIL"],
+      "ambigu":   ["ANSSI", "Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Défense : « Nous fournissons un marteau, pas le bras qui l'utilise. »",
+      "Argument : « Interdire CYPHERA, c'est laisser le champ aux IA russes. »",
+      "Précision : « Les extraits publiés sont sortis de leur contexte technique. »"
+    ],
+    "cibles_privilegiees": "Détourner l'attention vers les menaces extérieures"
+  },
+  "points_tension": [
+    "Témoignage de l'ingénieur lanceur d'alerte",
+    "Indices de financement par des fonds opaques",
+    "Responsabilité éthique du concepteur"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1 (Survie) : Contrats confirmés et code source protégé",
+    "echec": "Dépôt de bilan et interdiction de marchés publics"
+  },
+  "citation": "« Nos algorithmes sauvent des vies. Ne sacrifiez pas notre technologie. »",
+  "encadre_pedagogique": "CYPHERA SECURITY incarne le complexe militaro-industriel numérique. Elle utilise le secret des affaires comme bouclier."
+}

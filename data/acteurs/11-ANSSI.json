@@ -1,0 +1,81 @@
+{
+  "id": "ANSSI",
+  "acteur": "ANSSI",
+  "identite": {
+    "groupe": "Services de l'État (Rattachée au SGDSN)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Cybersécurité technique, protection des OIV",
+    "place_republique": "Expertise technique souveraine, neutralité affichée"
+  },
+  "interets": {
+    "materiels": "Autonomie technologique, budgets de défense active",
+    "symboliques": "Excellence technique, protection des infrastructures",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Prudente, reconnaît la puissance de l'outil mais craint pour la souveraineté",
+    "discours": "L'ANSSI se concentre sur l'aspect défensif ; CYPHERA est un partenaire",
+    "narratif": "La cybersécurité exige des outils de pointe sous contrôle étatique",
+    "mots_cles": ["souveraineté", "résilience", "audit technique", "OIV"]
+  },
+  "contraintes": {
+    "politiques": "Rattachée au Premier ministre, devoir de réserve",
+    "juridiques": "Secret-défense permanent (Art. L2321-1)",
+    "strategiques": "Éviter que les failles de CYPHERA ne deviennent des failles de l'État"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Plus de moyens pour l'audit interne des codes sources",
+      "Éviter une trop grande dépendance à CYPHERA",
+      "Clarification des chaînes de commandement cyber"
+    ],
+    "eviter": [
+      "L'exposition publique de ses méthodes de défense",
+      "La politisation de son expertise technique",
+      "Le partage forcé d'informations confidentielles"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "L'expert : explique la réalité des menaces russes pour cadrer le débat",
+    "position2": "Le certificateur : interroge la robustesse de CYPHERA",
+    "position3": "Le souverainiste : exprime des doutes sur les capitaux étrangers",
+    "position4": "Le pragmatique : propose des normes plus strictes pour les sous-traitants"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "⚠️"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "⚠️"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "✅"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "24/30 (AN_majorite + AN_opposition_droite + Senat_majorite + ED)",
+    "temoins": {
+      "soutiens": ["Armees", "DGSI", "Interieur"],
+      "menaces":  ["Medias"],
+      "ambigu":   ["CYPHERA", "Justice", "CNIL"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Réponse : « Techniquement, l'outil remplit son office, mais l'usage est politique. »",
+      "Conseil : « Nous recommandons un audit complet du code source. »",
+      "Alerte : « La dépendance logicielle est un risque stratégique. »"
+    ],
+    "cibles_privilegiees": "Maintenir l'exigence technique sans entrer dans la mêlée"
+  },
+  "points_tension": [
+    "Divergence avec CYPHERA sur la transparence du code",
+    "Pression du gouvernement pour validation sans réserve",
+    "Coopération difficile avec la CNIL sur certains protocoles"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1/2 : ANSSI confirmée comme autorité suprême d'audit",
+    "echec": "L'ANSSI est perçue comme ayant couvert un outil douteux"
+  },
+  "citation": "« La cybersécurité n'est pas une opinion, c'est une architecture. Nous sommes les architectes. »",
+  "encadre_pedagogique": "L'ANSSI joue le rôle de l'expert neutre. Elle est respectée pour sa technicité. Référence : Art. L2321-1 Code de la défense."
+}

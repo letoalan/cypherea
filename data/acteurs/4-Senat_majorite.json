@@ -1,0 +1,81 @@
+{
+  "id": "Senat_majorite",
+  "acteur": "Sénat – majorité",
+  "identite": {
+    "groupe": "Les Républicains (LR) + Centristes",
+    "type": "Membre commission",
+    "sieges_commission": 4,
+    "fonction": "Sagesse institutionnelle, contrôle de la légalité",
+    "place_republique": "Chambre haute, contre-pouvoir modérateur"
+  },
+  "interets": {
+    "materiels": "Stabilité des institutions, respect des prérogatives locales",
+    "symboliques": "Sénat comme « gardien des libertés », prestige de la Haute Assemblée",
+    "electorat": "Élus locaux, notables, monde rural et conservateur"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Prudence, veut éviter le spectacle, focalise sur le cadre juridique",
+    "discours": "La loi doit être respectée ; besoin d'une évaluation technique sereine",
+    "narratif": "Le Sénat apporte la rigueur là où l'Assemblée apporte l'émotion",
+    "mots_cles": ["légalité", "équilibre", "temps long", "protection"]
+  },
+  "contraintes": {
+    "politiques": "Ne pas affaiblir inutilement l'exécutif en période de crise",
+    "juridiques": "Attachement strict à la hiérarchie des normes",
+    "strategiques": "Maintenir l'influence du Sénat face à l'Assemblée"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Amélioration réelle du cadre législatif (Loi Renseignement)",
+      "Reconnaissance du rôle modérateur du Sénat",
+      "Protection du secret des sources (journalistes et parlementaires)"
+    ],
+    "eviter": [
+      "L'escalade populiste de l'ED ou de la gauche",
+      "Une crise de régime qui fragiliserait l'économie",
+      "Le contournement systématique du Parlement par des contrats privés"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Expertise : demande un audit technique indépendant sur les outils de CYPHERA",
+    "position2": "Sagesse : rappelle les principes de la CEDH et de la Constitution",
+    "position3": "Interrogation : questionne la pertinence du partenariat public-privé",
+    "position4": "Compromis : cherche un terrain d'entente entre majorité AN et opposition modérée"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "⚠️"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "⚠️"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "23/30 (bloc de droite et centre étendu)",
+    "temoins": {
+      "soutiens": ["Justice", "ANSSI", "CNIL"],
+      "menaces":  [],
+      "ambigu":   ["CYPHERA", "Armees", "Interieur", "DGSI", "Medias"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À Justice : « Quel cadre légal encadre l'usage de CYPHERA sur le sol français ? »",
+      "À CNIL : « Vos contrôles actuels sont-ils suffisants pour détecter des abus ? »",
+      "À Armees : « Comment assurez-vous que le secret-défense n'est pas utilisé abusivement ? »"
+    ],
+    "cibles_privilegiees": "Clarifier les zones d'ombre juridiques sans fracas"
+  },
+  "points_tension": [
+    "Divergence avec la majorité AN sur l'indépendance de la commission",
+    "Risque de paraître trop protecteur envers le gouvernement",
+    "Complexité technique des algorithmes vs compréhension des élus"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1/2 Équilibre : Réforme législative pérenne, renforcement du pouvoir de contrôle du Sénat",
+    "echec": "Le Sénat est perçu comme une chambre d'enregistrement de la majorité"
+  },
+  "citation": "« Au Sénat, nous préférons la lumière précise de la loi aux éclats de voix de la polémique. »",
+  "encadre_pedagogique": "La majorité sénatoriale (droite/centre) joue la carte de l'expertise. Elle est souvent plus attentive aux libertés publiques que la majorité AN, tout en restant fidèle aux institutions."
+}

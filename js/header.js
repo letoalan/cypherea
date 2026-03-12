@@ -5,27 +5,33 @@
 function injectHeader() {
     const headerHtml = `
     <header class="main-header">
+        <div class="header-left">
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                    <li><a href="objectifs.html" data-i18n="nav_objectives">Objectifs</a></li>
+                    <li><a href="repartition.html" data-i18n="nav_distribution">Répartition</a></li>
+                    <li><a href="simulation.html" data-i18n="nav_simulation">Simulation</a></li>
+                </ul>
+            </nav>
+        </div>
+        
         <div class="logo-container">
             <h1 data-i18n="title">Simulation Parlementaire – Affaire CYPHERA</h1>
         </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="main-nav" id="mainNav">
-            <ul>
-                <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
-                <li><a href="objectifs.html" data-i18n="nav_objectives">Objectifs</a></li>
-                <li><a href="repartition.html" data-i18n="nav_distribution">Répartition</a></li>
-                <li><a href="simulation.html" data-i18n="nav_simulation">Simulation</a></li>
-            </ul>
+
+        <div class="header-right">
             <div class="lang-selector">
                 <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
                 <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
                 <button class="lang-btn" data-lang="de" onclick="setLanguage('de')">DE</button>
             </div>
-        </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
     `;
     

@@ -1,0 +1,81 @@
+{
+  "id": "DGSI",
+  "acteur": "DGSI",
+  "identite": {
+    "groupe": "Services de l'État (Intérieur)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Contre-espionnage, lutte antiterroriste",
+    "place_republique": "Service de pointe, premier consommateur de données"
+  },
+  "interets": {
+    "materiels": "Accès illimité aux données, puissance de calcul, discrétion",
+    "symboliques": "Invulnérabilité de l'État, défection de menaces russes",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Hostile à la commission, craint pour ses sources",
+    "discours": "L'efficacité dépend du secret ; CYPHERA est tactique",
+    "narratif": "Sans surveillance prédictive, nous ne pourrons plus protéger",
+    "mots_cles": ["renseignement", "menaces hybrides", "cloisonnement", "efficacité"]
+  },
+  "contraintes": {
+    "politiques": "Solidarité absolue avec le ministre de l'Intérieur",
+    "juridiques": "Contrôlée par la CNCTR",
+    "strategiques": "Protéger ses agents et ses infiltrations"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Validation de l'usage des algorithmes par une loi",
+      "Exclusion de tout huis clos pour les parties sensibles",
+      "Étouffement du volet 'surveillance des opposants'"
+    ],
+    "eviter": [
+      "La divulgation de la liste des mots-clés surveillés",
+      "La mise sous contrôle permanent par des parlementaires",
+      "La rupture du contrat avec CYPHERA"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "L'opérationnel : témoigne d'attentats déjoués",
+    "position2": "Le mur de silence : invoque le secret-défense systématiquement",
+    "position3": "Le stratège : insiste sur l'agressivité des services russes",
+    "position4": "Le technicien : dément tout croisement illégal"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "✅"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "24/30 (bloc sécuritaire dur)",
+    "temoins": {
+      "soutiens": ["Interieur", "Armees", "CYPHERA"],
+      "menaces":  ["Medias", "CNIL"],
+      "ambigu":   ["ANSSI", "Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Réponse : « Je ne peux ni confirmer ni infirmer cette information. »",
+      "Argument : « La menace n'attend pas les débats. »",
+      "Défense : « Nous agissons sous le contrôle de la CNCTR. »"
+    ],
+    "cibles_privilegiees": "Verrouiller le débat sur la sécurité nationale"
+  },
+  "points_tension": [
+    "Dépassement de finalité pour surveiller des journalistes",
+    "Manque de transparence sur le coût des prestataires",
+    "Conflit de loyauté en cas de demande de déclassification"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1 (Sécurité) : Immunité renforcée des agents",
+    "echec": "Scandale d'État et démission du haut état-major"
+  },
+  "citation": "« Surveiller est un métier ingrat mais vital. Le secret en est la condition. »",
+  "encadre_pedagogique": "La DGSI est l'acteur le plus secret. Elle représente la raison d'État dans ce qu'elle a de plus occulte. Référence : CNCTR."
+}

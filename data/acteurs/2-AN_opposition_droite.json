@@ -1,0 +1,81 @@
+{
+  "id": "AN_opposition_droite",
+  "acteur": "AN – opposition droite",
+  "identite": {
+    "groupe": "Les Républicains (LR)",
+    "type": "Membre commission",
+    "sieges_commission": 5,
+    "fonction": "Contrôle exigeant, garant de la souveraineté",
+    "place_republique": "Pivot tactique entre majorité et oppositions"
+  },
+  "interets": {
+    "materiels": "Réindustrialisation cyber, soutien aux PME françaises du secteur",
+    "symboliques": "Ordre républicain, autorité de l'État, respect de la loi",
+    "electorat": "Territoires, entrepreneurs, électorat âgé attaché à la sécurité"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Inquiétude sur l'amateurisme de l'exécutif, mais accord sur le fond (sécurité)",
+    "discours": "Critique de la gestion, pas de l'outil ; demande de souveraineté numérique",
+    "narratif": "L'État a failli dans son contrôle, pas dans sa mission de sécurité",
+    "mots_cles": ["souveraineté", "contrôle", "efficacité", "État fort"]
+  },
+  "contraintes": {
+    "politiques": "Pas d'alliance frontale avec la gauche, ne pas paraître anti-sécurité",
+    "juridiques": "Respect du secret-défense mais demande de transparence sur les contrats",
+    "strategiques": "Se poser en alternative crédible de gouvernement"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Renforcement du contrôle parlementaire sur les contrats",
+      "Priorité aux entreprises françaises (préférence nationale cyber)",
+      "Mise en évidence du manque de pilotage politique"
+    ],
+    "eviter": [
+      "Affaiblissement des services de renseignement",
+      "Narratif de la gauche sur l'« État Big Brother »",
+      "Crise institutionnelle majeure qui profiterait à l'extrême droite"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Soutien critique : d'accord pour la commission, mais refuse le procès d'intention",
+    "position2": "Exigence technique : focalise sur la sécurité des données et le choix de Cyphera",
+    "position3": "Défense de la souveraineté : regrette la dépendance à une solution privée mal cadrée",
+    "position4": "Arbitrage : accepte des conclusions modérées contre des garanties sur le futur"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "⚠️"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "19/30 (peut faire basculer la majorité)",
+    "temoins": {
+      "soutiens": ["ANSSI", "Armees", "DGSI"],
+      "menaces":  ["Medias"],
+      "ambigu":   ["CYPHERA", "Justice", "CNIL", "Interieur"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À ANSSI : « Le contrat Cyphera garantit-il l'indépendance technologique de la France ? »",
+      "À Interieur : « Pourquoi avoir choisi Cyphera plutôt qu'une solution interne ? »",
+      "À CNIL : « Comment conciliez-vous protection des données et efficacité antiterroriste ? »"
+    ],
+    "cibles_privilegiees": "Dénoncer le manque de vision stratégique de l'exécutif"
+  },
+  "points_tension": [
+    "Dilemme entre loyauté aux institutions et dénonciation des erreurs de la majorité",
+    "Pression de l'électorat sur les libertés publiques vs sécurité",
+    "Concurrence avec le ED sur le thème de la souveraineté"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1/3 Hybride : Adoption d'une loi sur la souveraineté numérique, contrôle renforcé des contrats",
+    "echec": "Scénario 2 : Inutilité de la commission, victoire idéologique de la gauche"
+  },
+  "citation": "« Sécurité et liberté ne sont pas opposées, elles exigent un État fort et souverain. »",
+  "encadre_pedagogique": "La droite (LR) au Parlement : force d'appoint indispensable à la majorité relative. Elle utilise la commission pour marquer sa différence sur la méthode tout en validant les objectifs de sécurité."
+}

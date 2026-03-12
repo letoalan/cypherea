@@ -1,0 +1,81 @@
+{
+  "id": "Senat_opposition",
+  "acteur": "Sénat – opposition",
+  "identite": {
+    "groupe": "Socialiste, Écologiste et Républicain (SER)",
+    "type": "Membre commission",
+    "sieges_commission": 2,
+    "fonction": "Vigilance démocratique et éthique",
+    "place_republique": "Minorité de gauche au Sénat, voix de la conscience sociale"
+  },
+  "interets": {
+    "materiels": "Services publics numériques, souveraineté européenne",
+    "symboliques": "Éthique publique, protection des citoyens, démocratie locale",
+    "electorat": "Collectivités, cadres de la fonction publique, intellectuels"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Scepticisme profond, craint une privatisation du renseignement",
+    "discours": "L'État délègue ses fonctions régaliennes sans contrôle ; danger pour les données",
+    "narratif": "CYPHERA est le symptôme d'une perte de contrôle démocratique sur la tech",
+    "mots_cles": ["éthique", "privatisation", "contrôle citoyen", "souveraineté"]
+  },
+  "contraintes": {
+    "politiques": "Très minoritaire au Sénat, doit s'appuyer sur l'opposition AN",
+    "juridiques": "Respect du cadre sénatorial tout en poussant les limites de l'enquête",
+    "strategiques": "Mettre en avant une vision européenne de la cybersécurité"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Audit sur le coût caché du contrat CYPHERA",
+      "Création d'un comité citoyen de contrôle des algorithmes",
+      "Responsabilisation accrue des cabinets ministériels"
+    ],
+    "eviter": [
+      "La banalisation de la surveillance « prédictive »",
+      "Le glissement vers un modèle sécuritaire autoritaire",
+      "L'accord tacite entre la majorité sénatoriale et le gouvernement"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Lanceur d'alerte : insiste sur le témoignage de l'ingénieur de CYPHERA",
+    "position2": "Analyste : déconstruit les promesses d'efficacité de l'IA de CYPHERA",
+    "position3": "Défenseur européen : rappelle les principes du Règlement IA de l'UE",
+    "position4": "Opposant constructif : propose des alternatives basées sur le logiciel libre"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "❌"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "⚠️"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "⚠️"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "✅"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "❌"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "6/30 (minorité de gauche unie)",
+    "temoins": {
+      "soutiens": ["Medias", "CNIL"],
+      "menaces":  ["CYPHERA", "DGSI", "Armees", "Interieur"],
+      "ambigu":   ["ANSSI", "Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À CYPHERA : « Quelle est la part de fonds publics dans votre R&D ? »",
+      "À CNIL : « Avez-vous les moyens techniques de vérifier l'absence de biais ? »",
+      "À Interieur : « Pourquoi externaliser une compétence aussi sensible ? »"
+    ],
+    "cibles_privilegiees": "Pointer la déresponsabilisation de l'État et le risque éthique"
+  },
+  "points_tension": [
+    "Faiblesse numérique au sein de la commission",
+    "Difficulté à faire entendre un message nuancé entre les deux extrêmes",
+    "Pression pour suivre la radicalité de l'opposition AN"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 2 (Contrôle démocratique) : Inscription de l'éthique algorithmique dans la loi, contrôle citoyen",
+    "echec": "Simple note de bas de page dans le rapport final"
+  },
+  "citation": "« Déléguer la sécurité à des algorithmes privés sans contrôle, c'est abdiquer notre souveraineté. »",
+  "encadre_pedagogique": "L'opposition sénatoriale de gauche joue le rôle d'aiguillon éthique. Elle apporte souvent une dimension européenne et technique pour compenser sa faiblesse politique."
+}

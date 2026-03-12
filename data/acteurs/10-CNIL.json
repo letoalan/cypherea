@@ -1,0 +1,81 @@
+{
+  "id": "CNIL",
+  "acteur": "CNIL",
+  "identite": {
+    "groupe": "Autorité Administrative Indépendante (AAI)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Protection des données personnelles, garantie du RGPD",
+    "place_republique": "Gendarme du numérique, indépendant de l'exécutif"
+  },
+  "interets": {
+    "materiels": "Indépendance budgétaire, renforcement des pouvoirs de sanction",
+    "symboliques": "Confiance des citoyens dans le numérique, respect de la vie privée",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Alerte maximale, dénonce une opacité inacceptable sur les algorithmes",
+    "discours": "L'innovation ne doit pas se faire au détriment des droits fondamentaux",
+    "narratif": "CYPHERA est l'exemple type de ce qu'il ne faut pas faire sans contrôle préalable",
+    "mots_cles": ["protection", "RGPD", "algorithmes", "contrôle préalable"]
+  },
+  "contraintes": {
+    "politiques": "Doit rester neutre tout en critiquant l'action gouvernementale",
+    "juridiques": "Limites de ses pouvoirs d'investigation sur le secret-défense",
+    "strategiques": "Ne pas se couper des services de sécurité pour rester écoutée"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Soumission obligatoire de tout nouvel algorithme à la CNIL",
+      "Droit d'audit permanent sur les systèmes de CYPHERA",
+      "Sanctions exemplaires en cas de détournement de finalité"
+    ],
+    "eviter": [
+      "L'exclusion du champ de la sécurité nationale de ses compétences",
+      "La banalisation de la surveillance 'prédictive' sans cadre éthique",
+      "Le contournement de ses avis par l'exécutif"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Lanceur d'alerte institutionnel : rappelle les manquements de l'État",
+    "position2": "Technicienne : pointe les failles de sécurité dans le stockage",
+    "position3": "Défenseure : soutient les plaintes des journalistes et ONG",
+    "position4": "Régulatrice : propose un nouveau cadre de certification"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "❌"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "⚠️"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "✅"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "❌"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "10/30 (AN_opposition_gauche + Senat_majorite + Senat_opposition)",
+    "temoins": {
+      "soutiens": ["Medias", "Justice"],
+      "menaces":  ["CYPHERA", "Interieur", "DGSI", "Armees"],
+      "ambigu":   ["ANSSI"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Critique : « Pourquoi la CNIL n'a-t-elle pas été saisie avant le contrat ? »",
+      "Alerte : « Le croisement de ces fichiers est illégal au regard du RGPD. »",
+      "Proposition : « Il faut un droit d'accès aux algorithmes pour les citoyens. »"
+    ],
+    "cibles_privilegiees": "Forcer l'exécutif à plus de transparence algorithmique"
+  },
+  "points_tension": [
+    "Opposabilité du secret-défense face à la CNIL",
+    "Manque de moyens techniques pour auditer l'IA",
+    "Conflit de doctrine avec l'Intérieur sur la sécurité prédictive"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 2 (Contrôle) : Renforcement législatif des pouvoirs de la CNIL",
+    "echec": "La CNIL est perçue comme un frein bureaucratique inutile"
+  },
+  "citation": "« Vos algorithmes ne sont pas au-dessus des lois républicaines. Nul ne doit être profilé à son insu. »",
+  "encadre_pedagogique": "La CNIL est le garant technique des libertés. Dans l'affaire CYPHERA, elle joue son rôle de contre-pouvoir expert. Référence : RGPD et Loi Informatique et Libertés."
+}

@@ -1,0 +1,81 @@
+{
+  "id": "Justice",
+  "acteur": "Ministère de la Justice",
+  "identite": {
+    "groupe": "Gouvernement (Place Vendôme)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Garant des libertés individuelles, tutelle judiciaire",
+    "place_republique": "Arbitre entre raison d'État et État de droit"
+  },
+  "interets": {
+    "materiels": "Indépendance de la magistrature, modernisation des moyens de preuve",
+    "symboliques": "Respect du Code de procédure pénale, équilibre des pouvoirs",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Malaise, s'assure que le contrôle judiciaire n'a pas été occulté",
+    "discours": "La surveillance doit rester l'exception ; besoin de garanties",
+    "narratif": "La justice doit être le rempart contre les excès du renseignement",
+    "mots_cles": ["garanties", "contrôle judiciaire", "proportionnalité", "État de droit"]
+  },
+  "contraintes": {
+    "politiques": "Solidarité gouvernementale vs indépendance de la Justice",
+    "juridiques": "Art. 66 de la Constitution (autorité judiciaire gardienne de la liberté)",
+    "strategiques": "Éviter une fronde des magistrats face au 'profilage'"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Renforcement de l'intervention du juge dans les procédures CYPHERA",
+      "Protection du secret professionnel des avocats",
+      "Clarification des conditions de transmission pénale des preuves"
+    ],
+    "eviter": [
+      "Une condamnation de la France par la CEDH",
+      "L'exclusion du juge judiciaire au profit du seul administratif",
+      "Une mise en cause personnelle du Garde des Sceaux"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Rappel à la loi : insiste sur la nécessité de l'autorisation d'un juge",
+    "position2": "Prudence : refuse de valider l'usage 'prédictif' sans cadre pénal strict",
+    "position3": "Médiation : cherche à réconcilier besoins de sécurité et protection des droits",
+    "position4": "Technique juridique : analyse la conformité des contrats au droit public"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "⚠️"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "✅"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "⚠️"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "20/30 (AN_majorite + AN_opposition_gauche + Senat_majorite + Senat_opposition)",
+    "temoins": {
+      "soutiens": ["CNIL", "ANSSI"],
+      "menaces":  ["DGSI", "Interieur"],
+      "ambigu":   ["CYPHERA", "Medias", "Armees"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Question : « Un juge a-t-il visé chaque profil de risque CYPHERA ? »",
+      "Argument : « L'efficacité ne peut se passer de légitimité judiciaire. »",
+      "Rappel : « Le secret-défense n'est pas un blanc-seing pour l'arbitraire. »"
+    ],
+    "cibles_privilegiees": "Assurer que la Justice reste au centre du jeu démocratique"
+  },
+  "points_tension": [
+    "Désaccord avec l'Intérieur sur l'autonomie du renseignement",
+    "Pression des syndicats de magistrats contre l'IA 'prédictive'",
+    "Risque de saisine du Conseil constitutionnel"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1/2 : Réforme renforçant le rôle du juge judiciaire",
+    "echec": "Marginalisation de la Justice au profit d'un État purement sécuritaire"
+  },
+  "citation": "« La loi est le bouclier du citoyen. Sans elle, la technologie n'est qu'une arme. »",
+  "encadre_pedagogique": "Le Ministère de la Justice occupe une position inconfortable. Art. 66 de la Constitution : l'autorité judiciaire est la gardienne de la liberté individuelle."
+}

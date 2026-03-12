@@ -1,0 +1,81 @@
+{
+  "id": "Armees",
+  "acteur": "Ministère des Armées / COMCYBER",
+  "identite": {
+    "groupe": "Gouvernement (Défense)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Défense nationale, cyber-protection souveraine",
+    "place_republique": "Bras armé de l'exécutif, garant du secret-défense"
+  },
+  "interets": {
+    "materiels": "Dotations budgétaires cyber, maintien du partenariat CYPHERA",
+    "symboliques": "Efficacité opérationnelle, prestige des armées, invulnérabilité",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Strict respect du secret-défense, déni de tout détournement illégal",
+    "discours": "L'outil est indispensable face aux cyberattaques étatiques (Russie, Chine)",
+    "narratif": "La sécurité de la Nation exige des outils puissants et de la discrétion",
+    "mots_cles": ["secret-défense", "cyber-résilience", "intérêt supérieur", "Russie"]
+  },
+  "contraintes": {
+    "politiques": "Solidarité gouvernementale, protection du Conseil de défense",
+    "juridiques": "Secret de la défense nationale (L2312-8)",
+    "strategiques": "Ne pas dévoiler les capacités réelles du COMCYBER"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Maintien du secret-défense sur les algorithmes sensibles",
+      "Éviter la déclassification des documents opérationnels",
+      "Légitimation de l'usage de l'IA pour la défense de la patrie"
+    ],
+    "eviter": [
+      "L'audition publique d'officiers de renseignement",
+      "La remise en cause du programme CYPHERA",
+      "Le transfert de données militaires au juge judiciaire"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Fermeté : refuse de répondre au nom du secret de la défense nationale",
+    "position2": "Pédagogie : explique la réalité des menaces extérieures pour justifier l'outil",
+    "position3": "Coopération restreinte : peut transmettre des notes via la CCSDN",
+    "position4": "Technique : noie le débat sous des termes complexes pour masquer les dérives"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "✅"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "24/30 (bloc sécuritaire dominant)",
+    "temoins": {
+      "soutiens": ["Interieur", "DGSI", "ANSSI", "CYPHERA"],
+      "menaces":  ["Medias", "CNIL"],
+      "ambigu":   ["Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "En réponse : « Je ne peux répondre qu'en commission spécialisée secret-défense. »",
+      "Argument : « Sans CYPHERA, nous sommes aveugles face aux ingérences russes. »",
+      "Précision : « Il n'y a pas de surveillance de masse, mais un ciblage stratégique. »"
+    ],
+    "cibles_privilegiees": "Rendre la commission inopérante sur le volet technique souverain"
+  },
+  "points_tension": [
+    "Conflit entre transparence démocratique et secret-défense",
+    "Preuves de surveillance de civils par un outil militaire",
+    "Responsabilité du ministre en cas de dépassement de mission"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1 (Minimaliste) : Confirmation de l'utilité, maintien du secret",
+    "echec": "Déclassification forcée et mise en examen de hauts responsables"
+  },
+  "citation": "« Dans le cyber-espace, l'ombre est notre meilleure défense. Ne la brisez pas imprudemment. »",
+  "encadre_pedagogique": "Le Ministère des Armées (COMCYBER) est le pivot de l'affaire. Il utilise le secret-défense comme bouclier ultime face à l'investigation parlementaire. Art. L2312-8 du Code de la défense."
+}

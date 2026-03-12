@@ -1,0 +1,81 @@
+{
+  "id": "Interieur",
+  "acteur": "Ministère de l'Intérieur",
+  "identite": {
+    "groupe": "Gouvernement (Place Beauvau)",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Police intérieure, ordre public, renseignement territorial",
+    "place_republique": "Garant de la sécurité civile, autorité de tutelle DGSI"
+  },
+  "interets": {
+    "materiels": "Moyens de surveillance pour la police prédictive, bases de données",
+    "symboliques": "Ordre républicain, protection des Français, efficacité",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Défensive, insiste sur l'aspect salvateur de la technologie contre le crime",
+    "discours": "Toutes les procédures ont été validées juridiquement ; pas de dérapage",
+    "narratif": "CYPHERA a permis de déjouer des attentats et des actions violentes",
+    "mots_cles": ["ordre public", "prévention", "légalité", "efficacité"]
+  },
+  "contraintes": {
+    "politiques": "Exposition médiatique forte, cible privilégiée de la gauche",
+    "juridiques": "Lois Renseignement 2015, RGPD (sous tension)",
+    "strategiques": "Ne pas désavouer les services de police sur le terrain"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Reconnaissance de l'utilité opérationnelle pour la sécurité civile",
+      "Éviter toute modification restrictive des lois sur le renseignement",
+      "Dénoncer les 'campagnes de désinformation' russes"
+    ],
+    "eviter": [
+      "La remise en cause du croisement des fichiers administratifs",
+      "L'assimilation à un service de 'police politique'",
+      "La condamnation par la CNIL ou le juge administratif"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Fermeté : affirme que chaque dossier de surveillance a une base légale",
+    "position2": "Opérationnelle : évoque des succès (anonymisés) obtenus grâce aux données",
+    "position3": "Dédouanement : rejette la responsabilité des dérives sur l'entreprise privée",
+    "position4": "Bunker : refuse de commenter les « allégations de presse »"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "✅"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "24/30 (bloc sécuritaire puissant)",
+    "temoins": {
+      "soutiens": ["Armees", "DGSI", "CYPHERA", "ANSSI"],
+      "menaces":  ["CNIL", "Medias"],
+      "ambigu":   ["Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Réponse : « Préfère-t-on la protection des sources ou la prévention d'un attentat ? »",
+      "Argument : « Les algorithmes ne surveillent pas des opinions, mais des comportements. »",
+      "Défense : « Aucune donnée n'est sortie du cadre régalien. »"
+    ],
+    "cibles_privilegiees": "Délégitimer les critiques en les plaçant du côté de l'insécurité"
+  },
+  "points_tension": [
+    "Usage de CYPHERA pour surveiller des opposants politiques locaux",
+    "Manque de contrôle effectif par les préfets sur les algorithmes",
+    "Collision entre big data policier et respect de la vie privée"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1 (Sécurité) : Légitimation de la police prédictive",
+    "echec": "Mise sous tutelle judiciaire des services de renseignement"
+  },
+  "citation": "« Surveiller, c'est protéger. Gouverner, c'est prévoir. CYPHERA nous permet les deux. »",
+  "encadre_pedagogique": "Le Ministère de l'Intérieur est le principal bénéficiaire civil de CYPHERA. Il défend une vision utilitariste de la technologie. Référence : Lois Renseignement 2015-2021."
+}

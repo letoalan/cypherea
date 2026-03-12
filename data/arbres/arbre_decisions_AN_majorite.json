@@ -1,0 +1,2781 @@
+{
+  "_meta": {
+    "acteur_id": "AN_majorite",
+    "acteur_label": "AN – majorité présidentielle",
+    "version": "1.0",
+    "date": "2026-03-12",
+    "description": "Arbre de décision complet – 4 actes × 4 branches = 256 chemins",
+    "total_chemins": 256,
+    "champs_imports_fiche": [
+      "positions_acte1",
+      "objectifs.obtenir",
+      "objectifs.eviter",
+      "contraintes",
+      "scenarios_sortie",
+      "rapport_forces.coalition_possible",
+      "citation"
+    ]
+  },
+  "acte1": {
+    "P1": {
+      "label": "Prise de conscience prudente",
+      "description": "Reconnaît un problème, défend la commission comme preuve de transparence démocratique",
+      "tonalite": "conciliant",
+      "risque": "faible"
+    },
+    "P2": {
+      "label": "Minimisation",
+      "description": "Relativise la portée du scandale, insiste sur la menace russe comme priorité absolue",
+      "tonalite": "défensif",
+      "risque": "moyen"
+    },
+    "P3": {
+      "label": "Responsabilité partagée",
+      "description": "Reconnaît des erreurs de communication mais nie toute stratégie délibérée de surveillance",
+      "tonalite": "ambigu",
+      "risque": "moyen"
+    },
+    "P4": {
+      "label": "Offensive politique",
+      "description": "Accuse l'opposition et la société civile de dénoncer sans nuance, instrumentalisation politique",
+      "tonalite": "agressif",
+      "risque": "élevé"
+    }
+  },
+  "acte2": {
+    "P1.1": {
+      "parent": "P1",
+      "label": "Auditions ouvertes",
+      "description": "Accepte CNIL et journalistes sans filtre, mise sur la transparence",
+      "tonalite": "ouvert",
+      "risque": "faible"
+    },
+    "P1.2": {
+      "parent": "P1",
+      "label": "Auditions sélectives",
+      "description": "CNIL oui, journalistes en huis clos – compromis partiel",
+      "tonalite": "conciliant",
+      "risque": "faible"
+    },
+    "P1.3": {
+      "parent": "P1",
+      "label": "ANSSI comme arbitre",
+      "description": "Demande une expertise technique indépendante ANSSI pour dépolitiser le débat",
+      "tonalite": "technique",
+      "risque": "faible"
+    },
+    "P1.4": {
+      "parent": "P1",
+      "label": "Recadrage progressif",
+      "description": "Réintroduit progressivement la menace russe dans les questions",
+      "tonalite": "glissant",
+      "risque": "moyen"
+    },
+    "P2.1": {
+      "parent": "P2",
+      "label": "Contre-offensive technique",
+      "description": "Noie le débat sous données ANSSI/DGSI, complexité algorithmique",
+      "tonalite": "défensif",
+      "risque": "moyen"
+    },
+    "P2.2": {
+      "parent": "P2",
+      "label": "Secret-défense systématique",
+      "description": "Oppose L2312-8 à toute demande sur les contrats CYPHERA",
+      "tonalite": "bunker",
+      "risque": "moyen"
+    },
+    "P2.3": {
+      "parent": "P2",
+      "label": "Calendrier contrôlé",
+      "description": "Concède l'audition des journalistes mais maîtrise dates et durée",
+      "tonalite": "tactique",
+      "risque": "moyen"
+    },
+    "P2.4": {
+      "parent": "P2",
+      "label": "Alliance ED",
+      "description": "Mobilise tactiquement l'extrême droite pour bloquer les questions sur l'Élysée",
+      "tonalite": "risqué",
+      "risque": "élevé"
+    },
+    "P3.1": {
+      "parent": "P3",
+      "label": "Diversion institutionnelle",
+      "description": "Propose une commission de suivi technique pour diluer l'enquête",
+      "tonalite": "dilatoire",
+      "risque": "moyen"
+    },
+    "P3.2": {
+      "parent": "P3",
+      "label": "Comité éthique CNIL",
+      "description": "Reconnaît un usage excessif, soutient un comité éthique CNIL comme réponse",
+      "tonalite": "conciliant",
+      "risque": "faible"
+    },
+    "P3.3": {
+      "parent": "P3",
+      "label": "Compromis LR",
+      "description": "Négocie un rapport modéré avec l'opposition droite en échange de son soutien",
+      "tonalite": "négociation",
+      "risque": "faible"
+    },
+    "P3.4": {
+      "parent": "P3",
+      "label": "Bouc émissaire cabinet",
+      "description": "Désigne le cabinet ministériel (pas le ministre) comme responsable des dérives",
+      "tonalite": "cynique",
+      "risque": "moyen"
+    },
+    "P4.1": {
+      "parent": "P4",
+      "label": "Attaque sources journalistiques",
+      "description": "Affirme que les sources du Canard sont des agents d'ingérence russe",
+      "tonalite": "agressif",
+      "risque": "élevé"
+    },
+    "P4.2": {
+      "parent": "P4",
+      "label": "Invalidation QPC",
+      "description": "Tente de bloquer toute QPC a priori via pression sur le Conseil d'État",
+      "tonalite": "autoritaire",
+      "risque": "élevé"
+    },
+    "P4.3": {
+      "parent": "P4",
+      "label": "Huis clos généralisé",
+      "description": "Demande le huis clos pour toutes les auditions sensibles",
+      "tonalite": "opaque",
+      "risque": "élevé"
+    },
+    "P4.4": {
+      "parent": "P4",
+      "label": "Légitimité présidence contestée",
+      "description": "Remet en cause la légitimité du président de commission issu de l'opposition",
+      "tonalite": "agressif",
+      "risque": "très élevé"
+    }
+  },
+  "acte3": {
+    "a": {
+      "label": "Amendements cosmétiques",
+      "description": "Accepte des modifications de forme sans toucher au fond ni aux responsabilités",
+      "tonalite": "conciliant",
+      "effet": "dilue",
+      "risque": "faible"
+    },
+    "b": {
+      "label": "Cède RGPD / tient secret-défense",
+      "description": "Concède des améliorations sur la protection des données, refuse toute déclassification",
+      "tonalite": "partiel",
+      "effet": "compromis",
+      "risque": "moyen"
+    },
+    "c": {
+      "label": "Vote accéléré",
+      "description": "Force le vote du rapport avant que l'opposition ne consolide ses positions",
+      "tonalite": "tactique",
+      "effet": "clôture",
+      "risque": "moyen"
+    },
+    "d": {
+      "label": "Obstruction",
+      "description": "Bloque le processus via délais, demandes répétées, huis clos, refus de déclassification",
+      "tonalite": "obstructif",
+      "effet": "blocage",
+      "risque": "élevé"
+    }
+  },
+  "acte4": {
+    "α": {
+      "label": "Vote favorable (Rapport de sécurité adopté)",
+      "description": "Rapport minimaliste voté, gouvernement blanchi, CYPHERA encadré techniquement",
+      "scenario": "Sc1",
+      "score": 3,
+      "issue": "victoire"
+    },
+    "β": {
+      "label": "Vote de compromis (Adoption nuancée)",
+      "description": "Rapport ambigu voté à courte majorité, crise politique latente, recours juridiques probables",
+      "scenario": "Sc1/Sc2",
+      "score": 1,
+      "issue": "partielle"
+    },
+    "γ": {
+      "label": "Abstention (Rapport minoritaire)",
+      "description": "Rapport de la majorité adopté mais contesté, rapport minoritaire de l'opposition fait écho médiatique",
+      "scenario": "Sc2",
+      "score": -1,
+      "issue": "défaite partielle"
+    },
+    "δ": {
+      "label": "Vote contre (Rapport de contrôle strict)",
+      "description": "Transmission au Procureur de la République, QPC lois renseignement déposée, crise constitutionnelle",
+      "scenario": "Sc2/Juridique",
+      "score": -2,
+      "issue": "défaite"
+    }
+  },
+  "chemins": [
+    {
+      "id": "P1-P1.1-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 4,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Vote favorable (Rapport de sécurité adopté)",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 1,
+      "scenario_final": "⚠️ Vote de compromis (Adoption nuancée)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Abstention (Rapport minoritaire)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Vote contre (Rapport de contrôle strict)",
+      "issue": "défaite"
+    }
+  ]
+}

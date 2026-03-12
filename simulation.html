@@ -7,6 +7,7 @@
     <title data-i18n="tab_simulation">Simulation – Affaire CYPHERA</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/simulation.css">
+    <link rel="stylesheet" href="css/strategy.css">
 </head>
 
 <body>
@@ -135,23 +136,75 @@
 
         <!-- Tab 3: Acteurs & Objectifs -->
         <div id="mainTab3" class="main-tab-content">
-            <section class="glass-card">
-                <h3 class="accent-title" data-i18n="acte2_subtitle">14 Groupes (Survol pour détails)</h3>
-                <div class="table-container">
-                    <table class="actors-mini-table">
-                        <thead>
-                            <tr>
-                                <th data-i18n="rep_group">Groupe</th>
-                                <th data-i18n="rep_role">Rôle</th>
-                                <th data-i18n="rep_pos_acte1">Position Acte 1</th>
-                            </tr>
-                        </thead>
-                        <tbody id="actorsMiniBody">
-                            <!-- Filled by simulation.js -->
-                        </tbody>
-                    </table>
+            <nav class="sub-tab-nav">
+                <button class="sub-tab-btn active" onclick="switchSubTab(3, 1)" data-i18n="sim_sub_actors">Fiches Acteurs</button>
+                <button class="sub-tab-btn" onclick="switchSubTab(3, 2)" data-i18n="sim_sub_strategy">Stratégie de groupe</button>
+                <button class="sub-tab-btn" onclick="switchSubTab(3, 3)" data-i18n="sim_sub_results">Résultats de l'affaire</button>
+            </nav>
+
+            <!-- SubTab 3-1: Fiches -->
+            <div id="subContent3_1" class="sub-tab-container active">
+                <section class="glass-card">
+                    <h3 class="accent-title" data-i18n="acte2_subtitle">Acteurs & Objectifs</h3>
+                    <div id="actors-menu-container" class="menu-area"></div>
+                    <div id="actor-card-container" class="card-area"></div>
+                </section>
+            </div>
+
+            <!-- SubTab 3-2: Stratégie -->
+            <div id="subContent3_2" class="sub-tab-container">
+                <div id="strategy-subtab" class="glass-card">
+                    <h3 class="accent-title">🎯 Choix des Stratégies</h3>
+                    <div id="strategy-dashboard" class="dashboard-table"></div>
+                    <hr class="strategy-divider">
+                    <div id="strategy-panel" class="strategy-panel">
+                        <p class="placeholder-msg">← Sélectionnez un acteur dans le tableau</p>
+                    </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- SubTab 3-3: Résultats de l'affaire -->
+            <div id="subContent3_3" class="sub-tab-container">
+                <div id="results-subtab" class="glass-card">
+                    <div class="strategy-header">
+                        <h3>🎯 Progression Globale</h3>
+                        <div id="global-progress">
+                            <span id="progress-count">0/14</span> acteurs complétés
+                            <div class="progress-bar"><div id="progress-fill"></div></div>
+                        </div>
+                        <button onclick="resetAllStrategies()" class="btn-reset">↺ Recommencer Actes 2-4</button>
+                    </div>
+                    
+                    <h3 class="accent-title">📊 Baromètres d'Impact</h3>
+                    <div id="impact-barometers" class="impact-grid">
+                        <!-- ... (barometers) ... -->
+                        <div class="impact-card" id="impact-votes">
+                            <label>Vote Commission</label>
+                            <div class="impact-value"><span id="vote-count">0</span>/30</div>
+                            <div class="impact-gauge"><div id="vote-fill" style="width: 0%"></div></div>
+                            <small id="vote-status">Attente...</small>
+                        </div>
+                        <div class="impact-card" id="impact-institutions">
+                            <label>Adhésion Institutions</label>
+                            <div class="impact-value" id="inst-value">Neutralité</div>
+                            <div class="impact-gauge"><div id="inst-fill" style="width: 50%"></div></div>
+                        </div>
+                        <div class="impact-card" id="impact-cyphera">
+                            <label>État CYPHERA</label>
+                            <div class="impact-value" id="cy-status">Inconnu</div>
+                            <div class="impact-result-tag" id="cy-tag">—</div>
+                        </div>
+                        <div class="impact-card" id="impact-opinion">
+                            <label>Opinion Publique</label>
+                            <div class="impact-value" id="op-status">Indifférence</div>
+                            <div class="impact-gauge"><div id="op-fill" style="width: 50%"></div></div>
+                        </div>
+                    </div>
+
+                    <h3 class="accent-title">📋 État des Acteurs</h3>
+                    <div id="strategy-dashboard-results" class="dashboard-table"></div>
+                </div>
+            </div>
         </div>
 
         <!-- Tab 4: L'Enquête (Ancienne vue) -->
@@ -198,6 +251,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="js/simulation.js"></script>
+    <script src="js/actors-data.js"></script>
+    <script src="js/actors.js"></script>
+    <script src="js/strategy.js"></script>
     <script src="js/pdf-generator.js"></script>
 </body>
 

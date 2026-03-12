@@ -1,0 +1,2772 @@
+{
+  "_meta": {
+    "acteur_id": "ANSSI",
+    "acteur_label": "ANSSI",
+    "version": "1.0",
+    "date": "2026-03-12",
+    "description": "Arbre complet",
+    "total_chemins": 256
+  },
+  "acte1": {
+    "P1": {
+      "label": "Position 1",
+      "description": "L'expert : explique la réalité des menaces russes pour cadrer le débat",
+      "tonalite": "modéré",
+      "risque": "faible"
+    },
+    "P2": {
+      "label": "Position 2",
+      "description": "Le certificateur : interroge la robustesse de CYPHERA",
+      "tonalite": "technique",
+      "risque": "moyen"
+    },
+    "P3": {
+      "label": "Position 3",
+      "description": "Le souverainiste : exprime des doutes sur les capitaux étrangers",
+      "tonalite": "engagé",
+      "risque": "moyen"
+    },
+    "P4": {
+      "label": "Position 4",
+      "description": "Le pragmatique : propose des normes plus strictes pour les sous-traitants",
+      "tonalite": "radical",
+      "risque": "élevé"
+    }
+  },
+  "acte2": {
+    "P1.1": {
+      "parent": "P1",
+      "label": "Action 1",
+      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "tonalite": "modéré",
+      "risque": "faible"
+    },
+    "P1.2": {
+      "parent": "P1",
+      "label": "Action 2",
+      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "tonalite": "modéré",
+      "risque": "faible"
+    },
+    "P1.3": {
+      "parent": "P1",
+      "label": "Action 3",
+      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "tonalite": "modéré",
+      "risque": "faible"
+    },
+    "P1.4": {
+      "parent": "P1",
+      "label": "Action 4",
+      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "tonalite": "modéré",
+      "risque": "faible"
+    },
+    "P2.1": {
+      "parent": "P2",
+      "label": "Action 1",
+      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "tonalite": "technique",
+      "risque": "moyen"
+    },
+    "P2.2": {
+      "parent": "P2",
+      "label": "Action 2",
+      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "tonalite": "technique",
+      "risque": "moyen"
+    },
+    "P2.3": {
+      "parent": "P2",
+      "label": "Action 3",
+      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "tonalite": "technique",
+      "risque": "moyen"
+    },
+    "P2.4": {
+      "parent": "P2",
+      "label": "Action 4",
+      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "tonalite": "technique",
+      "risque": "moyen"
+    },
+    "P3.1": {
+      "parent": "P3",
+      "label": "Action 1",
+      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "tonalite": "engagé",
+      "risque": "moyen"
+    },
+    "P3.2": {
+      "parent": "P3",
+      "label": "Action 2",
+      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "tonalite": "engagé",
+      "risque": "moyen"
+    },
+    "P3.3": {
+      "parent": "P3",
+      "label": "Action 3",
+      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "tonalite": "engagé",
+      "risque": "moyen"
+    },
+    "P3.4": {
+      "parent": "P3",
+      "label": "Action 4",
+      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "tonalite": "engagé",
+      "risque": "moyen"
+    },
+    "P4.1": {
+      "parent": "P4",
+      "label": "Action 1",
+      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "tonalite": "radical",
+      "risque": "élevé"
+    },
+    "P4.2": {
+      "parent": "P4",
+      "label": "Action 2",
+      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "tonalite": "radical",
+      "risque": "élevé"
+    },
+    "P4.3": {
+      "parent": "P4",
+      "label": "Action 3",
+      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "tonalite": "radical",
+      "risque": "élevé"
+    },
+    "P4.4": {
+      "parent": "P4",
+      "label": "Action 4",
+      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "tonalite": "radical",
+      "risque": "élevé"
+    }
+  },
+  "acte3": {
+    "a": {
+      "label": "Concession forme",
+      "description": "Modifications cosmétiques",
+      "tonalite": "conciliant",
+      "effet": "dilue",
+      "risque": "faible"
+    },
+    "b": {
+      "label": "Concession fond",
+      "description": "Autorité d'audit confirmée dans le rapport",
+      "tonalite": "partiel",
+      "effet": "compromis",
+      "risque": "moyen"
+    },
+    "c": {
+      "label": "Clôture",
+      "description": "Fin des travaux",
+      "tonalite": "tactique",
+      "effet": "clôture",
+      "risque": "moyen"
+    },
+    "d": {
+      "label": "Blocage",
+      "description": "Résistance totale",
+      "tonalite": "obstructif",
+      "effet": "blocage",
+      "risque": "élevé"
+    }
+  },
+  "acte4": {
+    "α": {
+      "label": "Soutien institutionnel total",
+      "description": "Scénario 1/2 : ANSSI confirmée comme autorité suprême d'audit",
+      "scenario": "Cible",
+      "score": 2,
+      "issue": "victoire"
+    },
+    "β": {
+      "label": "Adaptation choisie (Réforme proactive)",
+      "description": "Accord partiel",
+      "scenario": "Mixte",
+      "score": 2,
+      "issue": "partielle"
+    },
+    "γ": {
+      "label": "Adaptation forcée (Contrainte légale)",
+      "description": "Rejet des arguments",
+      "scenario": "Opposé",
+      "score": -1,
+      "issue": "défaite partielle"
+    },
+    "δ": {
+      "label": "Opposition forte (Conflit de doctrine)",
+      "description": "L'ANSSI est perçue comme ayant couvert un outil douteux",
+      "scenario": "Opposé",
+      "score": -2,
+      "issue": "défaite"
+    }
+  },
+  "chemins": [
+    {
+      "id": "P1-P1.1-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.1-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.2-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.3-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3a-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3b-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3c-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4α",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4β",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4γ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P1-P1.4-A3d-A4δ",
+      "acte1": "P1",
+      "acte2": "P1.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.1-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.2-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.3-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3a-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3b-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3c-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4α",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4β",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4γ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P2-P2.4-A3d-A4δ",
+      "acte1": "P2",
+      "acte2": "P2.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.1-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.2-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.3-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3a-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3b-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3c-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4α",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4β",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4γ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P3-P3.4-A3d-A4δ",
+      "acte1": "P3",
+      "acte2": "P3.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.1-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.1",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.2-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.2",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.3-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.3",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3a-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "a",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3b-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "b",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "α",
+      "score": 3,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "β",
+      "score": 3,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "γ",
+      "score": 0,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3c-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "c",
+      "acte4": "δ",
+      "score": -1,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4α",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "α",
+      "score": 2,
+      "scenario_final": "✅ Soutien institutionnel total",
+      "issue": "victoire"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4β",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "β",
+      "score": 2,
+      "scenario_final": "⚠️ Adaptation choisie (Réforme proactive)",
+      "issue": "partielle"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4γ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "γ",
+      "score": -1,
+      "scenario_final": "❌ Adaptation forcée (Contrainte légale)",
+      "issue": "défaite partielle"
+    },
+    {
+      "id": "P4-P4.4-A3d-A4δ",
+      "acte1": "P4",
+      "acte2": "P4.4",
+      "acte3": "d",
+      "acte4": "δ",
+      "score": -2,
+      "scenario_final": "🔴 Opposition forte (Conflit de doctrine)",
+      "issue": "défaite"
+    }
+  ]
+}

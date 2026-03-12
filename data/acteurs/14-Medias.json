@@ -1,0 +1,81 @@
+{
+  "id": "Medias",
+  "acteur": "Journalistes / Syndicats",
+  "identite": {
+    "groupe": "Canard Enchaîné + Consortium d'investigation",
+    "type": "Témoin",
+    "sieges_commission": 0,
+    "fonction": "Révélation du scandale, liberté de la presse",
+    "place_republique": "Quatrième pouvoir, garant de la transparence"
+  },
+  "interets": {
+    "materiels": "Accès aux sources, protection contre poursuites baillons",
+    "symboliques": "Droit de savoir, éthique, vérité publique",
+    "electorat": "N/A"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Choc, découverte d'une surveillance ciblée de la profession",
+    "discours": "L'État a franchi une ligne rouge constitutionnelle",
+    "narratif": "CYPHERA est l'outil d'un régime qui ne supporte plus la contradiction",
+    "mots_cles": ["liberté de la presse", "secret des sources", "scandale d'État", "droit à l'information"]
+  },
+  "contraintes": {
+    "politiques": "Indépendance vis-à-vis des partis d'opposition",
+    "juridiques": "Loi de 1881, Loi Dati sur la protection des sources",
+    "strategiques": "Ne pas révéler l'identité du lanceur d'alerte"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Déclassification des dossiers de surveillance",
+      "Condamnation ferme des donneurs d'ordre politiques",
+      "Garantie d'absence d'accès aux métadonnées des rédactions"
+    ],
+    "eviter": [
+      "La criminalisation du lanceur d'alerte",
+      "Le recadrage sur le seul volet 'Russe'",
+      "L'adoption d'un 'Patriot Act' restrictif"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "L'accusateur : déballe de nouvelles preuves (mails, chats)",
+    "position2": "Le défenseur : refuse de répondre sur l'origine des fuites",
+    "position3": "L'analyste : démontre l'inefficacité de l'outil malgré son coût",
+    "position4": "Le contre-pouvoir : mobilise l'opinion internationale"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "❌"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "⚠️"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "⚠️"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "✅"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "❌"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "6/30 (AN_opposition_gauche + Senat_opposition)",
+    "temoins": {
+      "soutiens": ["CNIL", "Justice"],
+      "menaces":  ["DGSI", "Interieur", "CYPHERA", "Armees"],
+      "ambigu":   ["ANSSI"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "Question : « Qui a autorisé le ciblage de ma consoeur ? »",
+      "Argument : « Surveiller une rédaction, c'est surveiller la démocratie. »",
+      "Témoignage : « Nous avons les preuves d'une utilisation politique. »"
+    ],
+    "cibles_privilegiees": "Pousser les ministres vers la contradiction"
+  },
+  "points_tension": [
+    "Menaces de poursuites pour 'vol de documents classifiés'",
+    "Ambiguïté de certains médias complaisants",
+    "Épuisement des ressources face à l'État"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 2 (Contrôle) : Grande loi sur la protection des sources",
+    "echec": "Condamnation du lanceur d'alerte et maintien de la surveillance"
+  },
+  "citation": "« Nous ne sommes pas des ennemis de l'État, nous sommes les gardiens de son honnêteté. »",
+  "encadre_pedagogique": "Les journalistes sont le moteur de l'enquête. Ils représentent le 4ème pouvoir. Référence : Loi de 1881."
+}

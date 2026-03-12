@@ -1,0 +1,81 @@
+{
+  "id": "ED",
+  "acteur": "Groupe extrême droite",
+  "identite": {
+    "groupe": "Rassemblement National (RN)",
+    "type": "Membre commission",
+    "sieges_commission": 5,
+    "fonction": "Défense de la souveraineté sécuritaire, dénonciation de l'État-maquis",
+    "place_republique": "Force d'opposition, axe 'Patriot Act' à la française"
+  },
+  "interets": {
+    "materiels": "Nationalisation des outils de cyber-défense, priorité aux entreprises de défense",
+    "symboliques": "Identité nationale, protection du peuple contre 'les ennemis de la France', patriotisme",
+    "electorat": "Classes populaires, zones rurales, électorat sécuritaire"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Ambiguë : soutient la surveillance mais dénonce son usage par 'un clan' au pouvoir",
+    "discours": "L'outil est nécessaire, l'exécutif est illégitime ; il faut un Patriot Act singapourien",
+    "narratif": "Le gouvernement surveille les patriotes au lieu des terroristes",
+    "mots_cles": ["patriote", "souveraineté", "préférence nationale", "État-maquis"]
+  },
+  "contraintes": {
+    "politiques": "Ne pas s'allier avec la gauche, concurrencer la droite LR sur la sécurité",
+    "juridiques": "Vigilance sur le respect des libertés des 'vrais citoyens'",
+    "strategiques": "Se poser en parti de l'ordre total tout en dénonçant le 'système'"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Nationalisation ou contrôle étatique exclusif de CYPHERA",
+      "Utilisation des algorithmes contre l'immigration et la délinquance",
+      "Mise en cause des liens entre l'Élysée et les fonds étrangers"
+    ],
+    "eviter": [
+      "Une remise en cause globale du principe de surveillance prédictive",
+      "D'apparaître comme les alliés de la Russie",
+      "L'affaiblissement de la police territoriale"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Attaque frontale : dénonce la 'police politique' du gouvernement",
+    "position2": "Souverainisme : réclame que le code source soit géré par des militaires publics",
+    "position3": "Sécurité totale : propose d'étendre la surveillance aux 'zones de non-droit'",
+    "position4": "Victimisation : affirme que ses élus sont surveillés par le régime"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "⚠️"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "⚠️"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "✅"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "10/30 (alliance possible avec la droite dure)",
+    "temoins": {
+      "soutiens": ["Interieur", "DGSI", "Armees"],
+      "menaces":  ["Medias", "CNIL", "Justice"],
+      "ambigu":   ["CYPHERA", "ANSSI"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À CYPHERA : « Quel est le montant des investissements russes ou américains dans votre capital ? »",
+      "À Interieur : « Pourquoi ne pas utiliser Cyphera pour surveiller les activistes d'extrême-gauche ? »",
+      "À Armees : « Êtes-vous certain de l'étanchéité de vos systèmes face à l'espionnage industriel ? »"
+    ],
+    "cibles_privilegiees": "Dénoncer l'élite mondialisée et protéger la souveraineté sécuritaire"
+  },
+  "points_tension": [
+    "Compétition avec la droite LR sur le volet sécuritaire",
+    "Soupçons persistants de liens avec des puissances étrangères",
+    "Équilibrisme entre 'ordre' et 'libertés individuelles'"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 3 (Patriot Act singapourien) : Consolidation de la surveillance sous pavillon national",
+    "echec": "Stigmatisation par les autres groupes et maintien du statu quo libéral"
+  },
+  "citation": "« Surveillez les ennemis de la France, pas ceux qui l'aiment. La sécurité est la première des libertés. »",
+  "encadre_pedagogique": "L'extrême droite (RN) défend une vision étatiste et sécuritaire radicale. Elle utilise la commission pour valider l'outil technologique tout en disqualifiant ses utilisateurs actuels."
+}

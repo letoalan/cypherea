@@ -1,0 +1,81 @@
+{
+  "id": "AN_majorite",
+  "acteur": "AN – majorité présidentielle",
+  "identite": {
+    "groupe": "Renaissance + Horizons + MoDem",
+    "type": "Membre commission",
+    "sieges_commission": 10,
+    "fonction": "Défense exécutif, rapporteur probable",
+    "place_republique": "Majorité relative AN → dépendance LR tactique"
+  },
+  "interets": {
+    "materiels": "Préservation budgets ANSSI/DGSI, contrats CYPHERA",
+    "symboliques": "Loyauté exécutif, image gouvernement responsable",
+    "electorat": "Classes moyennes, urbains modérés"
+  },
+  "position_cyphera": {
+    "reaction_initiale": "Surpris, inquiet de l'impact politique, mais défend la nécessité de la cybersurveillance",
+    "discours": "Maladresses techniques, encadrement suffisant, pas dérive systémique",
+    "narratif": "Commission = preuve de transparence démocratique",
+    "mots_cles": ["transparence", "menace russe", "proportionnalité", "encadrement"]
+  },
+  "contraintes": {
+    "politiques": "Fidélité au président (art. 67), élections imminentes",
+    "juridiques": "Secret-défense (L2312-8), immunité présidentielle",
+    "strategiques": "Éviter crise gouvernementale, ne pas fragiliser Conseil défense"
+  },
+  "objectifs": {
+    "obtenir": [
+      "Commission perçue comme preuve de transparence",
+      "Rapport minimaliste : recos techniques sans remise en cause",
+      "Protection ministres (auditions cadrées)"
+    ],
+    "eviter": [
+      "Transmission au Procureur de la République",
+      "QPC lois renseignement",
+      "Mise en cause directe Élysée/Conseil défense"
+    ]
+  },
+  "positions_acte1": {
+    "position1": "Prise de conscience prudente : reconnaît un problème, défend commission comme transparence",
+    "position2": "Minimisation : relativise portée, insiste sur menace russe",
+    "position3": "Responsabilité partagée : reconnaît erreurs communication, pas de stratégie",
+    "position4": "Offensive politique : accuse opposition/société civile de dénoncer sans nuance"
+  },
+  "rapport_forces": {
+    "membres_commission": [
+      {"groupe": "AN_majorite",          "sieges": 10, "statut": "✅"},
+      {"groupe": "AN_opposition_droite", "sieges": 5,  "statut": "✅"},
+      {"groupe": "AN_opposition_gauche", "sieges": 4,  "statut": "❌"},
+      {"groupe": "Senat_majorite",       "sieges": 4,  "statut": "✅"},
+      {"groupe": "Senat_opposition",     "sieges": 2,  "statut": "❌"},
+      {"groupe": "ED",                   "sieges": 5,  "statut": "⚠️"}
+    ],
+    "total_sieges": 30,
+    "coalition_possible": "19/30 (majorité + droite + Sénat maj.)",
+    "temoins": {
+      "soutiens": ["Armees", "Interieur", "DGSI", "ANSSI", "CYPHERA"],
+      "menaces":  ["Medias", "CNIL"],
+      "ambigu":   ["Justice"]
+    }
+  },
+  "axes_intervention": {
+    "questions_types": [
+      "À CNIL : « Votre rigueur RGPD n'affaiblit-elle pas la lutte contre la Russie ? »",
+      "Aux Journalistes : « Vos sources sont-elles fiables et vérifiées ? »",
+      "À CYPHERA : « Confirmez-vous la conformité technique de vos outils ? »"
+    ],
+    "cibles_privilegiees": "Délégitimer CNIL, ONG, journalistes ; protéger ministères"
+  },
+  "points_tension": [
+    "Surveillance de journalistes innocents documentée",
+    "Contrats CYPHERA classés secret-défense de façon illégale",
+    "Contradiction entre rôle de contrôleur et loyauté à l'exécutif"
+  ],
+  "scenarios_sortie": {
+    "succes": "Scénario 1 (Minimaliste) : Rapport adopté, gouvernement blanchi, CYPHERA encadré",
+    "echec": "Scénario 2 : QPC + crise ministérielle + transmission pénale"
+  },
+  "citation": "« La commission prouve notre transparence. Encadrons CYPHERA sans affaiblir notre sécurité. »",
+  "encadre_pedagogique": "Majorité relative AN 2026 : Ensemble+LR contrôlent commission. RN souverainiste = allié tactique. Rapport = avis non contraignant (art. 140 Règlement AN)."
+}
