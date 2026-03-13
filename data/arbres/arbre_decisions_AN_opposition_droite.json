@@ -42,113 +42,113 @@
   "acte2": {
     "P1.1": {
       "parent": "P1",
-      "label": "Action 1 (via P1)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Analyse des défaillances de la chaîne de commandement interministérielle pour comprendre comment le contrat CYPHERA a pu déborder sans alerte des services de tutelle.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
-      "label": "Action 2 (via P1)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Proposition de transformation de CYPHERA en une entité de droit public ou sous contrôle direct du ministère des Armées pour garantir l'intérêt national.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
-      "label": "Action 3 (via P1)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Rédaction d'un amendement créant un statut dérogatoire pour le renseignement cyber offensif, s'inspirant des législations d'exception des démocraties 'fortes'.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
-      "label": "Action 4 (via P1)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Défense des agents opérationnels des services de renseignement en pointant la responsabilité unique de la haute bureaucratie et du manque de directives claires.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
-      "label": "Action 1 (via P2)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Exige une certification souveraine par l'ANSSI garantissant que 100% des données traitées par CYPHERA sont stockées sur le sol français et inaccessibles au Cloud Act.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
-      "label": "Action 2 (via P2)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Audit technique du code source de CYPHERA pour détecter d'éventuels backdoors ou vulnérabilités exploitables par des puissances étrangères, notamment la Russie.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
-      "label": "Action 3 (via P2)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Imposition d'un protocole de chiffrement d'État dont les clés sont détenues exclusivement par une autorité militaire indépendante de l'entreprise privée.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
-      "label": "Action 4 (via P2)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Confrontation des résultats de l'IA prédictive avec les statistiques réelles de déjouement d'attentats pour justifier l'investissement massif des contribuables.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
-      "label": "Action 1 (via P3)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Dénonciation de l'usage de bibliothèques logicielles ou de brevets sous licence étrangère dans les outils critiques de surveillance nationale.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
-      "label": "Action 2 (via P3)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Plaidoyer pour une autonomie stratégique totale via le rachat forcé des actifs technologiques de CYPHERA par un consortium industriel 100% français.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
-      "label": "Action 3 (via P3)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Redéfinition du rôle du COMCYBER comme unique pilote des opérations de surveillance, reléguant CYPHERA à un simple rôle de fournisseur de briques logicielles.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
-      "label": "Action 4 (via P3)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Refus catégorique de soumettre les outils de sécurité nationale française au futur Règlement IA européen, jugé trop restrictif pour la défense du pays.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
-      "label": "Action 1 (via P4)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Acceptation du maintien du dispositif en échange d'une transparence totale sur les lignes budgétaires dédiées aux 'opérations spéciales' de surveillance.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
-      "label": "Action 2 (via P4)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Soutien à l'usage de l'IA prédictive si celle-ci se concentre uniquement sur la cartographie des réseaux d'influence étrangers et des menaces hybrides russes.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
-      "label": "Action 3 (via P4)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Création d'une délégation parlementaire permanente dotée de pouvoirs d'investigation temps réel sur les algorithmes utilisés par les services de renseignement.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
-      "label": "Action 4 (via P4)",
-      "description": "Pression sur ANSSI + CYPHERA sur la souveraineté technique - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Appui tactique au gouvernement pour contrer les amendements de la gauche, en échange de garanties sur l'usage de CYPHERA pour le maintien de l'ordre public.",
       "tonalite": "radical",
       "risque": "élevé"
     }
