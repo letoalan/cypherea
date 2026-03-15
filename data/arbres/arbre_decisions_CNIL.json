@@ -37,112 +37,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V1)",
+      "description": "Expose publiquement à la commission que l'Intérieur a royalement ignoré trois avis d'avertissement préalables concernant CYPHERA.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V2)",
+      "description": "Apporte un soutien technique aux révélations des Médias, confirmant que l'architecture décrite rend l'anonymisation des données impossible.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V3)",
+      "description": "Saisit l'opportunité de l'audition pour réclamer formellement l'extension de son pouvoir de contrôle 'sur pièces et sur place' à la DGSI.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V4)",
+      "description": "Souligne devant les élus que confier le traitement de données souveraines à un prestataire privé comme CYPHERA est une hérésie juridique.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V1)",
+      "description": "Remet un rapport technique démontrant que le stockage des données par CYPHERA ne respecte pas les normes de sécurité de l'ANSSI.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V2)",
+      "description": "Détaille devant la commission les failles de conception de l'algorithme qui conduisent mécaniquement à un fichage illégal par ricochet.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V3)",
+      "description": "Refuse de se prononcer sur les aspects purement pénaux, rappelant que seule la Justice est compétente pour qualifier les infractions.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V4)",
+      "description": "Exige de l'Intérieur la communication immédiate et sans caviardage du code source complet et des jeux de données d'entraînement.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V1)",
+      "description": "S'appuie sur son témoignage pour dénoncer une dérive systémique du renseignement français vers une 'surveillance de masse non ciblée'.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V2)",
+      "description": "Demande solennellement aux parlementaires de protéger le lanceur d'alerte, estimant que son action a protégé les libertés fondamentales.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V3)",
+      "description": "Propose de chapeauter un audit citoyen indépendant associant la société civile et les Médias pour faire la lumière sur le projet.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V4)",
+      "description": "Critique publiquement l'expérimentation parallèle menée par les Armées, la qualifiant de 'cheval de Troie' pour un futur contrôle social.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V1)",
+      "description": "Menace formellement l'Intérieur de faire usage de son pouvoir de mise en demeure publique et de liquidation d'astreinte financière.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V2)",
+      "description": "Annonce à la commission qu'elle vient de transmettre un signalement au titre de l'article 40 à la Justice concernant les agissements de CYPHERA.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V3)",
+      "description": "Exige le débranchement immédiat et total des serveurs de CYPHERA jusqu'à l'adoption d'un nouveau cadre législatif contraignant.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Démontre illégalité croisement fichiers, soutient ONG (V4)",
+      "description": "Soumet un projet de loi clé en main aux députés imposant un veto suspensif de la CNIL sur tout nouveau déploiement algorithmique 'Secret-Défense'.",
       "tonalite": "radical",
       "risque": "élevé"
     }

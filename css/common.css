@@ -151,72 +151,141 @@ body {
 
 @media (max-width: 768px) {
     .main-header {
-        grid-template-columns: auto 1fr auto;
-        gap: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 0.8rem 1rem;
+        gap: 0.5rem;
     }
 
     .header-left {
-        order: 3; /* Nav toggle will be here eventually or hidden */
+        display: contents; /* Ensure children like .main-nav are visible even if container is minimal */
     }
 
     .logo-container {
-        order: 1;
+        flex: 1;
         text-align: left;
     }
 
     .header-right {
-        order: 2;
-        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
     }
 
     .menu-toggle {
         display: flex;
+        flex-shrink: 0; /* Prevent icon from shrinking */
+        z-index: 3000; /* Above the main-nav overlay */
+        position: relative; /* Enable z-index */
     }
+
+    .main-nav ul li {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .main-nav.active ul li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Staggered delay for menu items */
+    .main-nav.active ul li:nth-child(1) { transition-delay: 0.1s; }
+    .main-nav.active ul li:nth-child(2) { transition-delay: 0.2s; }
+    .main-nav.active ul li:nth-child(3) { transition-delay: 0.3s; }
+    .main-nav.active ul li:nth-child(4) { transition-delay: 0.4s; }
 
     .main-nav {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 80%;
+        left: 0;
+        width: 100%;
         height: 100vh;
-        background: rgba(15, 23, 42, 0.95);
-        backdrop-filter: blur(20px);
-        padding: 5rem 2rem;
+        background: rgba(15, 23, 42, 0.98); /* Deeper background for full overlay */
+        backdrop-filter: blur(25px);
+        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1000;
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        display: flex; /* Force display for mobile nav structure */
+        padding: 2rem;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 2000; /* Above everything */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
 
     .main-nav.active {
-        right: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .main-nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 2.5rem;
         width: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: 0;
     }
 
     .main-nav a {
-        font-size: 1.2rem;
+        font-size: 2rem; /* Larger links for full screen */
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        transition: var(--transition);
+    }
+    
+    .main-nav a:hover,
+    .main-nav a.active {
+        transform: scale(1.1);
+        color: var(--accent-color);
+        opacity: 1;
     }
 
     .lang-selector {
-        margin-top: auto;
-        padding-bottom: 2rem;
+        /* On mobile, keep lang selector in header-right or move to side nav */
+        display: flex; 
+        gap: 0.3rem;
+    }
+
+    .lang-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
     }
 
     .logo-container h1 {
-        font-size: 1rem;
-        max-width: 200px;
+        font-size: 0.95rem; /* Slightly smaller for mobile mobility */
+        max-width: none;
         line-height: 1.2;
+    }
+}
+
+/* Strategic Stacked Layout for very narrow screens (9/16 aspect ratio) */
+@media (max-width: 559px) {
+    .main-header {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .logo-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo-container h1 {
+        font-size: 0.9rem;
+        white-space: normal; /* Allow title to wrap if still too wide */
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem; /* More space between lang and burger */
     }
 }
 

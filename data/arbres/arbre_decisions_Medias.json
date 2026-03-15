@@ -37,112 +37,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V1)",
+      "description": "Publie une enquête choc la veille de l'audition, révélant des mails internes de CYPHERA prouvant que les biais de l'algorithme étaient connus.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V2)",
+      "description": "Profite de sa convocation en commission pour diffuser un enregistrement audio prouvant les failles du code de CYPHERA.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V3)",
+      "description": "Demande solennellement lors de son audition aux parlementaires de garantir au lanceur d'alerte une protection juridique face aux menaces.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V4)",
+      "description": "Met en cause l'Intérieur en détaillant sous serment les pressions et intimidations subies par la rédaction depuis le début de l'enquête.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V1)",
+      "description": "Refuse catégoriquement en commission de nommer ses sources internes à la DGSI, invoquant la loi sur la liberté de la presse de 1881.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V2)",
+      "description": "Démonte point par point le rapport de certification de l'ANSSI en remettant aux élus une contre-analyse réalisée par des chercheurs.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V3)",
+      "description": "Prouve devant la commission, documents de la CNIL à l'appui, que CYPHERA a volontairement ignoré les recommandations juridiques préalables.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V4)",
+      "description": "Publie un article de fact-checking en temps réel pendant les auditions, soulignant les contradictions et mensonges par omission du projet.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V1)",
+      "description": "Révèle dans un direct explosif que le logiciel a déjà produit des dizaines de fausses correspondances lors de tests menés par la DGSI.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V2)",
+      "description": "Met en cause les Armées pour gaspillage de fonds publics en s'appuyant sur des documents comptables confidentiels dévoilés lors de l'audition.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V3)",
+      "description": "Publie une infographie virale démontrant visuellement que la technologie de CYPHERA cible de manière disproportionnée certains quartiers.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V4)",
+      "description": "Lit à voix haute devant la commission les témoignages poignants et anonymes de policiers de terrain effrayés par l'opacité du système.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V1)",
+      "description": "Organise une couverture commune de l'affaire avec un consortium de presse étranger prestigieux pour peser indirectement sur les élus.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V2)",
+      "description": "Quitte ostensiblement son audition aux premiers échanges, dénonçant aux caméras une « parodie de contrôle » bridée par la majorité.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V3)",
+      "description": "Publie en ligne l'intégralité du code source fuité de CYPHERA, au risque de poursuites judiciaires massives, pour prouver sa dangerosité à l'opinion.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Protège lanceur d'alerte, nouvelles révélations (V4)",
+      "description": "Lance une campagne médiatique agressive ciblant les collusions politiques de CYPHERA, jetant l'opprobre public sur le contrat.",
       "tonalite": "radical",
       "risque": "élevé"
     }

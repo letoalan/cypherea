@@ -43,112 +43,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Analyse des défaillances de la chaîne de commandement interministérielle pour comprendre comment le contrat CYPHERA a pu déborder sans alerte des services de tutelle.",
+      "description": "Pose des questions très ouvertes à l'Intérieur pour lui permettre de justifier sereinement l'utilité sécuritaire du logiciel.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Proposition de transformation de CYPHERA en une entité de droit public ou sous contrôle direct du ministère des Armées pour garantir l'intérêt national.",
+      "description": "Intervient lors de l'audition de la CNIL pour recadrer fermement le débat, accusant l'opposition de faire le procès irresponsable de l'innovation technologique.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Rédaction d'un amendement créant un statut dérogatoire pour le renseignement cyber offensif, s'inspirant des législations d'exception des démocraties 'fortes'.",
+      "description": "Interroge de manière très courtoise CYPHERA, cherchant à démontrer que l'entreprise est un fleuron national qui ne mérite pas un lynchage public.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Défense des agents opérationnels des services de renseignement en pointant la responsabilité unique de la haute bureaucratie et du manque de directives claires.",
+      "description": "Réclame la tenue des auditions de la DGSI et des Armées exclusivement à huis clos pour « protéger le secret défense » face à l'agitation des Médias.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Exige une certification souveraine par l'ANSSI garantissant que 100% des données traitées par CYPHERA sont stockées sur le sol français et inaccessibles au Cloud Act.",
+      "description": "Soumet l'ANSSI à un interrogatoire technique serré sur la localisation précise des serveurs de CYPHERA et les risques structurels de fuites.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Audit technique du code source de CYPHERA pour détecter d'éventuels backdoors ou vulnérabilités exploitables par des puissances étrangères, notamment la Russie.",
+      "description": "Exige publiquement de CYPHERA des garanties chiffrées sur le cryptage, menaçant de réclamer une suspension si la fiabilité absolue n'est pas prouvée.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Imposition d'un protocole de chiffrement d'État dont les clés sont détenues exclusivement par une autorité militaire indépendante de l'entreprise privée.",
+      "description": "Confronte l'Intérieur à des rapports des Médias pointant des failles potentielles graves et un risque majeur d'espionnage industriel.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Confrontation des résultats de l'IA prédictive avec les statistiques réelles de déjouement d'attentats pour justifier l'investissement massif des contribuables.",
+      "description": "Demande formellement au président de la commission que le code source soit audité sous l'égide exclusive de l'Assemblée, sans l'ANSSI.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Dénonciation de l'usage de bibliothèques logicielles ou de brevets sous licence étrangère dans les outils critiques de surveillance nationale.",
+      "description": "Pousse les Armées dans leurs retranchements, les accusant frontalement d'avoir « bradé la souveraineté française » à une startup aux intérêts privés.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Plaidoyer pour une autonomie stratégique totale via le rachat forcé des actifs technologiques de CYPHERA par un consortium industriel 100% français.",
+      "description": "Soumet un rappel au règlement agressif pour reprocher à la DGSI un manque effarant de recul et de patriotisme technologique dans ses réponses.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Redéfinition du rôle du COMCYBER comme unique pilote des opérations de surveillance, reléguant CYPHERA à un simple rôle de fournisseur de briques logicielles.",
+      "description": "Cible particulièrement CYPHERA sur l'origine douteuse d'éventuels sous-traitants étrangers, cherchant à alerter sur une ingérence extérieure inacceptable.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Refus catégorique de soumettre les outils de sécurité nationale française au futur Règlement IA européen, jugé trop restrictif pour la défense du pays.",
+      "description": "Cite avec gravité des clauses spécifiques du contrat d'achat lors de l'audition, cherchant à révéler aux Médias un possible noyautage financier.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Acceptation du maintien du dispositif en échange d'une transparence totale sur les lignes budgétaires dédiées aux 'opérations spéciales' de surveillance.",
+      "description": "S'abstient ostensiblement de poser des questions agressives, préférant interroger avec tact l'Intérieur et les Armées sur les concessions garanties qu'ils sont prêts à lâcher.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Soutien à l'usage de l'IA prédictive si celle-ci se concentre uniquement sur la cartographie des réseaux d'influence étrangers et des menaces hybrides russes.",
+      "description": "Propose solennellement, au milieu d'une audition particulièrement tendue, un compromis à la majorité : valider le logiciel en échange d'un contrôle accru par le Parlement.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Création d'une délégation parlementaire permanente dotée de pouvoirs d'investigation temps réel sur les algorithmes utilisés par les services de renseignement.",
+      "description": "Vole subtilement au secours de l'Intérieur et de la DGSI mis en difficulté en posant des questions-perches qui leur permettent d'éluder les attaques frontales de la gauche.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Appui tactique au gouvernement pour contrer les amendements de la gauche, en échange de garanties sur l'usage de CYPHERA pour le maintien de l'ordre public.",
+      "description": "Interrompt calmement mais fermement les débats pour demander une courte suspension de séance, assumant de négocier en coulisses avec les ministères.",
       "tonalite": "radical",
       "risque": "élevé"
     }

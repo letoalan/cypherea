@@ -129,7 +129,7 @@ let translations = {
         acte1_btn: "📥 Télécharger Procédure",
 
         acte2_title: "Acte 2 : Auditions & Confrontations",
-        acte2_subtitle: "14 Groupes à Auditionner",
+        acte2_subtitle: "Les 14 Groupes au travail",
         acte2_questions_title: "Exemples de Questions",
         acte2_q1: "Ministère des Armées : 'Pourquoi avoir choisi CYPHERA SECURITY ? Quel contrôle parlementaire ?'",
         acte2_q2: "Journalistes : 'Vos sources sont-elles compromises ? Quel impact sur la liberté d'information ?'",

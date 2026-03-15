@@ -42,113 +42,113 @@
   "acte2": {
     "P1.1": {
       "parent": "P1",
-      "label": "Action 1 (via P1)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Interroge CYPHERA de façon clinique sur l'architecture de l'algorithme, exigeant des schémas précis pour asseoir l'autorité technique du Sénat.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
-      "label": "Action 2 (via P1)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Demande à l'ANSSI de décrire scrupuleusement le protocole de certification utilisé, s'étonnant poliment de la rapidité inhabituelle du processus.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
-      "label": "Action 3 (via P1)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Pousse poliment l'Intérieur à fournir les métriques prévisionnelles d'efficacité, refusant les grandes déclarations politiques au profit de données tangibles.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
-      "label": "Action 4 (via P1)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Réclame pacifiquement de pouvoir confronter les experts de l'ANSSI à un comité scientifique indépendant pour éclairer objectivement la représentation nationale.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
-      "label": "Action 1 (via P2)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Rappelle avec solennité à l'Intérieur et à la Justice la jurisprudence de la CEDH sur la surveillance, jouant avec stature le rôle de gardien des grands équilibres.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
-      "label": "Action 2 (via P2)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Interroge très précisément la CNIL sur l'insuffisance des garde-fous actuels, lui offrant une tribune respectée pour développer ses réserves juridiques.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
-      "label": "Action 3 (via P2)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Exige de la DGSI qu'elle détaille ses procédures strictes d'effacement des données tactiques, soulignant avec fermeté les risques de conservation illégale.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
-      "label": "Action 4 (via P2)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Appuie ostensiblement les craintes de la CNIL auprès de l'Intérieur, menaçant à demi-mot de saisir le Conseil constitutionnel si le texte n'est pas amendé.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
-      "label": "Action 1 (via P3)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Cuisine CYPHERA sur les clauses de propriété intellectuelle du contrat, s'inquiétant ouvertement de l'aliénation de l'État envers un acteur privé sans filet.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
-      "label": "Action 2 (via P3)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Confronte les Armées sur leur stratégie d'externalisation, leur demandant sèchement lors du huis clos pourquoi le logiciel n'a pas été développé en interne.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
-      "label": "Action 3 (via P3)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Demande avec insistance à la Justice de clarifier publiquement qui sera pénalement responsable en cas de dérive de l'algorithme : l'État ou le prestataire ?",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
-      "label": "Action 4 (via P3)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 4",
+      "label": "Action 4",
+      "description": "S'appuie sur une enquête lue dans les Médias pour questionner l'Intérieur sans relâche sur le coût faramineux du contrat privé pour les finances publiques.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
-      "label": "Action 1 (via P4)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Intervient de manière inattendue lors de l'audition de l'Intérieur pour abattre ses cartes et proposer formellement un amendement de compromis « à prendre ou à laisser ».",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
-      "label": "Action 2 (via P4)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 2",
+      "label": "Action 2",
+      "description": "S'affirme comme le point d'équilibre en s'opposant frontalement aux attaques outrancières contre CYPHERA, tout en exigeant de l'ANSSI des gages forts.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
-      "label": "Action 3 (via P4)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Met tout son poids politique dans la balance en menaçant publiquement la Justice de bloquer indéfiniment le texte au Sénat sans l'ajout de garanties formelles.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
-      "label": "Action 4 (via P4)",
-      "description": "Questionne conformité CEDH + légalité contrats - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Prend de court la commission en organisant un point presse immédiat avec les Médias pour ériger la « voie médiane » sénatoriale en seule issue politique viable.",
       "tonalite": "radical",
       "risque": "élevé"
     }

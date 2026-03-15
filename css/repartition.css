@@ -125,6 +125,7 @@ th {
 
 .view-switcher {
     display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for mobile responsiveness */
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 2.5rem;
@@ -132,12 +133,13 @@ th {
     padding: 0.4rem;
     border-radius: 12px;
     width: fit-content;
+    max-width: 100%; /* Ensure it doesn't overflow */
     margin-left: auto;
     margin-right: auto;
 }
 
 .view-btn {
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 1.2rem; /* Slightly reduced horizontal padding */
     border: none;
     background: transparent;
     color: rgba(255, 255, 255, 0.6);
@@ -146,6 +148,7 @@ th {
     font-weight: 600;
     transition: all 0.3s ease;
     font-size: 0.95rem;
+    white-space: nowrap; /* Prevent text wrapping inside buttons */
 }
 
 .view-btn:hover {

@@ -43,112 +43,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 1)",
+      "description": "Demande l'audition publique de l'Intérieur pour le sommer de s'expliquer sur les cibles réelles du logiciel sécuritaire.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 2)",
+      "description": "Multiplie les questions fermées à l'Intérieur et à la DGSI pour instiller l'idée que l'outil sert à surveiller l'opposition politique plutôt que les terroristes.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 3)",
+      "description": "Détourne son temps d'interrogation pour lire des déclarations accusant le pouvoir en place d'une dérive autoritaire et de fichage politique.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 4)",
+      "description": "Réclame formellement au président de la commission la publication de la liste des mots-clés surveillés pour démontrer un biais idéologique de l'algorithme.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 1)",
+      "description": "Soumet CYPHERA à un interrogatoire strict et inquisitoire sur la nationalité de ses ingénieurs et l'origine de ses actionnaires.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 2)",
+      "description": "Exige de l'ANSSI de confirmer sous serment l'absence totale de serveurs, de composants ou de sous-traitants américains dans la boucle.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 3)",
+      "description": "Interroge de façon offensive les Armées sur l'incapacité coupable de l'État à développer cette technologie en interne via ses ingénieurs publics.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 4)",
+      "description": "Dépose une motion de procédure exigeant que le code source soit retiré à l'entreprise et audité exclusivement par des experts militaires des Armées.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 1)",
+      "description": "Bouscule vivement la DGSI en audition, lui reprochant de ne pas déployer CYPHERA massivement pour surveiller l'immigration et les banlieues.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 2)",
+      "description": "Interpelle agressivement la CNIL, l'accusant publiquement de « protéger la délinquance » par un excès de principes juridiques hors-sol.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 3)",
+      "description": "S'appuie sciemment sur des faits divers dramatiques récents lors de ses questions à la Justice pour démontrer l'ultime nécessité d'une surveillance globale incontrôlée.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 4)",
+      "description": "Désorganise l'ordre du jour en exigeant l'audition non prévue de syndicats de police de terrain pour soutenir la militarisation du maintien de l'ordre face à l'Intérieur.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 1)",
+      "description": "Lève une motion d'ordre grave lors de l'audition de la DGSI pour l'accuser frontalement de surveiller illégalement les cadres de son parti.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 2)",
+      "description": "Refuse théâtralement de participer à un huis clos technique de l'ANSSI, sortant dans les couloirs pour dénoncer devant leurs camarades une « tentative d'étouffement ».",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 3)",
+      "description": "Prend longuement à partie l'Intérieur et les Armées en se posant en victime héroïque et en seule ligne de défense contre une dictature numérique.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Réclame contrôle étatique exclusif, cible immigrants + délinquance (Variante 4)",
+      "description": "Multiplie de façon assumée les incidents de séance avec la Justice et l'Intérieur, déclarant que la commission est illégitime tant qu'une enquête sur l'espionnage de son parti n'a pas abouti.",
       "tonalite": "radical",
       "risque": "élevé"
     }

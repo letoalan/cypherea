@@ -45,113 +45,113 @@
   "acte2": {
     "P1.1": {
       "parent": "P1",
-      "label": "Auditions ouvertes",
-      "description": "Accepte CNIL et journalistes sans filtre, mise sur la transparence",
+      "label": "Action 1",
+      "description": "Donne largement la parole à la CNIL lors de son audition, se posant en garant de la transparence et d'un contrôle éthique rigoureux.",
       "tonalite": "ouvert",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
-      "label": "Auditions sélectives",
-      "description": "CNIL oui, journalistes en huis clos – compromis partiel",
+      "label": "Action 2",
+      "description": "Met publiquement en exergue les propos des Médias sur les failles de CYPHERA pour imposer à la Justice une clarification immédiate.",
       "tonalite": "conciliant",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
-      "label": "ANSSI comme arbitre",
-      "description": "Demande une expertise technique indépendante ANSSI pour dépolitiser le débat",
+      "label": "Action 3",
+      "description": "Demande à l'ANSSI de réaliser un nouvel audit indépendant du code, cherchant à dépolitiser les critiques par l'expertise technique.",
       "tonalite": "technique",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
-      "label": "Recadrage progressif",
-      "description": "Réintroduit progressivement la menace russe dans les questions",
+      "label": "Action 4",
+      "description": "Utilise l'audition de la DGSI pour réorienter systématiquement le débat des questions de libertés publiques vers l'urgence de la menace étrangère.",
       "tonalite": "glissant",
       "risque": "moyen"
     },
     "P2.1": {
       "parent": "P2",
-      "label": "Contre-offensive technique",
-      "description": "Noie le débat sous données ANSSI/DGSI, complexité algorithmique",
+      "label": "Action 1",
+      "description": "Noie les questions de l'opposition sous les données chiffrées de l'ANSSI et de la DGSI, complexifiant l'audition à outrance.",
       "tonalite": "défensif",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
-      "label": "Secret-défense systématique",
-      "description": "Oppose L2312-8 à toute demande sur les contrats CYPHERA",
+      "label": "Action 2",
+      "description": "Soutient activement l'Intérieur en refusant avec lui que CYPHERA ne dévoile les détails de l'algorithme sous couvert de secret-défense.",
       "tonalite": "bunker",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
-      "label": "Calendrier contrôlé",
-      "description": "Concède l'audition des journalistes mais maîtrise dates et durée",
+      "label": "Action 3",
+      "description": "Organise politiquement le planning pour que l'audition des Médias soit la plus courte possible et reléguée en toute fin de journée.",
       "tonalite": "tactique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
-      "label": "Alliance ED",
-      "description": "Mobilise tactiquement l'extrême droite pour bloquer les questions sur l'Élysée",
+      "label": "Action 4",
+      "description": "Renvoie subtilement la balle aux questions sécuritaires de l'Extrême Droite pour faire diversion lors du passage de l'Intérieur.",
       "tonalite": "risqué",
       "risque": "élevé"
     },
     "P3.1": {
       "parent": "P3",
-      "label": "Diversion institutionnelle",
-      "description": "Propose une commission de suivi technique pour diluer l'enquête",
+      "label": "Action 1",
+      "description": "Tente d'éluder le vrai débat en proposant aux Armées et à la Justice la création future d'une lointaine « commission de suivi technique ».",
       "tonalite": "dilatoire",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
-      "label": "Comité éthique CNIL",
-      "description": "Reconnaît un usage excessif, soutient un comité éthique CNIL comme réponse",
+      "label": "Action 2",
+      "description": "Reconnaît publiquement quelques maladresses et invite solennellement la CNIL à aider l'État à co-construire une charte éthique avec CYPHERA.",
       "tonalite": "conciliant",
       "risque": "faible"
     },
     "P3.3": {
       "parent": "P3",
-      "label": "Compromis LR",
-      "description": "Négocie un rapport modéré avec l'opposition droite en échange de son soutien",
+      "label": "Action 3",
+      "description": "Profite d'une suspension de séance pour négocier un compromis modéré avec l'opposition de droite avant l'audition décisive de la DGSI.",
       "tonalite": "négociation",
       "risque": "faible"
     },
     "P3.4": {
       "parent": "P3",
-      "label": "Bouc émissaire cabinet",
-      "description": "Désigne le cabinet ministériel (pas le ministre) comme responsable des dérives",
+      "label": "Action 4",
+      "description": "Concentre ses critiques acérées sur la direction commerciale de CYPHERA pour dédouaner totalement de toute responsabilité les membres du gouvernement.",
       "tonalite": "cynique",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
-      "label": "Attaque sources journalistiques",
-      "description": "Affirme que les sources du Canard sont des agents d'ingérence russe",
+      "label": "Action 1",
+      "description": "Passe à l'offensive violente lors de l'audition des Médias, remettant publiquement en doute l'intégrité de leurs sources présentées comme anti-républicaines.",
       "tonalite": "agressif",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
-      "label": "Invalidation QPC",
-      "description": "Tente de bloquer toute QPC a priori via pression sur le Conseil d'État",
+      "label": "Action 2",
+      "description": "Exige fermement de la Justice une prise de parole pour certifier qu'aucun recours constitutionnel préventif n'est légalement justifiable.",
       "tonalite": "autoritaire",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
-      "label": "Huis clos généralisé",
-      "description": "Demande le huis clos pour toutes les auditions sensibles",
+      "label": "Action 3",
+      "description": "Invoque la sécurité d'État pour imposer à la commission le huis clos total lors des audiences conjointes réunissant l'Intérieur, les Armées et CYPHERA.",
       "tonalite": "opaque",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
-      "label": "Légitimité présidence contestée",
-      "description": "Remet en cause la légitimité du président de commission issu de l'opposition",
+      "label": "Action 4",
+      "description": "Brouille volontairement l'audition de l'ANSSI en remettant en cause bruyamment l'impartialité du président de commission (issu de l'opposition).",
       "tonalite": "agressif",
       "risque": "très élevé"
     }

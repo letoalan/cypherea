@@ -28,8 +28,8 @@
         <!-- Navigation Principale de la Simulation -->
         <nav class="main-simulation-tabs">
             <button class="main-tab-btn active" onclick="switchMainTab(1)"
-                data-i18n="sim_main_tab1">Présentation</button>
-            <button class="main-tab-btn" onclick="switchMainTab(2)" data-i18n="sim_main_tab2">L'Affaire</button>
+                data-i18n="sim_main_tab1">L'Affaire</button>
+            <button class="main-tab-btn" onclick="switchMainTab(2)" data-i18n="sim_main_tab2">Présentation</button>
             <button class="main-tab-btn" onclick="switchMainTab(3)" data-i18n="sim_main_tab3">Acteurs &
                 Objectifs</button>
             <button class="main-tab-btn" onclick="switchMainTab(4)" data-i18n="sim_main_tab4">L'Enquête</button>
@@ -210,7 +210,7 @@
         <!-- Tab 4: L'Enquête (Ancienne vue) -->
         <div id="mainTab4" class="main-tab-content">
             <!-- Hero Simulation avec Onglets (Actes) -->
-            <section class="hero-simulation glass-card">
+            <section class="hero-simulation">
                 <nav class="simulation-tabs">
                     <button class="tab-btn active" onclick="loadActe(1)" data-i18n="sim_tab1">Acte 1</button>
                     <button class="tab-btn" onclick="loadActe(2)" data-i18n="sim_tab2">Acte 2</button>
@@ -224,7 +224,7 @@
                 <div class="loading-spinner"></div>
             </section>
 
-            <!-- 5 PDF Download Buttons -->
+            <!-- 5 PDF Download Buttons (Désactivé en phase test)
             <section class="pdf-downloads-section">
                 <div class="download-grid">
                     <button class="btn-download" onclick="generatePDF('ctx')" data-i18n="down_ctx">Contexte</button>
@@ -234,14 +234,66 @@
                     <button class="btn-download" onclick="generatePDF('sim')" data-i18n="down_sim">Déroulé</button>
                 </div>
             </section>
+            -->
         </div>
     </main>
 
     <!-- Modal Acteurs -->
     <div id="actorModal" class="modal">
-        <div class="modal-content glass">
+        <div class="modal-content glass-card">
             <span class="close-btn">&times;</span>
-            <div id="modalBody"></div>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Vote Modal (Nouveau système interactif) -->
+    <div id="vote-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-btn" onclick="closeVote()">&times;</span>
+            <h2 id="vote-title" style="margin:0 0 15px 0;">Vote en cours</h2>
+            
+            <div class="vote-setup glass" style="margin-bottom:20px; padding:15px; display:flex; align-items:center; gap:20px;">
+                <div style="flex:1;">
+                    <label style="display:block; margin-bottom:5px; font-weight:600;">Sélection des candidats (Ctrl+Clic pour plusieurs) :</label>
+                    <select id="candidats-select" multiple class="vote-input" style="width:100%; height:80px; text-align:left;">
+                        <option value="AN Gauche">AN Gauche</option>
+                        <option value="Sénat Opp.">Sénat Opp.</option>
+                        <option value="AN Majorité">AN Majorité</option>
+                        <option value="Sénat Maj.">Sénat Maj.</option>
+                        <option value="AN Droite">AN Droite</option>
+                        <option value="ED">ED</option>
+                        <option value="DGSI">DGSI</option>
+                        <option value="ANSSI">ANSSI</option>
+                    </select>
+                </div>
+                <div id="resultat-seuil" class="seuil perd" style="flex:1; margin:0;">0/30 voix</div>
+            </div>
+
+            <div class="grid-2-large">
+                <div class="vote-table-container glass" style="margin:0; padding:15px; overflow-x:auto;">
+                    <table class="evaluation-grid" id="vote-grid">
+                        <thead>
+                            <tr id="vote-grid-header">
+                                <!-- JS Inject -->
+                            </tr>
+                        </thead>
+                        <tbody id="vote-table-body">
+                            <!-- JS Inject -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="hemicycle-container" class="glass" style="margin:0; padding:10px; min-height:450px;">
+                    <div id="hemicycle-chart"></div>
+                </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; border-top:1px solid rgba(255,255,255,0.1); padding-top:15px;">
+                <button id="btn-reset-vote" class="btn-vote" style="background:rgba(239, 68, 68, 0.1); border-color:#ef4444; color:#ef4444; padding:8px 15px; font-size:0.8em;">Réinitialiser</button>
+                <div style="display:flex; gap:10px;">
+                    <button id="btn-next-round" class="btn-vote" style="display:none; padding:10px 20px;">Passer au Second Tour</button>
+                    <button id="btn-validate-vote" class="btn-primary" style="padding:10px 25px; min-width:150px;">Valider le vote</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -250,10 +302,12 @@
     <script src="js/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
     <script src="js/simulation.js"></script>
     <script src="js/actors-data.js"></script>
     <script src="js/actors.js"></script>
     <script src="js/strategy.js"></script>
+    <script src="js/votes.js"></script>
     <script src="js/pdf-generator.js"></script>
 </body>
 

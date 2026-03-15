@@ -43,112 +43,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 1)",
+      "description": "Assure sous serment que la DGSI agit dans le strict respect de la loi sur le renseignement, rejetant toute dérive inconstitutionnelle.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 2)",
+      "description": "Produit lors de son audition des mémos juridiques prouvant que les avis préalables de la CNIL n'étaient que purement consultatifs.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 3)",
+      "description": "Contredit frontalement la Justice en affirmant que l'encadrement administratif actuel est suffisant face à l'imminence de la menace terroriste.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 4)",
+      "description": "Accuse publiquement les Médias de mettre en danger la sécurité de l'État en divulguant des méthodes d'enquête couvertes par le secret.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 1)",
+      "description": "Témoigne à huis clos partiel que l'algorithme de CYPHERA a permis à la DGSI de déjouer trois attentats majeurs ce trimestre.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 2)",
+      "description": "Balaie les fausses correspondances dénoncées par les Médias, les qualifiant de coût opérationnel marginal face aux vies réellement sauvées.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 3)",
+      "description": "Fait valoir devant les députés que les Armées déploient des systèmes de ciblage algorithmiques comparables en OPEX sans susciter la moindre polémique.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 4)",
+      "description": "Présente à la commission une synthèse rédigée en collaboration avec l'ANSSI attestant de l'absolue robustesse de l'infrastructure informatique.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 1)",
+      "description": "Déclare solennellement que les dirigeants de CYPHERA ont délibérément dissimulé les biais discriminatoires de leur algorithme lors de l'appel d'offres.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 2)",
+      "description": "Annonce au cours de l'audition son intention de se porter partie civile si la Justice ouvre une enquête pénale contre le prestataire privé.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 3)",
+      "description": "Rejoint la position de la CNIL en exigeant devant les parlementaires un audit complet et véritablement indépendant du code source de CYPHERA.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 4)",
+      "description": "Cherche à dédouaner son ministère en expliquant que la complexité technique du logiciel rendait le contrôle humain par la DGSI virtuellement impossible.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 1)",
+      "description": "Oppose systématiquement et sèchement le secret-défense à chaque question de la commission portant sur le paramétrage exact de l'algorithme.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 2)",
+      "description": "Dédaigne ouvertement les rappels à l'ordre de la Justice, martelant que le pilotage de l'antiterrorisme ne peut se soumettre aux procédures pénales.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 3)",
+      "description": "Menace publiquement de poursuivre les journalistes des Médias pour compromission du secret de la défense nationale s'ils publient d'autres fuites.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Responsabilité rejetée sur CYPHERA (prestataire) (Variante 4)",
+      "description": "Refuse catégoriquement de s'exprimer sur l'implication logistique des Armées dans le projet, intimant l'ordre aux élus de ne pas creuser cette piste.",
       "tonalite": "radical",
       "risque": "élevé"
     }

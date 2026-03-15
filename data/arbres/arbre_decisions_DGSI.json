@@ -37,112 +37,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Protège sources et infiltrations, silence total (V1)",
+      "description": "Témoigne à huis clos des résultats opérationnels concrets de CYPHERA ayant permis de démanteler des cellules dormantes.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Protège sources et infiltrations, silence total (V2)",
+      "description": "Explique de manière pédagogique aux censeurs de la CNIL que la logique du renseignement diffère fondamentalement du droit commun.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Protège sources et infiltrations, silence total (V3)",
+      "description": "Fournit aux parlementaires une synthèse déclassifiée des menaces pour justifier le maintien du contrat CYPHERA par l'Intérieur.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Protège sources et infiltrations, silence total (V4)",
+      "description": "Réfute calmement les accusations des Médias sur les 'faux positifs', arguant qu'ils font partie du processus normal de levée de doutes.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Protège sources et infiltrations, silence total (V1)",
+      "description": "Oppose systématiquement le secret de la défense nationale aux questions précises de la commission portant sur l'algorithme.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Protège sources et infiltrations, silence total (V2)",
+      "description": "Renvoie froidement toutes les interrogations sur la robustesse informatique de l'outil vers l'expertise de l'ANSSI.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Protège sources et infiltrations, silence total (V3)",
+      "description": "Esquive les questions sur le financement occulte en indiquant qu'il relève de missions conjointes avec les Armées.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Protège sources et infiltrations, silence total (V4)",
+      "description": "Refuse de répondre aux questions de constitutionnalité, déclarant que l'interprétation de la loi relève de la Justice, pas des services.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Protège sources et infiltrations, silence total (V1)",
+      "description": "Alerte la commission sur le fait que la polémique actuelle est activement amplifiée par des campagnes de désinformation russes.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Protège sources et infiltrations, silence total (V2)",
+      "description": "Démontre que suspendre l'usage de CYPHERA donnerait un avantage tactique immédiat aux services de cyberespionnage étrangers.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Protège sources et infiltrations, silence total (V3)",
+      "description": "Propose l'intégration de magistrats de la Justice habilités 'secret-défense' directement au sein des services pour rassurer les élus.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Protège sources et infiltrations, silence total (V4)",
+      "description": "Sous-entend que les fuites d'informations dans les Médias risquent de coûter la vie à des agents infiltrés sur le terrain.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Protège sources et infiltrations, silence total (V1)",
+      "description": "Dément farouchement sous serment avoir jamais croisé les données de CYPHERA avec des fichiers syndicaux ou politiques.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Protège sources et infiltrations, silence total (V2)",
+      "description": "Accuse devant la commission les dirigeants de CYPHERA de leur avoir sciemment caché les biais discriminatoires du logiciel.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Protège sources et infiltrations, silence total (V3)",
+      "description": "Réclame publiquement du gouvernement (Justice/Intérieur) l'inculpation pour haute trahison du lanceur d'alerte.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Protège sources et infiltrations, silence total (V4)",
+      "description": "Menace de revoir à la baisse la coopération interservices avec les Armées si le grand déballage public n'est pas stoppé net.",
       "tonalite": "radical",
       "risque": "élevé"
     }

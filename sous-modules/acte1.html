@@ -1,18 +1,29 @@
 <div class="acte-content animated-fade-in">
-    <h2 data-i18n="acte1_title">Acte 1 : Création de la Commission</h2>
-    <div class="procedure-grid">
-        <div class="step glass">
-            <h3 data-i18n="acte1_step1_title">1. Résolution</h3>
-            <p data-i18n="acte1_step1_desc">Vote résolution Assemblée Nationale : objet, durée (6 mois), composition (14 membres).</p>
-        </div>
-        <div class="step glass">
-            <h3 data-i18n="acte1_step2_title">2. Élection Président</h3>
-            <p data-i18n="acte1_step2_desc">Opposition souvent élue (équilibre politique). Convoque auditions, anime débats.</p>
-        </div>
-        <div class="step glass">
-            <h3 data-i18n="acte1_step3_title">3. Rapporteur</h3>
-            <p data-i18n="acte1_step3_desc">Rédige rapport, enquête pièces/terrain. Opposition ou expert technique.</p>
-        </div>
+  <h2>Acte 1 : Élection bureau + Préparation</h2>
+  
+  <div class="procedure-grid">
+    <div class="step glass">
+      <h3>1. Vote Président (secret)</h3>
+      <p><strong>Modalités :</strong> Majorité simple (16/30). Opposition souvent élue (équilibre). <br>
+      <em>Ex. : AN Gauche, Sénat Opp, AN Droite possibles</em></p>
+      <button class="btn-vote" onclick="openVote('President')">Voter Président</button>
     </div>
-    <button class="btn-download gold" onclick="generatePDF('comm')" data-i18n="acte1_btn">📥 Télécharger Procédure</button>
+    
+    <div class="step glass">
+      <h3>2. Vote Rapporteur (secret)</h3>
+      <p><strong>Modalités :</strong> Majorité simple. Souvent opposition/technique (DGSI, ANSSI).<br>
+      <em>Prépare rapport final</em></p>
+      <button class="btn-vote" onclick="openVote('Rapporteur')">Voter Rapporteur</button>
+    </div>
+  </div>
+
+  <div class="preparation-non-parlementaires glass">
+    <h3>📋 Groupes non-parlementaires : Préparez vos auditions</h3>
+    <ul>
+      <li><strong>Institutions (Armées, Intérieur, Justice, DGSI)</strong> : Dossier technique + 3 faits clés</li>
+      <li><strong>Indépendants (CNIL, ANSSI)</strong> : Recommandations réglementaires</li>
+      <li><strong>Cyphera</strong> : Argumentaire commercial + données techniques</li>
+      <li><strong>Médias</strong> : 2 scoops + questions critiques</li>
+    </ul>
+  </div>
 </div>

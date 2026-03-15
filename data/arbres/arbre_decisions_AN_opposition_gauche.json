@@ -42,113 +42,113 @@
   "acte2": {
     "P1.1": {
       "parent": "P1",
-      "label": "Action 1 (via P1)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Soulève un rappel au règlement pour exiger que l'audition de CYPHERA soit publique, dénonçant vivement l'opacité de la procédure.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
-      "label": "Action 2 (via P1)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Interroge de manière très insistante l'Intérieur sur l'absence étonnante de consultation du Parlement lors de la signature du contrat initial.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
-      "label": "Action 3 (via P1)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Exige formellement du président de la commission que le temps d'audition accordé aux Médias soit doublé pour « équilibrer la parole de l’État ».",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
-      "label": "Action 4 (via P1)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Utilise son temps de parole imparti non pas pour interroger l'Intérieur, mais pour lire publiquement une enquête à charge publiée par les Médias.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
-      "label": "Action 1 (via P2)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Pose une série de questions fermées et techniques à CYPHERA pour les pousser à admettre les biais discriminatoires de leur algorithme.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
-      "label": "Action 2 (via P2)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Tente de piéger l'ANSSI en audition pour leur faire avouer que la certification du logiciel s'est faite dans une urgence anormale.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
-      "label": "Action 3 (via P2)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Pousse la CNIL dans ses retranchements pour obtenir d'elle une critique publique et explicite du modèle d'aspiration de données de CYPHERA.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
-      "label": "Action 4 (via P2)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Exige inflexiblement face à la DGSI que l'Assemblée nationale obtienne un accès complet au code source pour poursuivre les travaux.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
-      "label": "Action 1 (via P3)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Appuie systématiquement chaque interpellation de l'Intérieur et des Armées sur des citations et chiffres extraits d'un rapport accablant des Médias.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
-      "label": "Action 2 (via P3)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Utilise son temps face à la DGSI pour relayer méthodiquement les questions restées sans réponse lors de l'audition précédente des Médias.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
-      "label": "Action 3 (via P3)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Confronte l'Intérieur à des cas théoriques documentés d'erreurs d'algorithmes (faux positifs) ayant mené à des arrestations abusives.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
-      "label": "Action 4 (via P3)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 4",
+      "label": "Action 4",
+      "description": "S'appuie sur la présence des Médias en audition pour transformer la séance en grande tribune politique, appelant au rejet total du projet.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
-      "label": "Action 1 (via P4)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Affiche ostensiblement son désaccord en refusant de poser sa question aux Armées, qualifiant l'audition de « mascarade » avant de garder un long silence.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
-      "label": "Action 2 (via P4)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Boycotte purement et simplement l'audition de la DGSI, laissant son siège vide en signe de contestation radicale de la commission.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
-      "label": "Action 3 (via P4)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Adopte un ton très accusateur envers CYPHERA, cherchant délibérément le conflit et provoquant des rappels à l'ordre répétés de la présidence.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
-      "label": "Action 4 (via P4)",
-      "description": "Alliance journalistes + CNIL, questions sur opposants surveillés - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Maintient une ligne d'obstruction en déposant des dizaines de recours de procédure pendant les auditions de renseignement pour empêcher la DGSI de dérouler son discours.",
       "tonalite": "radical",
       "risque": "élevé"
     }

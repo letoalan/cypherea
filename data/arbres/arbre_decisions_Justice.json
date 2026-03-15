@@ -43,112 +43,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 1)",
+      "description": "Témoigne sous serment que l'usage actuel de CYPHERA par l'Intérieur flirte dangereusement avec l'inconstitutionnalité sans l'aval d'un juge.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 2)",
+      "description": "Demande solennellement à la commission d'inscrire le contrôle a priori par un magistrat du siège dans toute future loi.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 3)",
+      "description": "Exprime sa vive inquiétude quant au respect du secret de l'instruction face aux méthodes de collecte massive de la DGSI.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 4)",
+      "description": "Souligne devant les élus que les révélations des Médias rendent incontournable une clarification rapide du cadre légal.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 1)",
+      "description": "Refuse, en tant que ministre, de valider l'utilisation des données algorithmiques de CYPHERA comme preuves pénales recevables.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 2)",
+      "description": "S'appuie longuement sur les avis défavorables de la CNIL pour alerter sur le risque civil et pénal encouru par l'État.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 3)",
+      "description": "Décortique juridiquement le rapport de l'ANSSI pour démontrer que la sécurité informatique ne garantit en rien la légalité des procédures.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 4)",
+      "description": "Alerte la commission sur la fragilité juridique des contrats liant les Armées à des prestataires de surveillance privés.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 1)",
+      "description": "Propose à la commission un compromis : autoriser CYPHERA pour l'antiterrorisme (DGSI) mais l'interdire pour le droit commun.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 2)",
+      "description": "Offre d'accompagner l'Intérieur dans la rédaction d'un décret encadrant technologiquement les futures enquêtes de police judiciaire.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 3)",
+      "description": "Tente de rassurer les Médias et l'opinion publique en annonçant la création d'un parquet national compétent sur les dérives numériques.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 4)",
+      "description": "Déclare publiquement que la Justice saura faire preuve de clémence envers les lanceurs d'alerte si l'intérêt supérieur de la Nation est prouvé.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 1)",
+      "description": "Prend ses distances de manière spectaculaire avec le gouvernement en affirmant que l'Intérieur outrepasse délibérément ses droits.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 2)",
+      "description": "Menaçe à demi-mot de démissionner si la commission valide un texte privant définitivement les juges de leur pouvoir de contrôle préalable.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 3)",
+      "description": "Affirme sous serment disposer d'éléments suffisants pour que le Parquet ouvre une information judiciaire sur les dirigeants de CYPHERA.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Vérifie conformité art. 66 Constitution + droits avocats (Variante 4)",
+      "description": "Qualifie officiellement l'architecture même du système déployé par la DGSI de « violation systémique de l'État de droit ».",
       "tonalite": "radical",
       "risque": "élevé"
     }

@@ -43,112 +43,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 1)",
+      "description": "Oppose catégoriquement le secret de la défense nationale concernant tout contrat liant potentiellement le COMCYBER à CYPHERA.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 2)",
+      "description": "Se retranche derrière les impératifs du Code de la Défense face aux questions insistantes sur la mutualisation des serveurs avec l'Intérieur.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 3)",
+      "description": "Exige le huis clos strict et sans captation pour la moindre question touchant directement aux capacités offensives cyber de la France.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 4)",
+      "description": "Dément sèchement et formellement les rumeurs publiées par les Médias concernant l'utilisation de l'algorithme sur des cibles civiles.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 1)",
+      "description": "Légitime les technologies de pointe comme CYPHERA en détaillant devant la commission la violence inédite des cyberattaques étatiques actuelles.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 2)",
+      "description": "Défend un front uni de l'État en soutenant publiquement le besoin opérationnel vital de la DGSI pour ce type d'outil prédictif.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 3)",
+      "description": "S'appuie sur une note classifiée de l'ANSSI pour démontrer que la souveraineté technologique prime sur les débats purement administratifs.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 4)",
+      "description": "Alerte les parlementaires sur le risque géopolitique dramatique que représenterait un désarmement unilatéral du renseignement français.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 1)",
+      "description": "Accepte de transmettre des évaluations techniques, mais exclusivement par le canal de la Délégation Parlementaire au Renseignement (DPR).",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 2)",
+      "description": "Se dit ouvert à une discussion sur l'éthique algorithmique avec la CNIL, à l'exclusion stricte de tout périmètre opérationnel de guerre.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 3)",
+      "description": "Suggère que le maintien de l'expertise de CYPHERA est un prérequis indispensable au programme de la future IA militaire européenne.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 4)",
+      "description": "Rassure la Justice sur le fait que les éventuelles données tactiques ramenées d'OPEX sont physiquement isolées des réseaux civils.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 1)",
+      "description": "Noye délibérément le débat sous une avalanche d'acronymes militaires et de spécifications architecturales cryptographiques indéchiffrables.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 2)",
+      "description": "Conteste avec une grande froideur institutionnelle les compétences des parlementaires pour juger de la pertinence des outils de cyberdéfense.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 3)",
+      "description": "Affirme que la compartimentation en silos du code garantit mathématiquement l'étanchéité totale, balayant d'un revers de main toute critique.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Refuse audition publique des officiers, oppose L2312-8 (Variante 4)",
+      "description": "Oppose une fin de non-recevoir hautaine face aux plaintes éthiques, renvoyant sèchement toutes les responsabilités civiles sur l'Intérieur.",
       "tonalite": "radical",
       "risque": "élevé"
     }

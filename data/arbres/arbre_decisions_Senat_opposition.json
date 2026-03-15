@@ -42,113 +42,113 @@
   "acte2": {
     "P1.1": {
       "parent": "P1",
-      "label": "Action 1 (via P1)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Profite de l'audition des Médias pour exposer les propos alertants de l'ingénieur de CYPHERA, forçant la majorité à se justifier.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
-      "label": "Action 2 (via P1)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Confronte la direction de CYPHERA et l'ANSSI en audition avec les fuites techniques de l'ingénieur prouvant les failles du code.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
-      "label": "Action 3 (via P1)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Exige solennellement de la Justice la garantie que le lanceur d'alerte de CYPHERA bénéficiera d'une totale protection légale.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
-      "label": "Action 4 (via P1)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Somme publiquement l'Intérieur de s'expliquer sur les pressions présumées exercées sur le lanceur d'alerte et sa famille.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
-      "label": "Action 1 (via P2)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Décortique les propres rapports techniques de l'ANSSI pour démontrer devant la commission l'inefficacité de l'algorithme.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
-      "label": "Action 2 (via P2)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Interpelle la DGSI sur le taux de faux positifs du logiciel, prouvant avec des chiffres que l'outil est juridiquement et techniquement inexploitable.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
-      "label": "Action 3 (via P2)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Demande à la CNIL de confirmer publiquement que les gains de sécurité promis par l'Intérieur sont dérisoires face aux risques massifs induits.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
-      "label": "Action 4 (via P2)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Transmet officiellement aux Médias, lors de leur audition, une contre-expertise chiffrée démontant publiquement les promesses des Armées.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
-      "label": "Action 1 (via P3)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Rappelle fermement et pédagogiquement à la Justice et à l'Intérieur que l'outil de CYPHERA viole ouvertement le nouveau Règlement IA de l'UE.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
-      "label": "Action 2 (via P3)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Demande avec insistance à la CNIL de révéler l'avis de ses homologues européens concernant ce traitement biométrique de masse.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
-      "label": "Action 3 (via P3)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Confronte la Justice à la lettre du droit européen, en soulignant l'incompatibilité totale du contrat avec les normes de l'Union.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
-      "label": "Action 4 (via P3)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Prend les Médias à témoin lors de leur audition, martelant la violation explicite du droit européen pour transformer le débat technique en grand scandale.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
-      "label": "Action 1 (via P4)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 1",
+      "label": "Action 1",
+      "description": "Présente formellement à l'ANSSI et à la DGSI une alternative open source chiffrée, jugée techniquement supérieure et respectueuse de la vie privée.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
-      "label": "Action 2 (via P4)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 2",
+      "label": "Action 2",
+      "description": "Tend fermement la main à la majorité en proposant d'adopter le rapport si, et seulement si, le contrat avec CYPHERA est cassé au profit d'un consortium public.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
-      "label": "Action 3 (via P4)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 3",
+      "label": "Action 3",
+      "description": "Tient un discours très structuré face aux Armées pour démontrer qu'un développement en logiciel libre de bout en bout garantirait leur seule véritable souveraineté.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
-      "label": "Action 4 (via P4)",
-      "description": "Interroge conformité Règlement IA UE, propose logiciel libre - Déclinaison 4",
+      "label": "Action 4",
+      "description": "Utilise l'audition des Médias pour livrer de manière théâtrale un plaidoyer radical en faveur d'un changement total de doctrine numérique nationale.",
       "tonalite": "radical",
       "risque": "élevé"
     }

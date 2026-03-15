@@ -37,112 +37,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "description": "Explique doctement à la commission que sans des algorithmes prédictifs robustes validés par ses soins, la France est aveugle face aux APT étatiques.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "description": "Légitime techniquement le besoin de l'Intérieur, tout en soulignant que la précipitation dans le déploiement a créé des failles de sécurité.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "description": "Soumet aux parlementaires un panorama glacant des cyberattaques ayant récemment ciblé les infrastructures critiques pour justifier CYPHERA.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "description": "Désamorce les accusations de surveillance de masse de la CNIL en arguant que l'outil est mathématiquement conçu pour le ciblage chirurgical.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "description": "Exige devant les élus un audit technique complet ('boîte blanche') du code de CYPHERA par ses propres ingénieurs avant tout déploiement final.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "description": "Confirme en partie les révélations des Médias : l'architecture de la base de données CYPHERA présente bien des vulnérabilités critiques.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "description": "Refuse de se prononcer sur la légalité du croisement des fichiers, renvoyant sèchement cette responsabilité vers la Justice et l'Intérieur.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "description": "Alerte la commission sur les risques d'une compromission de la 'supply chain' si CYPHERA conserve l'hébergement actuel.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "description": "S'inquiète publiquement des clauses floues du contrat liant l'Intérieur à CYPHERA concernant la réversibilité et la localisation des données.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "description": "Révèle que la procédure standard de certification SecNumCloud a été délibérément by-passée ou accélérée indûment pour ce projet.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "description": "Appuie indirectement les réserves des Armées en préconisant le développement exclusif d'outils souverains non dépendants de fonds étrangers.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "description": "Recommande formellement aux députés d'adopter un amendement imposant le visa obligatoire de l'ANSSI pour tout algorithme classifié.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Recommande audit code source + normes sous-traitants (V1)",
+      "description": "Désavoue catégoriquement l'architecture de CYPHERA, la qualifiant de 'bombe à retardement' pour la sécurité nationale devant des élus médusés.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Recommande audit code source + normes sous-traitants (V2)",
+      "description": "Accuse l'Intérieur et la DGSI d'avoir privilégié l'innovation technologique au mépris total des règles élémentaires de durcissement informatique.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Recommande audit code source + normes sous-traitants (V3)",
+      "description": "Plaide pour l'exclusion définitive de CYPHERA des marchés publics de sécurité et de défense pour manquements graves à la souveraineté.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Recommande audit code source + normes sous-traitants (V4)",
+      "description": "Propose une alliance inattendue avec la CNIL : proposer un nouveau cadre commun d'audit, alliant sécurité technique maximale et respect strict du RGPD.",
       "tonalite": "radical",
       "risque": "élevé"
     }

@@ -74,8 +74,8 @@ async function loadActe(acteNumber) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize with Actors & Strategy tab
-    switchMainTab(3);
+    // Initialize with "L'Affaire" tab (Tab 1)
+    switchMainTab(1);
 
     // Pre-initialize acts for tab 4
     loadActe(1);
@@ -85,3 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeBtn) closeBtn.onclick = () => modal.style.display = 'none';
     window.onclick = (e) => { if (e.target == modal) modal.style.display = 'none'; };
 });
+
+// Phase Enquête - Nouvelles fonctions
+function startAuditions() {
+    alert("Les auditions démarrent. Respectez le temps de parole et prenez des notes obligatoires.");
+}
+
+function showEvaluation() {
+    alert("Affichage de la grille d'évaluation (en développement).");
+}

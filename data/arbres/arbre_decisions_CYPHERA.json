@@ -37,112 +37,112 @@
     "P1.1": {
       "parent": "P1",
       "label": "Action 1",
-      "description": "Secret des affaires, détourne vers menaces russes (V1)",
+      "description": "Témoigne sous serment que les documents publiés par les Médias sont des brouillons de recherche obsolètes, sans lien avec la version déployée.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.2": {
       "parent": "P1",
       "label": "Action 2",
-      "description": "Secret des affaires, détourne vers menaces russes (V2)",
+      "description": "Remet formellement à la commission un audit de sécurité interne attestant de l'absence de biais algorithmique intentionnel dans le code.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.3": {
       "parent": "P1",
       "label": "Action 3",
-      "description": "Secret des affaires, détourne vers menaces russes (V3)",
+      "description": "Invite publiquement l'ANSSI à venir inspecter librement ses serveurs, misant sur une opération de transparence totale pour rassurer les élus.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P1.4": {
       "parent": "P1",
       "label": "Action 4",
-      "description": "Secret des affaires, détourne vers menaces russes (V4)",
+      "description": "Suggère poliment devant les députés que son ex-ingénieur lanceur d'alerte a manipulé les données volées pour se venger d'un licenciement.",
       "tonalite": "modéré",
       "risque": "faible"
     },
     "P2.1": {
       "parent": "P2",
       "label": "Action 1",
-      "description": "Secret des affaires, détourne vers menaces russes (V1)",
+      "description": "Rejette la responsabilité sur l'Intérieur, affirmant sous serment que le ciblage des quartiers sensibles était une commande expresse du ministère.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.2": {
       "parent": "P2",
       "label": "Action 2",
-      "description": "Secret des affaires, détourne vers menaces russes (V2)",
+      "description": "S'abrite derrière un langage hyper-technique lors des questions pour noyer les parlementaires sous la complexité mathématique des réseaux de neurones.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.3": {
       "parent": "P2",
       "label": "Action 3",
-      "description": "Secret des affaires, détourne vers menaces russes (V3)",
+      "description": "Invoque la confidentialité de son statut de sous-traitant pour refuser d'expliquer comment la DGSI paramètre l'outil sur le terrain.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P2.4": {
       "parent": "P2",
       "label": "Action 4",
-      "description": "Secret des affaires, détourne vers menaces russes (V4)",
+      "description": "Rappelle froidement que les Armées utilisent exactement la même technologie en OPEX sans que cela ne pose de controverses éthiques.",
       "tonalite": "technique",
       "risque": "moyen"
     },
     "P3.1": {
       "parent": "P3",
       "label": "Action 1",
-      "description": "Secret des affaires, détourne vers menaces russes (V1)",
+      "description": "Fait amende honorable en reconnaissant des biais algorithmiques involontaires et annonce un plan d'action logiciel immédiat pour les corriger.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.2": {
       "parent": "P3",
       "label": "Action 2",
-      "description": "Secret des affaires, détourne vers menaces russes (V2)",
+      "description": "Plaide lors de son audition pour la création urgente d'un comité d'éthique permanent intégrant des experts de haut niveau désignés par la CNIL.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.3": {
       "parent": "P3",
       "label": "Action 3",
-      "description": "Secret des affaires, détourne vers menaces russes (V3)",
+      "description": "Annonce l'ouverture partielle de son code source à un collège de chercheurs académiques pour prouver sa volonté radicale de s'améliorer.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P3.4": {
       "parent": "P3",
       "label": "Action 4",
-      "description": "Secret des affaires, détourne vers menaces russes (V4)",
+      "description": "Demande officiellement à coconstruire avec la Justice un nouveau référentiel garantissant la compatibilité des IA souveraines avec l'État de droit.",
       "tonalite": "engagé",
       "risque": "moyen"
     },
     "P4.1": {
       "parent": "P4",
       "label": "Action 1",
-      "description": "Secret des affaires, détourne vers menaces russes (V1)",
+      "description": "Oppose farouchement le 'secret des affaires' à toute demande de la commission concernant l'architecture de ses bases de données.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.2": {
       "parent": "P4",
       "label": "Action 2",
-      "description": "Secret des affaires, détourne vers menaces russes (V2)",
+      "description": "Menace à demi-mot de délocaliser ses activités de R&D hors d'Europe si la loi française menace de forcer la révélation de ses brevets algorithmiques.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.3": {
       "parent": "P4",
       "label": "Action 3",
-      "description": "Secret des affaires, détourne vers menaces russes (V3)",
+      "description": "Exige le huis clos total sous peine de quitter l'audition, arguant que le grand déballage public télévisé favorise l'espionnage industriel.",
       "tonalite": "radical",
       "risque": "élevé"
     },
     "P4.4": {
       "parent": "P4",
       "label": "Action 4",
-      "description": "Secret des affaires, détourne vers menaces russes (V4)",
+      "description": "Annonce à la tribune avoir déposé une plainte pénale formelle pour vol de données industrielles, visant directement le lanceur d'alerte et les Médias.",
       "tonalite": "radical",
       "risque": "élevé"
     }
