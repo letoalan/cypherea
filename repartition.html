@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="tab_repartition">Répartition – Affaire CYPHERA</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/repartition.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/layout.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/header-nav.css">
+    <link rel="stylesheet" href="css/components/header-mobile.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/glass-card.css">
+    <link rel="stylesheet" href="css/pages/repartition/repartition-upload.css">
+    <link rel="stylesheet" href="css/pages/repartition/repartition-results.css">
 </head>
 
 <body>
@@ -24,20 +32,39 @@
 
     <main class="container">
         <section class="glass-card">
-            <h2 class="accent-title" data-i18n="rep_title">Répartition des Rôles</h2>
+            <h2 class="accent-title premium-upload-title">📋 Importer la composition</h2>
 
             <div class="template-section">
-                <button class="btn secondary" onclick="downloadTemplate()" data-i18n="rep_template_btn">Télécharger le
-                    Modèle (CSV)</button>
-                <p class="help-text">Remplissez ce fichier avec les noms de vos élèves, puis importez-le ci-dessous.</p>
+                <button class="btn secondary" onclick="downloadTemplate()" data-i18n="rep_template_btn">
+                    <span style="font-size: 1.2rem; margin-right: 8px;">📊</span> Télécharger le Modèle
+                </button>
+                <p class="help-text">Remplissez le fichier avec les noms des élèves.</p>
             </div>
 
             <div class="upload-section">
-                <label for="csvFile" class="custom-file-upload">
-                    <span data-i18n="rep_upload">Charger la liste des élèves (CSV)</span>
-                    <input type="file" id="csvFile" accept=".csv" onchange="handleFileSelect(event)">
-                </label>
-                <div id="file-info"></div>
+                <div id="drop-zone" class="glass-upload-zone" onclick="document.getElementById('csvFile').click()">
+                    <div class="upload-icon-premium">🏛️</div>
+                    <div class="upload-prompt-text">
+                        Déposez votre fichier CSV/Excel ici<br>
+                        <span style="font-size: 0.9rem; opacity: 0.7;">ou cliquez pour parcourir</span>
+                    </div>
+                    <button class="btn-browse-glass">Parcourir fichiers</button>
+                    <input type="file" id="csvFile" accept=".csv, .xlsx, .xls" style="display: none;" onchange="handleFileSelect(event)">
+                </div>
+
+                <div id="file-info">
+                    <!-- Dynamic States (Empty, Loading, Loaded) -->
+                </div>
+
+                <div id="mini-hemi-preview" class="mini-hemicycle-preview">
+                    <div class="hemi-dot-container" id="hemi-dots">
+                        <!-- 14 dots for detected groups -->
+                    </div>
+                    <div class="detected-count">
+                        <span id="group-number">0</span> groupes détectés
+                    </div>
+                </div>
+                <p class="format-hint">Format supporté : CSV uniquement (Excel converti auto)</p>
             </div>
 
             <div class="actions">
@@ -61,11 +88,12 @@
     </main>
 
     <script src="i18n/translations.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/header.js"></script>
+    <script src="js/core/i18n.js"></script>
+    <script src="js/components/header.js"></script>
     <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
-    <script src="js/roles.js"></script>
-    <script src="js/simulation.js"></script>
+    <script src="js/core/actors-data.js"></script>
+    <script src="js/modules/roles.js"></script>
+    <script src="js/modules/simulation.js"></script>
 </body>
 
 </html>

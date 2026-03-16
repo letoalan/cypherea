@@ -8,30 +8,34 @@ window.actorsCache = {};
 function initActorsMenu() {
     const container = document.getElementById('actors-menu-container');
     if (!container) return;
-    const select = document.createElement('select');
-    select.id = 'actorSelect';
-    select.className = 'glass-select';
-    select.onchange = (e) => loadActorCard(e.target.value);
 
-    const defaultOption = new Option("-- Sélectionner un acteur --", "");
-    select.add(defaultOption);
-
-    const groupMembre = document.createElement('optgroup');
-    groupMembre.label = "🏛 Membres de la commission";
-    const groupTemoin = document.createElement('optgroup');
-    groupTemoin.label = "🎙 Témoins auditionnés";
+    const grid = document.createElement('div');
+    grid.className = 'actors-grid';
 
     window.ACTORS_MANIFEST.forEach(actor => {
         const label = window.getActorLabel(actor.id);
-        const opt = new Option(label, actor.id);
-        if (actor.id === "AN_majorite") opt.selected = true;
-        (actor.type === 'membre' ? groupMembre : groupTemoin).appendChild(opt);
+        const btn = document.createElement('button');
+        btn.className = `actor-menu-item ${actor.type}`;
+        btn.dataset.id = actor.id;
+        
+        const shortLabel = label.split(' - ').pop() || label;
+        btn.innerHTML = `
+            <span class="actor-icon">${actor.icon || (actor.type === 'membre' ? '🏛' : '🎙')}</span>
+            <span class="actor-name">${shortLabel}</span>
+        `;
+        
+        btn.onclick = () => {
+            grid.querySelectorAll('.actor-menu-item').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            loadActorCard(actor.id);
+        };
+        
+        if (actor.id === "AN_majorite") btn.classList.add('active');
+        grid.appendChild(btn);
     });
 
-    select.appendChild(groupMembre);
-    select.appendChild(groupTemoin);
     container.innerHTML = '';
-    container.appendChild(select);
+    container.appendChild(grid);
     loadActorCard("AN_majorite");
 }
 
@@ -47,6 +51,7 @@ async function loadActorCard(actorId) {
             const actor = window.ACTORS_MANIFEST.find(a => a.id === actorId);
             const response = await fetch(`data/acteurs/${actor.file}`);
             const data = await response.json();
+            data.id = actorId; // Ensure ID is present
             window.actorsCache[actorId] = data;
             renderActorCard(data);
         } catch (error) {
@@ -63,46 +68,65 @@ function renderActorCard(data) {
     container.innerHTML = `
         <div class="actor-card glass slide-in">
             <div class="card-header">
-                <span class="badge ${badge}">${typeLabel}</span>
+                <div>
+                    <span class="badge ${badge}">${typeLabel}</span>
+                    <span class="seats-count">${data.identite.sieges_commission || 0} sièges</span>
+                </div>
                 <h2>${data.acteur}</h2>
-                <span class="seats-count">${data.identite.sieges_commission || 0} sièges</span>
             </div>
             
             <div class="card-body">
-                <section class="card-section">
+                <section class="card-section reaction-section">
                     <h3>RÉACTION INITIALE</h3>
                     <p class="quote">« ${data.position_cyphera.reaction_initiale} »</p>
-                    <div id="positions-acte1-container"></div>
+                    <div id="positions-acte1-container" class="positions-interactive"></div>
                 </section>
 
                 <div class="actor-accordion">
                     ${renderAccordionItem("🎯 Objectifs & Intérêts", `
-                        <p>✅ <strong>Obtenir :</strong> ${data.objectifs.obtenir.join(' / ')}</p>
-                        <p>❌ <strong>Éviter :</strong> ${data.objectifs.eviter.join(' / ')}</p>
-                        <hr>
-                        <p><strong>Intérêts matériels :</strong> ${data.interets.materiels}</p>
-                        <p><strong>Intérêts symboliques :</strong> ${data.interets.symboliques}</p>
+                        <div class="accordion-inner">
+                            <div class="obj-list">
+                                <p class="obj-item pos">✅ <strong>Obtenir :</strong> ${data.objectifs.obtenir.join(' / ')}</p>
+                                <p class="obj-item neg">❌ <strong>Éviter :</strong> ${data.objectifs.eviter.join(' / ')}</p>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="interests-grid">
+                                <div class="interest-box"><strong>Matériels</strong><p>${data.interets.materiels}</p></div>
+                                <div class="interest-box"><strong>Symboliques</strong><p>${data.interets.symboliques}</p></div>
+                            </div>
+                        </div>
                     `)}
                     
                     ${renderAccordionItem("📊 Rapport de Forces", `
-                        <div class="force-grid">
-                            ${(data.rapport_forces.membres_commission || []).map(m => `
-                                <div class="member-mini-tag ${m.statut === '✅' ? 'pos' : m.statut === '❌' ? 'neg' : 'neu'}">
-                                    ${m.groupe}: ${m.sieges} ${m.statut}
-                                </div>
-                            `).join('')}
+                        <div class="accordion-inner">
+                            <div class="force-grid">
+                                ${(data.rapport_forces.membres_commission || []).map(m => `
+                                    <div class="member-mini-tag ${m.statut === '✅' ? 'pos' : m.statut === '❌' ? 'neg' : 'neu'}">
+                                        <strong>${m.groupe}</strong><br>${m.sieges} sièges ${m.statut}
+                                    </div>
+                                `).join('')}
+                            </div>
+                            <p class="coalition-text"><strong>🤝 Coalition possible :</strong> ${data.rapport_forces.coalition_possible}</p>
+                            <hr class="card-divider">
+                            <p class="targets-text"><strong>🎯 Cibles privilégiées :</strong> ${data.axes_intervention.cibles_privilegiees}</p>
                         </div>
-                        <p class="mt-1"><strong>Coalition :</strong> ${data.rapport_forces.coalition_possible}</p>
-                        <hr>
-                        <p><strong>Cibles :</strong> ${data.axes_intervention.cibles_privilegiees}</p>
                     `)}
 
                     ${renderAccordionItem("⚠️ Contraintes & Tensions", `
-                        <ul>${data.points_tension.map(t => `<li>${t}</li>`).join('')}</ul>
-                        <p><strong>Contrainte politique :</strong> ${data.contraintes.politiques}</p>
+                        <div class="accordion-inner">
+                            <ul class="tension-list">${data.points_tension.map(t => `<li>${t}</li>`).join('')}</ul>
+                            <div class="constraint-box">
+                                <strong>⚖️ Contrainte politique</strong>
+                                <p>${data.contraintes.politiques}</p>
+                            </div>
+                        </div>
                     `)}
                     
-                    ${renderAccordionItem("📖 Aide pédagogique", `<p class="small">${data.encadre_pedagogique}</p>`)}
+                    ${renderAccordionItem("📖 Aide pédagogique", `
+                        <div class="accordion-inner help-box">
+                            <p>${data.encadre_pedagogique}</p>
+                        </div>
+                    `)}
                 </div>
             </div>
 
@@ -119,7 +143,6 @@ function renderAccordionItem(title, content) {
         <div class="accordion-item">
             <button class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
                 <span>${title}</span>
-                <span class="icon">▼</span>
             </button>
             <div class="accordion-content">${content}</div>
         </div>
@@ -129,23 +152,27 @@ function renderAccordionItem(title, content) {
 function renderPositionsActe1(actorId, positions) {
     const container = document.getElementById('positions-acte1-container');
     if (!container) return;
+    
     const nav = document.createElement('div'), textZone = document.createElement('p');
-    nav.className = 'positions-nav'; textZone.className = 'position-text';
+    nav.className = 'positions-nav-premium'; 
+    textZone.className = 'position-text-premium';
+    
     const validateBtn = document.createElement('button');
-    validateBtn.className = 'btn-validate-inline';
+    validateBtn.className = 'btn-validate-premium';
     
     let currentPosKey = "";
     const saved = localStorage.getItem(`pos_acte1_${actorId}`);
     let targetButton = null;
 
     Object.keys(positions).forEach((key, idx) => {
-        const pKey = `P${idx + 1}`; // Codage standardisé
+        const pKey = `P${idx + 1}`;
         const btn = document.createElement('button');
-        btn.textContent = pKey;
+        btn.className = 'pos-btn-premium';
+        btn.innerHTML = `<span>${pKey}</span>`;
         btn.onclick = () => {
-            nav.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            nav.querySelectorAll('.pos-btn-premium').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            textZone.textContent = positions[key];
+            textZone.innerHTML = `<strong>Position actuelle :</strong> ${positions[key]}`;
             currentPosKey = pKey;
             
             const isSaved = localStorage.getItem(`pos_acte1_${actorId}`) === pKey;
@@ -157,7 +184,7 @@ function renderPositionsActe1(actorId, positions) {
     });
 
     const spacer = document.createElement('div');
-    spacer.className = 'nav-spacer';
+    spacer.className = 'nav-flex-spacer';
     nav.appendChild(spacer);
 
     validateBtn.onclick = () => {
@@ -177,7 +204,6 @@ function renderPositionsActe1(actorId, positions) {
     container.appendChild(nav);
     container.appendChild(textZone);
     
-    // Restaurer la position choisie ou la première par défaut
     if (targetButton) targetButton.click();
     else if (nav.firstChild) nav.firstChild.click();
 }

@@ -1,34 +1,64 @@
-<div class="acte-content animated-fade-in">
-  <h2>Acte 3 : Rédaction Rapport</h2>
-  
-  <div class="aides-rédaction">
+  <div class="acte-content animated-fade-in">
+  <div class="acte-header-premium">
+    <h2>Acte 3 : Rédaction Rapport <span id="result-Rapport-summary" class="result-badge"></span></h2>
+  </div>
+    
+  <div class="bureau-cards-grid">
     <!-- Parlementaires -->
-    <div class="glass aide-parlementaires">
-      <h3>🏛️ Groupes parlementaires</h3>
-      <p><strong>Rapport majoritaire (Rapporteur) :</strong> Synthèse + recommandations.<br>
-      <strong>Texte(s) minoritaire(s) :</strong> AN Gauche/ED = amendements.</p>
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="card-tag">Législation</div>
+        <span class="actor-icon-intel">🏛️</span>
+      </div>
+      <h3>Groupes parlementaires</h3>
+      <div class="step-details-premium">
+        <p><strong>Rapport majoritaire (Rapporteur) :</strong> Synthèse + recommandations stratégiques.</p>
+        <p><strong>Texte(s) minoritaire(s) :</strong> AN Gauche/ED = contre-propositions et amendements.</p>
+      </div>
     </div>
     
-    <!-- Non-parlementaires -->
-    <div class="glass aide-non-parlementaires">
-      <h3>🏛️ Institutions/Indépendants</h3>
-      <ul>
-        <li><strong>Avis technique</strong> (1 page max)</li>
-        <li>Annexes factuelles</li>
-        <li><em>Pas de rapport politique</em></li>
-      </ul>
+    <!-- Institutions -->
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="card-tag">Expertise</div>
+        <span class="actor-icon-intel">🏛️</span>
+      </div>
+      <h3>Institutions & Indépendants</h3>
+      <div class="step-details-premium">
+        <p><strong>Avis technique :</strong> Note de synthèse factuelle (1 page max) destinée à la commission.</p>
+        <p><em>Pas de rapport politique autorisé pour ce collège d'acteurs.</em></p>
+      </div>
     </div>
     
-    <div class="glass aide-cyphera">
-      <h3>💻 Cyphera</h3>
-      <p><strong>Dossier technique</strong> : specs produit + réponse recommandations.</p>
+    <!-- Cyphera -->
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="card-tag">Défense</div>
+        <span class="actor-icon-intel">💻</span>
+      </div>
+      <h3>Entreprise Cyphera</h3>
+      <div class="step-details-premium">
+        <p><strong>Dossier de réponse :</strong> Spécifications produit, réponse aux critiques et engagements futurs.</p>
+      </div>
     </div>
     
-    <div class="glass aide-medias">
-      <h3>📰 Médias</h3>
-      <p><strong>Chronique critique</strong> : analyse + perspectives publiques.</p>
+    <!-- Médias -->
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="card-tag">Analyse</div>
+        <span class="actor-icon-intel">📰</span>
+      </div>
+      <h3>Médias & Opinion</h3>
+      <div class="step-details-premium">
+        <p><strong>Chronique critique :</strong> Analyse des débats, perspectives publiques et impact sociétal.</p>
+      </div>
     </div>
   </div>
   
-  <button class="btn-primary" style="margin-top:20px;" onclick="openVote('Rapport')">Voter Rapport Final</button>
+  <div class="final-vote-container">
+    <p class="tech-label" style="color: rgba(255,255,255,0.6);">Décision Finale de la Commission</p>
+    <button class="btn-final-action" onclick="openVote('Rapport')">
+      🗳️ Voter le Rapport Final
+    </button>
+  </div>
 </div>

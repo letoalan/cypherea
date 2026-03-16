@@ -1,28 +1,93 @@
 <div class="acte-content animated-fade-in">
-  <h2>Acte 4 : Débat Final</h2>
-  
-  <div class="sequence-debat glass">
-    <ol>
-      <li><strong>Rapporteur</strong> : Présente rapport + texte minoritaire (si existe)</li>
-      <li><strong>Déclarations groupes parlementaires</strong> (2 min/groupe) :</li>
-         - AN Maj, AN Gauche, AN Droite : positions politiques
-         - Sénat : nuances institutionnelles
-         - ED : opposition dure
-      <li><strong>Réactions institutions/Cyphera</strong> (conf. presse) :</li>
-         - Faits techniques + engagement
-      <li><strong>Médias</strong> : Chronique radio (1 min)</li>
-    </ol>
+  <div class="acte-header-premium">
+    <h2>Acte 4 : Débat Final</h2>
   </div>
   
-  <div class="aide-methodologique glass">
-    <h3>📋 Aide méthodologique</h3>
-    <ul>
-      <li><strong>Rapporteur</strong> : "Notre enquête révèle X, nous recommandons Y"</li>
-      <li><strong>Déclaration groupe</strong> : "Mon groupe approuve/rejette pour Z"</li>
-      <li><strong>Conf. presse</strong> : "L'État s'engage à V, mesures immédiates"</li>
-      <li><strong>Chronique radio</strong> : "Affaire CYPHERA : scandale ou progrès ?"</li>
-    </ul>
+  <div class="sequence-debat glass slide-in-up stagger-1" style="padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(253, 187, 45, 0.2);">
+    <h3 class="tech-label" style="margin-bottom: 1.5rem; color: var(--accent-color); font-size: 1rem;">⏱️ Protocole de la Séance</h3>
+    <div class="debate-steps-list" style="display: flex; flex-direction: column; gap: 1.2rem;">
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div class="step-number-badge">1</div>
+        <p style="margin: 0; font-size: 1.05rem;"><strong>Rapporteur</strong> : Présentation du rapport final et des textes minoritaires.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div class="step-number-badge">2</div>
+        <p style="margin: 0; font-size: 1.05rem;"><strong>Groupes Parlementaires</strong> : Déclarations solennelles (2 min / groupe).</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div class="step-number-badge">3</div>
+        <p style="margin: 0; font-size: 1.05rem;"><strong>Institutions & Cyphera</strong> : Conférence de presse et réactions techniques.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div class="step-number-badge">4</div>
+        <p style="margin: 0; font-size: 1.05rem;"><strong>Médias</strong> : Chronique radio et synthèse de l'opinion publique.</p>
+      </div>
+    </div>
   </div>
   
-  <button class="btn-evaluation" onclick="showEvaluation()">Grille Évaluation</button>
+  <div class="aide-methodologique slide-in-up stagger-2">
+    <h3 class="accent-title" style="margin-bottom: 1.5rem;">📋 Briefing des Acteurs</h3>
+    
+    <div class="intel-files-grid" style="grid-template-columns: 1fr;">
+      <details class="intel-file-accordion slide-in-up stagger-2">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🖋️</span>
+          <span>Rapporteur : Présentation du Rapport</span>
+        </summary>
+        <div class="intel-file-content" style="display: block; padding: 2rem;">
+          <p><strong>Objectif :</strong> Synthétiser les conclusions de la commission et proposer des solutions législatives.</p>
+          <ul class="briefing-list">
+            <li><strong>Structure :</strong> Utilisez le triptyque : Constat (ce qu'on a vu) → Analyse (ce qu'on en pense) → Recommandation (ce qu'on change).</li>
+            <li><strong>Style :</strong> Formel, solennel et s'appuyant sur des citations verbatim des auditions de l'Acte 2.</li>
+            <li><strong>Exemple :</strong> <em>"Malgré les dénégations de Cyphera, la commission a constaté un manque de transparence critique. En conséquence, nous préconisons un audit annuel obligatoire..."</em></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="intel-file-accordion slide-in-up stagger-3">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">📢</span>
+          <span>Groupes Parlementaires : Déclarations</span>
+        </summary>
+        <div class="intel-file-content" style="display: block; padding: 2rem;">
+          <p><strong>Objectif :</strong> Exprimer le vote du groupe et ses motivations politiques.</p>
+          <ul class="briefing-list">
+            <li><strong>Identité :</strong> Réaffirmez vos valeurs (liberté individuelle vs sécurité nationale). Parlez au nom de vos électeurs.</li>
+            <li><strong>Argumentation :</strong> Justifiez pourquoi vous validez ou rejetez le rapport. Soyez clairs sur vos lignes rouges.</li>
+            <li><strong>Exemple :</strong> <em>"Au nom de la défense des libertés publiques, mon groupe refuse de donner un chèque en blanc à une technologie dont l'État ne possède pas le code source..."</em></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="intel-file-accordion slide-in-up stagger-4">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🏛️</span>
+          <span>Gouvernement / Institutions : Conférence de Presse</span>
+        </summary>
+        <div class="intel-file-content" style="display: block; padding: 2rem;">
+          <p><strong>Objectif :</strong> Reprendre la main sur le récit et annoncer des mesures concrètes.</p>
+          <ul class="briefing-list">
+            <li><strong>Action :</strong> Ne soyez pas sur la défensive. Annoncez un "Plan d'action" ou des décrets immédiats.</li>
+            <li><strong>Rassurance :</strong> Réconciliez sécurité et droit, et affirmez que l'État garde le contrôle total de ses outils.</li>
+            <li><strong>Exemple :</strong> <em>"Le Gouvernement a entendu les préoccupations de la commission. Nous lançons dès demain la création d'un Haut Conseil à l'éthique algorithmique..."</em></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="intel-file-accordion slide-in-up stagger-5">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🎙️</span>
+          <span>Médias : Chronique Radio</span>
+        </summary>
+        <div class="intel-file-content" style="display: block; padding: 2rem;">
+          <p><strong>Objectif :</strong> Décrypter les enjeux pour le grand public avec un angle fort.</p>
+          <ul class="briefing-list">
+            <li><strong>Hook :</strong> Commencez par une phrase marquante. Utilisez des métaphores pour expliquer la technologie.</li>
+            <li><strong>Synthèse :</strong> Résumez qui sort vainqueur et qui est le grand perdant de ce débat final.</li>
+            <li><strong>Exemple :</strong> <em>"Derrière les murs du Palais Bourbon, c'est l'avenir de votre vie privée qui s'est joué ce soir. Cyphera : protection vitale ou boîte de Pandore ?..."</em></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
 </div>

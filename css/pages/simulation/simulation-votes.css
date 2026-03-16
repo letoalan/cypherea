@@ -1,0 +1,203 @@
+/* Voting System - Decision Center (Phase 28) */
+
+#vote-modal .modal-content {
+    max-width: 1200px;
+    background: rgba(15, 23, 42, 0.85); /* Darker blueprint glass */
+    border: 1px solid rgba(253, 187, 45, 0.2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(253, 187, 45, 0.05);
+    backdrop-filter: blur(25px);
+    border-radius: 28px;
+    padding: 2.5rem;
+}
+
+#vote-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 2rem !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#vote-title::before {
+    content: '🗳️';
+    font-size: 1.5rem;
+}
+
+/* Vote Setup & Majority Gauge */
+.vote-setup.glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-bottom: 2rem !important;
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem !important;
+}
+
+.candidat-grid-container {
+    max-height: 150px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.candidat-selection-table {
+    width: 100%;
+}
+
+.candidat-selection-table td {
+    padding: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+#resultat-seuil {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-shadow: 0 0 15px rgba(253, 187, 45, 0.4);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#resultat-seuil.perd {
+    color: #fbbf24;
+    border-color: rgba(251, 191, 36, 0.3);
+    box-shadow: inset 0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+#resultat-seuil.gagne.validated {
+    color: #4ade80;
+    border-color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    box-shadow: 0 0 30px rgba(74, 222, 128, 0.4);
+    transform: scale(1.05);
+}
+
+/* Voting Grid (Large Table) */
+.vote-table-container.glass {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.evaluation-grid#vote-grid {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
+
+.evaluation-grid#vote-grid th {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent-color);
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.evaluation-grid#vote-grid tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: background 0.2s ease;
+}
+
+.evaluation-grid#vote-grid tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.vote-input {
+    width: 65px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.vote-input:focus {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(253, 187, 45, 0.3);
+    outline: none;
+}
+
+/* Hemicycle Display */
+#hemicycle-container.glass {
+    background: rgba(15, 23, 42, 0.5);
+    border-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem !important;
+}
+
+#hemicycle-chart {
+    height: 350px;
+    position: relative;
+}
+
+/* Animations & States */
+.row-voted {
+    border-left: 3px solid #4ade80 !important;
+    background: rgba(74, 222, 128, 0.05) !important;
+}
+
+.row-validated {
+    opacity: 0.7;
+    background: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* Footer & Actions */
+.vote-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.vote-modal-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-vote.reset {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-vote.reset:hover {
+    background: #ef4444;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+.btn-vote.round {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+}
+
+.btn-vote.round:hover {
+    background: #3b82f6;
+    color: #fff;
+}

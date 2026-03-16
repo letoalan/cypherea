@@ -1,0 +1,20 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+.main-footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+}

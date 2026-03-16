@@ -1,29 +1,184 @@
 <div class="acte-content animated-fade-in">
-  <h2>Acte 1 : Élection bureau + Préparation</h2>
+  <div class="acte-header-premium">
+    <h2 data-i18n="acte1_title">Acte 1 : Création de la commission</h2>
+  </div>
   
-  <div class="procedure-grid">
-    <div class="step glass">
-      <h3>1. Vote Président (secret)</h3>
-      <p><strong>Modalités :</strong> Majorité simple (16/30). Opposition souvent élue (équilibre). <br>
-      <em>Ex. : AN Gauche, Sénat Opp, AN Droite possibles</em></p>
-      <button class="btn-vote" onclick="openVote('President')">Voter Président</button>
+  <div class="bureau-cards-grid">
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="step-number-badge">1</div>
+        <span id="result-President-summary" class="result-badge"></span>
+      </div>
+      <h3 data-i18n="acte1_step2_title">Élection Président</h3>
+      <div class="step-details-premium">
+        <p data-i18n="acte1_step2_desc">L'Opposition est souvent élue pour l'équilibre politique. Convoque les auditions et anime les débats.</p>
+      </div>
+      <button class="btn primary w-100" onclick="openVote('President')">🗳️ Voter Président</button>
     </div>
     
-    <div class="step glass">
-      <h3>2. Vote Rapporteur (secret)</h3>
-      <p><strong>Modalités :</strong> Majorité simple. Souvent opposition/technique (DGSI, ANSSI).<br>
-      <em>Prépare rapport final</em></p>
-      <button class="btn-vote" onclick="openVote('Rapporteur')">Voter Rapporteur</button>
+    <div class="bureau-step-card">
+      <div class="step-header">
+        <div class="step-number-badge">2</div>
+        <span id="result-Rapporteur-summary" class="result-badge"></span>
+      </div>
+      <h3 data-i18n="acte1_step3_title">Élection Rapporteur</h3>
+      <div class="step-details-premium">
+        <p data-i18n="acte1_step3_desc">Rédige le rapport final, enquête sur les pièces et sur le terrain. Rôle technique ou politique.</p>
+      </div>
+      <button class="btn primary w-100" onclick="openVote('Rapporteur')">🗳️ Voter le Rapporteur</button>
     </div>
   </div>
 
-  <div class="preparation-non-parlementaires glass">
-    <h3>📋 Groupes non-parlementaires : Préparez vos auditions</h3>
-    <ul>
-      <li><strong>Institutions (Armées, Intérieur, Justice, DGSI)</strong> : Dossier technique + 3 faits clés</li>
-      <li><strong>Indépendants (CNIL, ANSSI)</strong> : Recommandations réglementaires</li>
-      <li><strong>Cyphera</strong> : Argumentaire commercial + données techniques</li>
-      <li><strong>Médias</strong> : 2 scoops + questions critiques</li>
-    </ul>
+  <div class="intel-dashboard-premium">
+    <div class="intel-title-row">
+      <span class="intel-icon-main">📋</span>
+      <h3 data-i18n="acte2_subtitle">Dossiers d'Intelligence : Acteurs Clés</h3>
+    </div>
+    
+    <div class="intel-files-grid">
+      <!-- DGSI -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">👁️</span>
+          <span>DGSI (Services de l'Intérieur)</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Validation légale des algorithmes</li>
+              <li>Protection du secret-défense</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Divulgation des mots-clés</li>
+              <li>Contrôle parlementaire strict</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- ANSSI -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">💻</span>
+          <span>ANSSI (Sécurité Cyber)</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Audit des codes sources</li>
+              <li>Souveraineté technologique</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Exposition des méthodes</li>
+              <li>Politisation de l'expertise</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- CNIL -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🔒</span>
+          <span>CNIL (Données Personnelles)</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Audit permanent Cyphera</li>
+              <li>Sanctions exemplaires</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Relégation institutionnelle</li>
+              <li>Banalisation surveillance</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- COMCYBER -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🎖️</span>
+          <span>COMCYBER (Ministère des Armées)</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Secret des algorithmes</li>
+              <li>Légitimation IA Défense</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Audition publique sensibles</li>
+              <li>Arrêt du programme critique</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- CYPHERA -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">🦊</span>
+          <span>CYPHERA SECURITY</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Maintien des contrats</li>
+              <li>Protection IP (Brevets)</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Condamnation pénale</li>
+              <li>Révélation des cibles</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- MEDIAS -->
+      <details class="intel-file-accordion">
+        <summary class="intel-file-header">
+          <span class="actor-icon-intel">📰</span>
+          <span>Journalistes & Médias</span>
+        </summary>
+        <div class="intel-file-content">
+          <div class="intel-block">
+            <h4>🎯 Objectifs</h4>
+            <ul>
+              <li>Déclassification documents</li>
+              <li>Protection des sources</li>
+            </ul>
+          </div>
+          <div class="intel-block risks-block">
+            <h4>⚠️ Risques</h4>
+            <ul>
+              <li>Poursuites lanceur d'alerte</li>
+              <li>Diversion sécuritaire</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </div>
   </div>
 </div>

@@ -1,0 +1,631 @@
+/* Act 1: Bureau & Intelligence Dashboard (Phase 26) */
+
+.acte-header-premium {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.acte-header-premium h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(253, 187, 45, 0.3);
+}
+
+@media (max-width: 768px) {
+    .acte-header-premium h2 {
+        font-size: 1.6rem;
+    }
+}
+
+.acte-header-premium::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Bureau Election Grid */
+.bureau-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.bureau-step-card {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    transition: all 0.4s ease;
+}
+
+.bureau-step-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.step-number-badge {
+    background: var(--accent-color);
+    color: #000;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.bureau-step-card h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.step-details-premium {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.step-details-premium p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Intelligence Dashboard Section */
+.intel-dashboard-premium {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.intel-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.intel-icon-main {
+    font-size: 2rem;
+}
+
+.intel-dashboard-premium h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.intel-files-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .briefing-grid, 
+    .audition-manager-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-2-briefing {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .timer-digital {
+        font-size: 2.5rem;
+    }
+
+    .intel-file-content {
+        grid-template-columns: 1fr;
+    }
+
+    .final-vote-container {
+        padding: 1.5rem;
+    }
+
+    .btn-final-action {
+        padding: 1.2rem 2.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+.intel-file-accordion {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.intel-file-accordion[open] {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(253, 187, 45, 0.3);
+}
+
+.intel-file-header {
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    color: #fff;
+    list-style: none; /* Hide default triangle */
+    position: relative;
+}
+
+.intel-file-header::-webkit-details-marker {
+    display: none;
+}
+
+.intel-file-header::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+    font-family: monospace;
+}
+
+.intel-file-accordion[open] .intel-file-header::after {
+    transform: rotate(45deg); /* Turns + into x or just rotate for - effect */
+    content: '−';
+}
+
+.actor-icon-intel {
+    font-size: 1.4rem;
+}
+
+.intel-file-content {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(0,0,0,0.15);
+}
+
+.intel-block h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.intel-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intel-block li {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.intel-block li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.risks-block li::before {
+    color: #ef4444;
+}
+
+/* Utilities */
+.w-100 {
+    width: 100%;
+}
+
+/* Premium Vote Button Overrides (Phase 27) */
+.bureau-step-card .btn.primary {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #d4a017 100%);
+    color: #000;
+    border: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(253, 187, 45, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bureau-step-card .btn.primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.bureau-step-card .btn.primary:hover::before {
+    left: 100%;
+}
+
+.bureau-step-card .btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(253, 187, 45, 0.5);
+    filter: brightness(1.1);
+}
+
+/* ACT 2 - Auditions Hub (Phase 30) */
+.briefing-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.briefing-card-premium {
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.briefing-card-premium h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.grid-2-briefing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.tech-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.8rem;
+}
+
+.briefing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.briefing-list li {
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.briefing-list li::before {
+    content: '❯';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 0.7rem;
+    top: 3px;
+}
+
+.methodology-text {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Audition Dashboard Grid */
+.audition-manager-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: stretch; /* Equalize heights naturally */
+}
+
+.monitoring-panel {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Stretch to grid height */
+}
+
+.panel-header {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.panel-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+.monitoring-loading {
+    padding: 2rem;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.audition-actors-list {
+    flex-grow: 1;
+    overflow-y: hidden; /* Remove scroll bar */
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread rows to fill space */
+}
+
+.audition-actor-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 100px;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.4rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.audition-actor-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(253, 187, 45, 0.2);
+}
+
+.audition-actor-row.active {
+    background: rgba(253, 187, 45, 0.08);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(253, 187, 45, 0.1);
+}
+
+.actor-icon { font-size: 1.2rem; }
+.actor-name { font-weight: 600; color: #fff; }
+.actor-status {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.actor-status.active {
+    background: rgba(74, 222, 128, 0.15);
+    color: #4ade80;
+    animation: status-pulse 2s infinite;
+}
+
+@keyframes status-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.actor-status.completed {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+}
+
+/* Mission Clock Console */
+.mission-clock-console {
+    padding: 2rem;
+    border-radius: 28px;
+    border: 1px solid rgba(253, 187, 45, 0.15);
+    text-align: center;
+}
+
+.console-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.active-identity {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    min-height: 1.5rem;
+}
+
+.clepsydre-outer {
+    position: relative;
+    width: 80px;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.clepsydre-fluid {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: height 1s linear, background 0.5s ease;
+    box-shadow: 0 0 30px rgba(74, 222, 128, 0.3);
+}
+
+.clepsydre-ticks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.clepsydre-ticks span {
+    width: 10px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+.timer-display {
+    margin-bottom: 2rem;
+}
+
+.timer-digital {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.timer-unit {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 5px;
+}
+
+.console-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-reset-small {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reset-small:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.05);
+}
+
+
+/* Final Action Button (Phase 35) */
+.final-vote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: rgba(253, 187, 45, 0.03);
+    border-radius: 30px;
+    border: 1px dashed rgba(253, 187, 45, 0.2);
+}
+
+.btn-final-action {
+    background: linear-gradient(135deg, #ffd700 0%, #d4a017 50%, #b8860b 100%);
+    color: #000;
+    border: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(212, 160, 23, 0.4);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.btn-final-action::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    transition: 0.6s;
+    border-radius: 50px;
+}
+
+.btn-final-action:hover::before {
+    left: 100%;
+}
+
+.btn-final-action:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(212, 160, 23, 0.6);
+}
+
+@media (max-width: 768px) {
+    .intel-file-content {
+        grid-template-columns: 1fr;
+    }
+}

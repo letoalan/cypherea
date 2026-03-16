@@ -1,0 +1,83 @@
+
+.objectifs-buttons {
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.objectif-btn {
+    padding: 2.5rem 1.5rem;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(20px);
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.objectif-btn:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.objectif-btn.active {
+    background: linear-gradient(135deg, var(--gold), #fbbf24);
+    color: #0f172a;
+    border-color: var(--gold);
+    box-shadow: 0 20px 50px rgba(253, 187, 45, 0.3);
+}
+
+/* Sections de Contenu */
+.objectifs-content {
+    padding: 2rem 2rem 6rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.goal-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: all 0.4s ease;
+}

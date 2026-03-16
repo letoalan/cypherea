@@ -1,0 +1,53 @@
+.btn-vote, .btn-primary {
+    background: linear-gradient(45deg, #4ade80, #22c55e);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #0f172a;
+    box-shadow: 0 10px 25px rgba(74, 222, 128, 0.4);
+}
+
+.btn-vote:hover, .btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(74, 222, 128, 0.6);
+    background: linear-gradient(45deg, #22c55e, #16a34a);
+}
+
+.btn-evaluation { 
+    background: linear-gradient(45deg, #f59e0b, #eab308); 
+    color: #000;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.btn-evaluation:hover {
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.5);
+}
+
+.btn-validate-inline {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-validate-inline:hover {
+    background: var(--accent-color);
+    color: black;
+    box-shadow: 0 0 15px rgba(253, 187, 45, 0.3);
+}
+
+.btn-validate-inline.validated {
+    background: rgba(74, 222, 128, 0.2);
+    border-color: #4ade80;
+    color: #4ade80;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
+}

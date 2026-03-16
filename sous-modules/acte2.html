@@ -1,32 +1,77 @@
 <div class="acte-content animated-fade-in">
-  <h2>Acte 2 : Auditions</h2>
+  <div class="acte-header-premium">
+    <h2 data-i18n="acte2_title">Acte 2 : Auditions & Confrontations</h2>
+  </div>
   
-  <div class="droits-devoirs glass">
-    <h3>⚖️ Droits & Devoirs</h3>
-    <div class="grid-2">
-      <div>
-        <h4>Parlementaires (AN, Sénat, ED)</h4>
-        <ul>
-          <li>Poser questions (2/groupe max)</li>
-          <li><strong>Prendre notes obligatoires</strong></li>
-          <li>Confrontations croisées</li>
-        </ul>
+  <div class="briefing-grid">
+    <div class="briefing-card-premium glass">
+      <div class="card-tag">Protocoles</div>
+      <h3>⚖️ Droits & Devoirs</h3>
+      <div class="grid-2-briefing">
+        <div class="briefing-column">
+          <h4 class="tech-label">Parlementaires (AN, Sénat, ED)</h4>
+          <ul class="briefing-list">
+            <li>Poser des questions stratégiques</li>
+            <li><strong>Notes obligatoires</strong> (Base du rapport)</li>
+            <li>Confrontations croisées autorisées</li>
+          </ul>
+        </div>
+        <div class="briefing-column">
+          <h4 class="tech-label">Invités & Témoins</h4>
+          <ul class="briefing-list">
+            <li>Répondre sous serment (Plausibilité)</li>
+            <li>Interdiction de poser des questions</li>
+            <li>Respect du secret défense</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h4>Invités</h4>
-        <ul>
-          <li>Répondre factuellement</li>
-          <li>Pas de questions</li>
-          <li>Respect confidentialité</li>
-        </ul>
-      </div>
+    </div>
+    
+    <div class="briefing-card-premium glass importance-notes">
+      <div class="card-tag alert">Intégrité des données</div>
+      <h3>📝 Méthodologie d'Analyse</h3>
+      <p class="methodology-text"><strong>Toutes les notes constituent la base du rapport final.</strong> Il est impératif de citer des verbatim pour garantir la crédibilité et la force juridique du rapport.</p>
     </div>
   </div>
   
-  <div class="notes-importantes glass">
-    <h3>📝 Importance notes</h3>
-    <p><strong>Toutes notes = base rapport final.</strong> Citer verbatim pour crédibilité.</p>
+  <div class="audition-manager-grid slide-in">
+    <div class="monitoring-panel glass">
+      <div class="panel-header">
+        <span class="panel-icon">📡</span>
+        <span class="panel-title">Suivi des auditions</span>
+      </div>
+      <div class="audition-actors-list" id="audition-actors-list">
+        <div class="monitoring-loading">Initialisation des capteurs...</div>
+      </div>
+    </div>
+
+    <div class="mission-clock-console glass">
+      <div class="console-label">Signal actif</div>
+      <div id="active-actor-name" class="active-identity">En attente de sélection...</div>
+      
+      <div class="clepsydre-outer">
+        <div class="clepsydre-ticks">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="clepsydre-fluid" id="clepsydre-fill"></div>
+      </div>
+
+      <div class="timer-display">
+        <div class="timer-digital" id="timer-digital">10:00</div>
+        <div class="timer-unit">MIN:SEC</div>
+      </div>
+
+      <div class="console-actions">
+        <button id="btn-timer-toggle" class="btn-primary" onclick="handleTimerToggle()" disabled>Démarrer</button>
+        <button id="btn-timer-reset" class="btn-reset-small" onclick="handleTimerReset()">Reset</button>
+      </div>
+    </div>
   </div>
-  
-  <button class="btn-primary" onclick="startAuditions()">Démarrer Auditions</button>
+
+  <script>
+    // Ensure the list is populated if the script is already loaded
+    if (typeof initAuditionSection === 'function') {
+      initAuditionSection();
+    }
+  </script>
 </div>

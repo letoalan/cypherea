@@ -1,0 +1,48 @@
+.badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge-blue { background: #3b82f6; color: white; }
+.badge-orange { background: #f59e0b; color: white; }
+
+.result-badge {
+    display: inline-block;
+    padding: 2px 12px;
+    background: rgba(74, 222, 128, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    border-radius: 50px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 15px;
+    vertical-align: middle;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.result-badge:empty {
+    display: none;
+}
+
+.member-mini-tag {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.member-mini-tag.pos { border-color: #4ade80; color: #4ade80; }
+.member-mini-tag.neg { border-color: #f87171; color: #f87171; }
+.member-mini-tag.neu { border-color: #fbbf24; color: #fbbf24; }
+
+.tag {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}

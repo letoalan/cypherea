@@ -38,7 +38,19 @@ async function renderDashboard() {
     ].filter(c => c !== null);
 
     const validated = window.getValidatedPositions();
-    let html = '<table><thead><tr><th>Acteur</th><th>A1</th><th>A2</th><th>A3</th><th>A4</th><th>Statut</th></tr></thead><tbody>';
+    let html = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Acteur</th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>A3</th>
+                    <th>A4</th>
+                    <th>État</th>
+                </tr>
+            </thead>
+            <tbody>`;
     
     let completedCount = 0;
     window.ACTORS_MANIFEST.forEach(actor => {
@@ -49,21 +61,32 @@ async function renderDashboard() {
         const isDone = !!choice.acte4;
         if (isDone) completedCount++;
         
-        html += `<tr onclick="renderStrategyPanel('${actor.id}')">
-            <td><strong>${label}</strong></td>
-            <td><span class="act-badge locked">${choice.acte1 || '—'}</span></td>
-            <td><span class="act-badge ${choice.acte2?'filled':''}">${choice.acte2 || '—'}</span></td>
-            <td><span class="act-badge ${choice.acte3?'filled':''}">${choice.acte3 || '—'}</span></td>
-            <td><span class="act-badge ${choice.acte4?'filled':''}">${choice.acte4 || '—'}</span></td>
-            <td><span class="status-badge">${isDone ? '✅ Terminé' : '🔵 En cours'}</span></td>
-        </tr>`;
+        html += `
+            <tr onclick="renderStrategyPanel('${actor.id}')">
+                <td>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <span style="font-size:1.4rem;">${actor.icon || '👤'}</span>
+                        <div style="display:flex; flex-direction:column;">
+                            <strong>${label}</strong>
+                            <span style="font-size:0.75rem; opacity:0.6;">${actor.type === 'membre' ? 'Commission' : 'Témoin'}</span>
+                        </div>
+                    </div>
+                </td>
+                <td><span class="act-badge locked">${choice.acte1 || '—'}</span></td>
+                <td><span class="act-badge ${choice.acte2?'filled':''}">${choice.acte2 || '—'}</span></td>
+                <td><span class="act-badge ${choice.acte3?'filled':''}">${choice.acte3 || '—'}</span></td>
+                <td><span class="act-badge ${choice.acte4?'filled':''}">${choice.acte4 || '—'}</span></td>
+                <td><span class="status-badge ${isDone ? 'success' : 'active'}">${isDone ? '✅ Prêt' : '🔵 En cours'}</span></td>
+            </tr>`;
     });
     
     html += '</tbody></table>';
     containers.forEach(c => c.innerHTML = html);
     const progress = (completedCount / 14) * 100;
-    document.getElementById('progress-fill').style.width = `${progress}%`;
-    document.getElementById('progress-count').textContent = `${completedCount}/14`;
+    const progressFill = document.getElementById('progress-fill');
+    if (progressFill) progressFill.style.width = `${progress}%`;
+    const progressCount = document.getElementById('progress-count');
+    if (progressCount) progressCount.textContent = `${completedCount}/14`;
     
     updateImpactBarometers();
 }
@@ -73,7 +96,6 @@ async function renderDashboard() {
  */
 function updateImpactBarometers() {
     const choices = window.strategyChoices;
-    const manifest = window.ACTORS_MANIFEST;
     
     // 1. Vote Commission (Parlementaires)
     const seats = { "AN_majorite": 10, "AN_opposition_droite": 5, "ED": 5, "AN_opposition_gauche": 4, "Senat_majorite": 4, "Senat_opposition": 2 };
@@ -83,11 +105,16 @@ function updateImpactBarometers() {
         if (a4 === 'α' || a4 === 'β') totalVotes += seats[id];
     });
     
-    document.getElementById('vote-count').textContent = totalVotes;
-    document.getElementById('vote-fill').style.width = `${(totalVotes / 30) * 100}%`;
+    const voteCount = document.getElementById('vote-count');
+    const voteFill = document.getElementById('vote-fill');
     const vStatus = document.getElementById('vote-status');
-    vStatus.textContent = totalVotes >= 16 ? "✅ Rapport Adopté" : "❌ Rapport Rejeté";
-    vStatus.className = totalVotes >= 16 ? "status-success" : "status-fail";
+    
+    if (voteCount) voteCount.textContent = totalVotes;
+    if (voteFill) voteFill.style.width = `${(totalVotes / 30) * 100}%`;
+    if (vStatus) {
+        vStatus.textContent = totalVotes >= 16 ? "✅ Rapport Adopté (Majorité)" : "❌ Rapport Rejeté (Censure)";
+        vStatus.className = totalVotes >= 16 ? "status-success" : "status-fail";
+    }
 
     // 2. Adhésion Institutions
     const insts = ["Armees", "Interieur", "Justice", "CNIL", "ANSSI", "DGSI"];
@@ -100,21 +127,27 @@ function updateImpactBarometers() {
         }
     });
     const instRate = instCount > 0 ? (instSupport / instCount) * 100 : 50;
-    document.getElementById('inst-fill').style.width = `${instRate}%`;
-    document.getElementById('inst-value').textContent = instRate > 50 ? "Majoritaire" : (instCount > 0 ? "Minoritaire" : "Neutralité");
+    const instFill = document.getElementById('inst-fill');
+    const instVal = document.getElementById('inst-value');
+    if (instFill) instFill.style.width = `${instRate}%`;
+    if (instVal) instVal.textContent = instRate > 50 ? "Adhésion Majoritaire" : (instCount > 0 ? "Adhésion Minoritaire" : "Neutralité Étatique");
 
     // 3. État CYPHERA
     const cyA4 = choices["CYPHERA"]?.acte4;
-    const cyStatus = { "α": "Succès", "β": "Survie", "γ": "Affaibli", "δ": "Disparu" }[cyA4] || "Inconnu";
-    document.getElementById('cy-status').textContent = cyStatus;
-    document.getElementById('cy-tag').textContent = cyA4 ? `Acte 4: ${cyA4}` : "—";
+    const cyStatus = { "α": "Succès industriel", "β": "Survie précaire", "γ": "Affaiblissement", "δ": "Disparition" }[cyA4] || "Attente Acte 4";
+    const cyStatEl = document.getElementById('cy-status');
+    const cyTagEl = document.getElementById('cy-tag');
+    if (cyStatEl) cyStatEl.textContent = cyStatus;
+    if (cyTagEl) cyTagEl.textContent = cyA4 ? `Stratégie : ${cyA4}` : "Phase préparatoire";
     
     // 4. Opinion Publique (Médias)
     const medA4 = choices["Medias"]?.acte4;
     const medRate = { "α": 90, "β": 60, "γ": 40, "δ": 10 }[medA4] || 50;
-    const medLabel = { "α": "Convaincue", "β": "Détournée", "γ": "Lassée", "δ": "Hostile" }[medA4] || "Indifférence";
-    document.getElementById('op-fill').style.width = `${medRate}%`;
-    document.getElementById('op-status').textContent = medLabel;
+    const medLabel = { "α": "Opinion Convaincue", "β": "Opinion Détournée", "γ": "Opinion Lassée", "δ": "Opinion Hostile" }[medA4] || "Indifférence Médiatique";
+    const opFill = document.getElementById('op-fill');
+    const opStat = document.getElementById('op-status');
+    if (opFill) opFill.style.width = `${medRate}%`;
+    if (opStat) opStat.textContent = medLabel;
 }
 
 async function renderStrategyPanel(actorId) {
@@ -156,15 +189,23 @@ function renderActeChoices(actorId, acteNum, tree) {
         options = Object.keys(tree.acte4).map(k => ({id:k, ...tree.acte4[k]}));
     }
 
-    return options.map(opt => `
-        <div class="position-card" onclick="validateActeChoice('${actorId}', ${acteNum}, '${opt.id}')">
-            <div class="pos-header"><span class="pos-badge">${opt.id.split('.').pop()}</span><span class="pos-label">${opt.label}</span></div>
-            <p class="pos-desc">${opt.description}</p>
-            <div class="pos-meta">
-                <span class="tag">${opt.tonalite || ''}</span>
-                <span class="tag risque-${opt.risque}">${opt.risque || ''}</span>
-            </div>
-        </div>`).join('');
+    return options.map(opt => {
+        const tonClass = opt.tonalite ? `ton-${opt.tonalite.toLowerCase()}` : '';
+        const riskClass = opt.risque ? `risque-${opt.risque.toLowerCase()}` : '';
+        
+        return `
+            <div class="position-card" onclick="validateActeChoice('${actorId}', ${acteNum}, '${opt.id}')">
+                <div class="pos-header">
+                    <span class="pos-badge">${opt.id.split('.').pop().toUpperCase()}</span>
+                    <span class="pos-label">${opt.label}</span>
+                </div>
+                <p class="pos-desc">${opt.description}</p>
+                <div class="pos-meta">
+                    <span class="tag ${tonClass}">${opt.tonalite || ''}</span>
+                    <span class="tag ${riskClass}">${opt.risque || ''}</span>
+                </div>
+            </div>`;
+    }).join('');
 }
 
 function validateActeChoice(actorId, acteNum, choiceId) {
@@ -187,7 +228,9 @@ function revealOutcome(actorId, tree) {
             <div class="score-gauge">Score : ${"█".repeat(path.score + 2)}${"░".repeat(5-(path.score+2))} (${path.score})</div>
             <blockquote class="citation">"${actorData?.citation || ''}"</blockquote>
             <div class="encadre-peda">${actorData?.encadre_pedagogique || ''}</div>
-            <button class="btn-reset" onclick="resetActorStrategy('${actorId}', 2)">↺ Rejouer cet acteur</button>
+            <button class="btn-reset replay" onclick="resetActorStrategy('${actorId}', 2)">
+                <span class="btn-icon">↺</span> Rejouer cet acteur
+            </button>
         </div>`;
     renderDashboard();
 }

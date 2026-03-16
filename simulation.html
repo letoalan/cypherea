@@ -5,9 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="tab_simulation">Simulation – Affaire CYPHERA</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/simulation.css">
-    <link rel="stylesheet" href="css/strategy.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/layout.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/header-nav.css">
+    <link rel="stylesheet" href="css/components/header-mobile.css">
+    <link rel="stylesheet" href="css/components/badges.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/glass-card.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/modal.css">
+    <link rel="stylesheet" href="css/components/tables.css">
+    <link rel="stylesheet" href="css/components/accordions.css">
+    <link rel="stylesheet" href="css/components/animations.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-layout.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-tabs.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-votes.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-auditions.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-actor-card.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-strategy.css">
+    <link rel="stylesheet" href="css/pages/simulation/simulation-acts.css">
 </head>
 
 <body>
@@ -169,10 +187,15 @@
                     <div class="strategy-header">
                         <h3>🎯 Progression Globale</h3>
                         <div id="global-progress">
-                            <span id="progress-count">0/14</span> acteurs complétés
+                            <div>
+                                <span id="progress-count">0/14</span>
+                                <span class="progress-text">acteurs complétés</span>
+                            </div>
                             <div class="progress-bar"><div id="progress-fill"></div></div>
                         </div>
-                        <button onclick="resetAllStrategies()" class="btn-reset">↺ Recommencer Actes 2-4</button>
+                        <button onclick="resetAllStrategies()" class="btn-reset warning">
+                            <span class="btn-icon">↺</span> Recommencer Actes 2-4
+                        </button>
                     </div>
                     
                     <h3 class="accent-title">📊 Baromètres d'Impact</h3>
@@ -250,27 +273,20 @@
     <div id="vote-modal" class="modal">
         <div class="modal-content glass">
             <span class="close-btn" onclick="closeVote()">&times;</span>
-            <h2 id="vote-title" style="margin:0 0 15px 0;">Vote en cours</h2>
+            <h2 id="vote-title">Vote en cours</h2>
             
-            <div class="vote-setup glass" style="margin-bottom:20px; padding:15px; display:flex; align-items:center; gap:20px;">
-                <div style="flex:1;">
-                    <label style="display:block; margin-bottom:5px; font-weight:600;">Sélection des candidats (Ctrl+Clic pour plusieurs) :</label>
-                    <select id="candidats-select" multiple class="vote-input" style="width:100%; height:80px; text-align:left;">
-                        <option value="AN Gauche">AN Gauche</option>
-                        <option value="Sénat Opp.">Sénat Opp.</option>
-                        <option value="AN Majorité">AN Majorité</option>
-                        <option value="Sénat Maj.">Sénat Maj.</option>
-                        <option value="AN Droite">AN Droite</option>
-                        <option value="ED">ED</option>
-                        <option value="DGSI">DGSI</option>
-                        <option value="ANSSI">ANSSI</option>
-                    </select>
+            <div class="vote-setup glass">
+                <div class="candidate-selection-wrap">
+                    <label>Choix des candidats :</label>
+                    <div id="candidats-selection-area" class="candidat-grid-container">
+                        <!-- JS Inject Table of Checkboxes -->
+                    </div>
                 </div>
-                <div id="resultat-seuil" class="seuil perd" style="flex:1; margin:0;">0/30 voix</div>
+                <div id="resultat-seuil" class="seuil perd">0/30 voix</div>
             </div>
 
             <div class="grid-2-large">
-                <div class="vote-table-container glass" style="margin:0; padding:15px; overflow-x:auto;">
+                <div class="vote-table-container glass">
                     <table class="evaluation-grid" id="vote-grid">
                         <thead>
                             <tr id="vote-grid-header">
@@ -283,32 +299,35 @@
                     </table>
                 </div>
                 
-                <div id="hemicycle-container" class="glass" style="margin:0; padding:10px; min-height:450px;">
+                <div id="hemicycle-container" class="glass">
                     <div id="hemicycle-chart"></div>
                 </div>
             </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:20px; border-top:1px solid rgba(255,255,255,0.1); padding-top:15px;">
-                <button id="btn-reset-vote" class="btn-vote" style="background:rgba(239, 68, 68, 0.1); border-color:#ef4444; color:#ef4444; padding:8px 15px; font-size:0.8em;">Réinitialiser</button>
-                <div style="display:flex; gap:10px;">
-                    <button id="btn-next-round" class="btn-vote" style="display:none; padding:10px 20px;">Passer au Second Tour</button>
-                    <button id="btn-validate-vote" class="btn-primary" style="padding:10px 25px; min-width:150px;">Valider le vote</button>
+            <div class="vote-modal-footer">
+                <button id="btn-reset-vote" class="btn-vote reset">Réinitialiser</button>
+                <div class="vote-modal-actions">
+                    <button id="btn-next-round" class="btn-vote round" style="display:none;">Passer au Second Tour</button>
+                    <button id="btn-validate-vote" class="btn-primary">Valider et fermer</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="i18n/translations.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/header.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
-    <script src="js/simulation.js"></script>
-    <script src="js/actors-data.js"></script>
-    <script src="js/actors.js"></script>
-    <script src="js/strategy.js"></script>
-    <script src="js/votes.js"></script>
-    <script src="js/pdf-generator.js"></script>
+    <script src="js/core/actors-data.js"></script>
+    <script src="js/core/i18n.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/modules/auditions.js"></script>
+    <script src="js/modules/simulation.js"></script>
+    <script src="js/modules/actors.js"></script>
+    <script src="js/modules/strategy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/votes/votes-core.js"></script>
+    <script src="js/votes/votes-logic.js"></script>
+    <script src="js/votes/votes-ui.js"></script>
+    <script src="js/votes/votes-charts.js"></script>
+    <script src="js/votes/votes-summary.js"></script>
+    <script src="js/utils/pdf-generator.js"></script>
 </body>
 
 </html>

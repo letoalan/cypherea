@@ -1,0 +1,30 @@
+.actors-mini-table,
+.evaluation-grid,
+#vote-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.actors-mini-table th,
+.evaluation-grid th,
+#vote-grid th {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent-color);
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.actors-mini-table td,
+.evaluation-grid td,
+#vote-grid td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.loading-spinner {
+    width: 50px; height: 50px; border: 4px solid rgba(255,255,255,0.3);
+    border-top: 4px solid #4ade80; border-radius: 50%; animation: spin 1s linear infinite;
+    margin: 50px auto;
+}

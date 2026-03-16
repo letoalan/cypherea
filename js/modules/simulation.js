@@ -67,6 +67,16 @@ async function loadActe(acteNumber) {
         if (typeof window.setLanguage === 'function') {
             window.setLanguage(lang);
         }
+
+        // Refresh vote badges if voting script is loaded
+        if (typeof window.refreshSummaryResults === 'function') {
+            window.refreshSummaryResults();
+        }
+
+        // Initialize auditions if on Acte 2
+        if (acteNumber === 2 && typeof window.initAuditionSection === 'function') {
+            window.initAuditionSection();
+        }
     } catch (error) {
         console.error('Erreur chargement acte:', error);
         container.innerHTML = '<p class="error">Erreur lors du chargement de l\'acte. Veuillez réessayer.</p>';
@@ -86,10 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onclick = (e) => { if (e.target == modal) modal.style.display = 'none'; };
 });
 
-// Phase Enquête - Nouvelles fonctions
-function startAuditions() {
-    alert("Les auditions démarrent. Respectez le temps de parole et prenez des notes obligatoires.");
-}
 
 function showEvaluation() {
     alert("Affichage de la grille d'évaluation (en développement).");

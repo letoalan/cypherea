@@ -1,0 +1,118 @@
+.evaluation-summary {
+    background: rgba(253, 187, 45, 0.1);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Grilles par Phase */
+.phases-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.phase-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+}
+
+.phase-card h3 {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(253, 187, 45, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.phase-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.phase-grid th {
+    text-align: left;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem;
+}
+
+.phase-grid td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Barème */
+.evaluation-scale {
+    margin-top: 4rem;
+}
+
+.scale-grid {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.scale-grid th { background: rgba(0,0,0,0.3); padding: 1.2rem; }
+.scale-grid td { padding: 1.2rem; }
+
+.scale-grid tr.excellent { background: rgba(52, 211, 153, 0.1); border-left: 4px solid #34d399; }
+.scale-grid tr.very-good { background: rgba(96, 165, 250, 0.1); border-left: 4px solid #60a5fa; }
+.scale-grid tr.satisfying { background: rgba(251, 191, 36, 0.1); border-left: 4px solid #fbbf24; }
+.scale-grid tr.insufficient { background: rgba(248, 113, 113, 0.1); border-left: 4px solid #f87171; }
+
+.teacher-section {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--gold);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
+
+/* Boutons PDF/Print */
+.pdf-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.pdf-btn, .print-btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdf-btn.gold {
+    background: linear-gradient(45deg, var(--gold), #fbbf24);
+    color: #000;
+    border: none;
+    box-shadow: 0 10px 20px rgba(253, 187, 45, 0.3);
+}
+
+.print-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.pdf-btn:hover, .print-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+@media print {
+    body { background: white !important; color: black !important; }
+    .main-header, .main-footer, .hero-video, .objectifs-buttons, .pdf-actions { display: none !important; }
+    .glass-card { background: white !important; color: black !important; border: none !important; box-shadow: none !important; backdrop-filter: none !important; }
+    .objectif-btn, .section-subtitle { display: none !important; }
+}

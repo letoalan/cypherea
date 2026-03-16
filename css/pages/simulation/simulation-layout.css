@@ -1,0 +1,142 @@
+.tab-pane,
+.main-tab-content,
+.sub-tab-container {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.tab-pane.active,
+.main-tab-content.active,
+.sub-tab-container.active {
+    display: block;
+}
+
+.procedure-grid,
+.positions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step,
+.position-card {
+    transition: var(--transition);
+}
+
+.step h3,
+.position-card h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.step p,
+.position-card ul {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.position-card ul {
+    padding-left: 1.2rem;
+}
+
+.acte-content {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.positions-list p {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.dynamic-content-area {
+    min-height: 300px;
+    margin-top: 2rem;
+}
+
+.sub-content-row {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .sub-content-row {
+        flex-direction: column;
+    }
+    .left-col, .right-col {
+        width: 100%;
+    }
+}
+
+.photo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.right-col h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.right-col p {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Layout Acteurs & Objectifs (Phase 18 Restoration) */
+#subContent3_1 .glass-card {
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "menu"
+        "card";
+    gap: 2rem;
+}
+
+#subContent3_1 .accent-title { 
+    grid-area: title; 
+    margin-bottom: 0.5rem;
+}
+
+#actors-menu-container { 
+    grid-area: menu; 
+}
+
+#actor-card-container { 
+    grid-area: card; 
+    min-height: 600px;
+}
+
+@media (min-width: 1024px) {
+    #subContent3_1 .glass-card {
+        grid-template-areas: 
+            "title title"
+            "menu card";
+        grid-template-columns: 320px 1fr;
+        align-items: start;
+    }
+    
+    #actors-menu-container {
+        position: sticky;
+        top: 20px;
+    }
+
+    .actors-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
