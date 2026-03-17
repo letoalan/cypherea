@@ -629,3 +629,81 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== Responsive <414px ===== */
+@media (max-width: 414px) {
+    .acte-header-premium h2 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .bureau-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .bureau-step-card {
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .intel-dashboard-premium {
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .intel-files-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .intel-file-header {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .intel-file-content {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .briefing-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-2-briefing {
+        grid-template-columns: 1fr;
+    }
+
+    .audition-manager-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .audition-actor-row {
+        grid-template-columns: 30px 1fr 70px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .mission-clock-console {
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .timer-digital {
+        font-size: 2rem;
+    }
+
+    .final-vote-container {
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .btn-final-action {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+}

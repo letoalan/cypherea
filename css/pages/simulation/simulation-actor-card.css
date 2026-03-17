@@ -222,3 +222,54 @@
     font-style: italic;
     opacity: 0.8;
 }
+
+/* ===== Responsive <414px ===== */
+@media (max-width: 414px) {
+    .actors-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .actor-menu-item {
+        padding: 0.7rem 0.5rem;
+        border-radius: 8px;
+    }
+
+    .actor-name {
+        font-size: 0.75rem;
+    }
+
+    .actor-card {
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-section {
+        padding: 1.2rem 1rem;
+        border-radius: 12px;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .force-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .positions-nav-premium {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}

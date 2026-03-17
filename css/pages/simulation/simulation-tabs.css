@@ -126,3 +126,42 @@
     font-weight: 700;
     box-shadow: 0 5px 15px rgba(253, 187, 45, 0.2);
 }
+
+/* ===== Responsive <414px ===== */
+@media (max-width: 414px) {
+    .simulation-tabs {
+        border-radius: 16px;
+        padding: 0.3rem;
+        gap: 0.3rem;
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        border-radius: 12px;
+    }
+
+    .main-simulation-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        white-space: normal;
+    }
+
+    .main-tab-btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+        border-radius: 0.7rem;
+        flex: 1 1 calc(50% - 0.5rem);
+        text-align: center;
+    }
+
+    .sub-tab-nav {
+        gap: 0.4rem;
+    }
+
+    .sub-tab-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}

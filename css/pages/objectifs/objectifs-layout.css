@@ -81,3 +81,34 @@
     position: relative;
     transition: all 0.4s ease;
 }
+
+/* ===== Responsive <414px ===== */
+@media (max-width: 414px) {
+    .objectifs-buttons {
+        padding: 2rem 1rem;
+    }
+
+    .buttons-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .objectif-btn {
+        padding: 1.5rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .objectifs-content {
+        padding: 1rem 0.8rem 4rem;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .goal-card {
+        padding: 1.5rem 1.2rem;
+        border-radius: 1rem;
+    }
+}

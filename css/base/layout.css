@@ -18,3 +18,9 @@
         padding: 1.5rem;
     }
 }
+
+@media (max-width: 414px) {
+    .container {
+        padding: 1rem 0.8rem;
+    }
+}
